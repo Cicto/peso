@@ -1,0 +1,579 @@
+CRITICAL - 2022-06-22 09:52:30 --> Call to a member function getUserInfo() on null
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-22 10:25:16 --> Class "App\Controllers\UsersModel" not found
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-22 10:26:17 --> Too few arguments to function App\Models\UsersModel::__construct(), 0 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 22 and exactly 1 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(22): App\Models\UsersModel->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:27:37 --> Too few arguments to function App\Models\UsersModel::__construct(), 0 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 23 and exactly 1 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(23): App\Models\UsersModel->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:28:18 --> Too few arguments to function App\Models\UsersModel::__construct(), 0 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 23 and exactly 1 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(23): App\Models\UsersModel->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:29:07 --> Too few arguments to function App\Models\UsersModel::__construct(), 0 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 23 and exactly 1 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(23): App\Models\UsersModel->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:29:16 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(25): App\Models\UsersModel->getUsers()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:29:51 --> Too few arguments to function App\Models\UsersModel::__construct(), 0 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 23 and exactly 1 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(23): App\Models\UsersModel->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:30:37 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): App\Models\UsersModel->getUsers()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:31:36 --> Too few arguments to function App\Models\UsersModel::__construct(), 0 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 24 and exactly 1 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(24): App\Models\UsersModel->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:32:32 --> Undefined variable $table
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Models\UsersModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): App\Models\UsersModel->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-22 10:36:41 --> Class "App\Models\DataTable" not found
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): App\Models\UsersModel->getUsersDataTables()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:36:53 --> Class "App\Models\DataTable" not found
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): App\Models\UsersModel->getUsersDataTables()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:37:02 --> Class "App\Models\DataTable" not found
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): App\Models\UsersModel->getUsersDataTables()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:37:32 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Models\UsersModel.php(34): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): App\Models\UsersModel->getUsersDataTables()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-22 10:38:56 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:39:12 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:40:26 --> json_encode() expects at least 1 argument, 0 given
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): json_encode()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:40:33 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:41:34 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:41:35 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:42:23 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:42:24 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:43:26 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:43:44 --> Undefined property: App\Controllers\Users::$db
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:44:03 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(34): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:44:10 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(34): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:45:22 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(25): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:47:43 --> Undefined variable $builder
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:47:51 --> json_encode() expects at least 1 argument, 0 given
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(30): json_encode()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-22 10:47:56 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(30): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:48:27 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(30): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:48:29 --> __clone method called on non-object
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Array)
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Array)
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(30): Hermawan\DataTables\DataTable::of(Array)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-22 10:52:15 --> Undefined property: stdClass::$IF(active=0 "Active" "Not Activated")
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 105)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(24): Hermawan\DataTables\DataTable->toJson()
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-22 11:06:13 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Users->App\Controllers\{closure}(Object(stdClass))
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#3 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-22 11:54:16 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 11:54:16 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+CRITICAL - 2022-06-22 11:54:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+CRITICAL - 2022-06-22 11:54:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+CRITICAL - 2022-06-22 11:54:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+CRITICAL - 2022-06-22 11:54:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 4
+CRITICAL - 2022-06-22 11:54:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 4
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 4
+CRITICAL - 2022-06-22 11:54:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 4
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 4
+CRITICAL - 2022-06-22 11:54:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 4
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:54:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+CRITICAL - 2022-06-22 11:54:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:55:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+CRITICAL - 2022-06-22 11:55:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"Active" "Not Activated")  LIKE :IF(active = 0 "Active" "Not Activated"): ESCAPE' at line 3
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:59:16 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-06-22 11:59:16 --> Unknown column 'action' in 'order clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `e...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `e...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `e...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `e...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-22 11:59:18 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 11:59:18 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:59:18 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 11:59:18 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:59:21 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 11:59:21 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:59:21 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 11:59:21 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 11:59:24 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-06-22 11:59:24 --> Unknown column 'action' in 'order clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `e...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `e...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `e...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `e...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-22 11:59:28 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-06-22 11:59:28 --> Unknown column 'action' in 'order clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `e...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `e...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `e...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `e...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-22 11:59:31 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-06-22 11:59:31 --> Unknown column 'action' in 'order clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `e...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `e...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `e...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `e...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-22 12:02:45 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 12:02:45 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-22 12:03:13 --> Unknown column 'action' in 'where clause'
+CRITICAL - 2022-06-22 12:03:13 --> Unknown column 'action' in 'where clause'
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

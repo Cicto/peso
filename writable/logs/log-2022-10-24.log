@@ -1,0 +1,73 @@
+CRITICAL - 2022-10-24 11:42:00 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(755): count(NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->particularsRequirements()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-24 11:42:56 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(755): count(NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->particularsRequirements()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-24 11:43:59 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(755): count(NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->particularsRequirements()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-24 23:08:15 --> Invalid file: settings/filter.php
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('settings/filter...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/filter', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(821): view('settings/filter', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->filter('1')
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-24 23:14:47 --> Undefined variable $view_data
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(818): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 818)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->filter('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-24 23:52:16 --> var_dump() expects at least 1 argument, 0 given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(837): var_dump()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->searchApplication('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-24 23:52:16 --> Attempt to read property "visa_description" on bool
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/settings/filter.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 33)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/filter', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(828): view('settings/filter', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->filter('1')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-24 23:52:34 --> Attempt to read property "visa_description" on bool
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/settings/filter.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 33)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/filter', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(828): view('settings/filter', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->filter('1')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-24 23:52:40 --> var_dump() expects at least 1 argument, 0 given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(837): var_dump()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->searchApplication('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}

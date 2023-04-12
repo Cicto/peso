@@ -1,0 +1,53 @@
+CRITICAL - 2022-07-09 01:48:30 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-09 01:52:22 --> Attempt to read property "role" on string
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-09 01:52:49 --> Undefined variable $departments
+#0 C:\xampp\htdocs\projects\applications\app\Views\partials\newTicket.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/newTic...', NULL, true)
+#4 C:\xampp\htdocs\projects\applications\app\Views\layouts\main.php(47): CodeIgniter\View\View->include('partials/newTic...')
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('dashboards/supe...', Array, true)
+#9 C:\xampp\htdocs\projects\applications\app\Controllers\Dashboard.php(25): view('dashboards/supe...', Array)
+#10 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#11 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-07-09 02:44:57 --> Class "App\Libraries\BaliwagCity" not found
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Users->__construct()
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-09 02:45:13 --> Class "App\Controllers\BaliwagCity" not found
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Users->__construct()
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-09 02:46:18 --> Class "App\Controllers\BaliwagCity" not found
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->addUser()
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-09 02:46:33 --> Class "App\Controllers\BaliwagCity" not found
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->addUser()
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}

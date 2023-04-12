@@ -1,0 +1,537 @@
+ERROR - 2023-04-12 07:59:53 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 08:00:15 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 08:02:03 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 08:02:04 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:06:09 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:06:53 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:07:42 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-12 08:07:42 --> Attempt to read property "role" on array
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-12 08:07:59 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:08:05 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:08:06 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:08:08 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:08:10 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:08:14 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-12 08:27:42 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:27:42 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:29:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:29:30 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:30:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:30:14 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:30:18 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:30:18 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:30:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:30:52 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:33:01 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:33:01 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:34:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:34:04 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:34:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:34:30 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:34:42 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:34:42 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:35:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:35:02 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:36:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:36:02 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:36:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:36:14 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:36:24 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:36:24 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:36:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:36:33 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:37:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:37:04 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:37:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:37:13 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:37:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:37:25 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:37:31 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:37:31 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:37:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:37:51 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:37:56 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:37:56 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:38:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:38:08 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:38:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:38:15 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:38:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:38:22 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:38:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:38:52 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:39:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:39:08 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:39:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:39:14 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:39:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:39:25 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:39:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:39:38 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:39:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:39:46 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:51:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:51:05 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:52:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:52:20 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:52:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:52:43 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:52:59 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:52:59 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:53:40 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:53:40 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:55:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:55:20 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:57:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:57:38 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:57:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:57:55 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:58:11 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:58:11 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 08:59:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 08:59:07 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:00:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:00:34 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:01:18 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:01:18 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:01:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:01:46 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:02:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:02:17 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:03:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:03:15 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:04:32 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:04:32 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:04:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:04:55 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:06:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:06:03 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:06:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:06:36 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:09:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:09:54 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:10:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:10:15 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:10:47 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:10:47 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:11:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:11:48 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:11:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:11:54 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:12:10 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:12:10 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:12:28 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:12:28 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:13:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:13:08 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:13:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:13:13 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:13:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:13:19 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:13:39 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:13:39 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:17:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:17:36 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:18:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:18:05 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:18:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:18:30 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:20:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:20:51 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:26:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:26:34 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:28:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:28:20 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:30:06 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:30:06 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:30:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:30:30 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:31:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:31:55 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:32:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:32:36 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:44:42 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:44:42 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 09:44:42 --> Undefined variable $user_information
+#0 C:\xampp\htdocs\peso\app\Views\users\resume.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/resume', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Users.php(42): view('users/resume', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->resume()
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-04-12 09:44:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:44:57 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:45:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:45:06 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:47:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:47:43 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:48:39 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:48:39 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 09:48:45 --> Undefined array key "fileToUpload"
+#0 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(406): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 406)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\UtilController->uploadUserResume('1')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UtilController))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-12 09:52:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:52:48 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:53:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:53:08 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:55:23 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:55:23 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:55:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:55:43 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 09:55:53 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 09:55:53 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:02:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:02:48 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:03:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:03:20 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:03:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:03:33 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:03:40 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:03:40 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:04:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:04:57 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:05:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:05:33 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:05:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:05:43 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:09:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:09:04 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:09:27 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:09:27 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:09:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:09:46 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:09:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:09:48 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 10:13:19 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 10:15:17 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 10:15:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:16:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:16:20 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 10:16:20 --> rename(C:/xampp/htdocs/peso/public/assets/media/avatars/temp/undefined,C:/xampp/htdocs/peso/public/assets/media/avatars/undefined): The system cannot find the file specified (code: 2)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:/xampp...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(22): rename('C:/xampp/htdocs...', 'C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\UtilController->moveUserAvatar('undefined')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UtilController))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-12 10:16:21 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-04-12 10:18:32 --> Undefined variable $departments
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-12 10:22:31 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:22:31 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 10:22:51 --> Undefined property: stdClass::$house_number
+#0 C:\xampp\htdocs\peso\app\Views\users\editProfile.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/editProfi...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(96): view('users/editProfi...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 10:23:23 --> Undefined property: stdClass::$house_number
+#0 C:\xampp\htdocs\peso\app\Views\users\editProfile.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/editProfi...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(97): view('users/editProfi...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 10:23:57 --> Undefined property: stdClass::$street_name
+#0 C:\xampp\htdocs\peso\app\Views\users\editProfile.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 149)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/editProfi...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(97): view('users/editProfi...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 10:24:02 --> Undefined variable $is_loggedin
+#0 C:\xampp\htdocs\peso\app\Views\partials\noSideBarHeader.php(2833): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2833)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\noSideBarMain.php(68): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/editProfi...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(97): view('users/editProfi...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2023-04-12 10:27:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 10:27:54 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 10:52:18 --> Undefined variable $course
+#0 C:\xampp\htdocs\peso\app\Views\users\editProfile.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 202)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/editProfi...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(98): view('users/editProfi...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-04-12 11:12:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:12:52 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:15:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:15:48 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:17:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:17:33 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:17:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:17:41 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:18:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:18:46 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:18:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:18:57 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:19:00 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:19:00 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:23:49 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:23:49 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 11:23:49 --> Undefined variable $id
+#0 C:\xampp\htdocs\peso\app\Controllers\Users.php(489): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 489)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->updatePublicUserInfo('7')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-12 11:24:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:24:35 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 11:24:35 --> Undefined variable $id
+#0 C:\xampp\htdocs\peso\app\Controllers\Users.php(489): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 489)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->updatePublicUserInfo('7')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-12 11:24:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:24:57 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:24:57 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:27:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:27:04 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:27:04 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:28:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:28:19 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:28:19 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:29:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:29:22 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:29:22 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:29:37 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:29:37 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:29:37 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:29:45 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:29:45 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:29:45 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:29:59 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:29:59 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:30:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:30:12 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:30:12 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:32:26 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:32:26 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 11:32:26 --> CodeIgniter\Database\BaseBuilder::getCompiledUpdate(): Argument #1 ($reset) must be of type bool, array given, called in C:\xampp\htdocs\peso\app\Models\MasterModel.php on line 126
+#0 C:\xampp\htdocs\peso\app\Models\MasterModel.php(126): CodeIgniter\Database\BaseBuilder->getCompiledUpdate(Array, Array)
+#1 C:\xampp\htdocs\peso\app\Controllers\Users.php(490): App\Models\MasterModel->update('public_user_inf...', Array, Array)
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->updatePublicUserInfo()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-12 11:32:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:32:51 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:32:51 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:33:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:33:05 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:33:05 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:33:18 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:33:18 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:33:18 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:33:39 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:33:39 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:34:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:34:04 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:34:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:34:48 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:35:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:35:25 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:35:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:35:36 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:35:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:35:55 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:35:55 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:36:44 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:36:44 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:36:44 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:38:49 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:38:49 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:38:49 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:39:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:39:03 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:39:03 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:39:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:39:08 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:39:08 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:39:27 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:39:27 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:39:27 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:39:45 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:39:45 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:39:45 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:40:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:40:08 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:40:08 --> Unknown column 'brgy_id' in 'field list'
+ERROR - 2023-04-12 11:40:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:40:46 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:40:58 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:40:58 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:41:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:41:12 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:41:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:41:33 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:42:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:42:15 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:42:31 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:42:31 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:42:31 --> Unknown column 'barangayd_id' in 'field list'
+ERROR - 2023-04-12 11:42:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:42:38 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:42:44 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:42:44 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:44:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:44:03 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:45:10 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:45:10 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:49:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:49:41 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:49:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:49:55 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:50:31 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:50:31 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:50:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:50:41 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:54:10 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:54:10 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 11:54:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 11:54:22 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 12:42:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 12:42:03 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 12:49:11 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 12:49:11 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 12:52:42 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 12:54:44 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 12:54:44 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 12:54:47 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 12:54:47 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 12:55:13 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-12 12:56:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 12:56:07 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-12 12:56:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-12 12:56:12 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-12 13:23:56 --> Undefined variable $is_loggedin
+#0 C:\xampp\htdocs\peso\app\Views\partials\noSideBarHeader.php(2833): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2833)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\noSideBarMain.php(68): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/search', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(35): view('jobs/search', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->search()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-04-12 13:23:59 --> Undefined variable $is_loggedin
+#0 C:\xampp\htdocs\peso\app\Views\partials\noSideBarHeader.php(2833): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2833)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\noSideBarMain.php(68): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/search', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(35): view('jobs/search', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->search()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-04-12 13:24:19 --> Undefined variable $is_loggedin
+#0 C:\xampp\htdocs\peso\app\Views\partials\noSideBarHeader.php(2833): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2833)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\noSideBarMain.php(68): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/search', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(35): view('jobs/search', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->search()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-04-12 13:40:53 --> Cannot access protected property CodeIgniter\Database\MySQLi\Builder::$db
+#0 C:\xampp\htdocs\peso\app\Libraries\TemplateLib.php(28): App\Models\MasterModel->get('users', 'user_id, firstn...', Array, Array, false, false)
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(16): App\Libraries\TemplateLib::userInformation('7')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Jobs->__construct()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-04-12 13:41:02 --> syntax error, unexpected token ")"
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/jobs/search')
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/jobs/search')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-04-12 13:41:07 --> Cannot access protected property CodeIgniter\Database\MySQLi\Builder::$db
+#0 C:\xampp\htdocs\peso\app\Libraries\TemplateLib.php(28): App\Models\MasterModel->get('users', 'user_id, firstn...', Array, Array, false, false)
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(16): App\Libraries\TemplateLib::userInformation('7')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Jobs->__construct()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-04-12 13:48:20 --> Cannot access protected property CodeIgniter\Database\MySQLi\Builder::$db
+#0 C:\xampp\htdocs\peso\app\Libraries\TemplateLib.php(28): App\Models\MasterModel->get('users', 'user_id, firstn...', Array, Array, false, false)
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(16): App\Libraries\TemplateLib::userInformation('7')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Jobs->__construct()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}

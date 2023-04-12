@@ -1,0 +1,18 @@
+CRITICAL - 2022-08-02 02:36:28 --> Invalid file: pending.php
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pending.php')
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pending', Array, true)
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(30): view('pending', Array)
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->index()
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-02 02:37:23 --> Invalid file: applications/pending_application.php
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('applications/pe...')
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('applications/pe...', Array, true)
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(30): view('applications/pe...', Array)
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->index()
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}

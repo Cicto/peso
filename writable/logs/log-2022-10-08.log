@@ -1,0 +1,45 @@
+CRITICAL - 2022-10-08 15:26:57 --> Attempt to read property "visa_type" on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 196)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('<')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-08 15:27:13 --> Attempt to read property "visa_type" on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 196)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('<')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-08 15:29:27 --> Table 'applications_db.applicaiton_comments' doesn't exist
+ERROR - 2022-10-08 15:29:56 --> Table 'applications_db.applicaiton_comments' doesn't exist
+ERROR - 2022-10-08 15:30:20 --> Table 'applications_db.applicaiton_comments' doesn't exist
+CRITICAL - 2022-10-08 15:48:09 --> Undefined variable $coms
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/admin/documentDetails.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 135)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(225): view('admin/documentD...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('9')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 15:49:37 --> Undefined property: stdClass::$date
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/admin/documentDetails.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 136)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(225): view('admin/documentD...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('9')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-08 16:06:48 --> Too few arguments to function App\Controllers\Admin::uploadedDocuments(), 0 passed in /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->uploadedDocuments()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}

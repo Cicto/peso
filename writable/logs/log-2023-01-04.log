@@ -1,0 +1,205 @@
+ERROR - 2023-01-04 14:42:13 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 14:42:13 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 14:42:29 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 14:58:43 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 14:58:44 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 15:00:08 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 15:00:08 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 15:19:34 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 15:19:34 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 15:20:32 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+ERROR - 2023-01-04 15:20:33 --> Table 'baliwagc_systems_db.educational_attainment' doesn't exist
+CRITICAL - 2023-01-04 15:20:46 --> Undefined variable $roles
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Views/logs/logs.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 119)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('logs/logs', Array, true)
+#4 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(25): view('logs/logs', Array)
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->index()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#7 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 15:20:59 --> Undefined variable $departments
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Views/logs/logs.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 112)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('logs/logs', Array, true)
+#4 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(25): view('logs/logs', Array)
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->index()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#7 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 15:51:24 --> Class "App\Controllers\DataTable" not found
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-01-04 15:52:07 --> Unknown column 'issue_id' in 'order clause'
+CRITICAL - 2023-01-04 15:52:07 --> Unknown column 'issue_id' in 'order clause'
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `log_id`...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `log_id`...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `log_id`...')
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `log_id`...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#9 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#10 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-04 15:53:46 --> Unknown column 'issue_id' in 'order clause'
+CRITICAL - 2023-01-04 15:53:46 --> Unknown column 'issue_id' in 'order clause'
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `log_id`...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `log_id`...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `log_id`...')
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `log_id`...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#9 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#10 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-04 15:56:38 --> Undefined property: stdClass::$DATE_FORMAT(created_at "%M `%e`, %Y")
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 15:57:41 --> Undefined property: stdClass::$DATE_FORMAT(created_at "%M %e %Y")
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 15:57:42 --> Undefined property: stdClass::$DATE_FORMAT(created_at "%M %e %Y")
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 15:58:12 --> Undefined property: stdClass::$DATE_FORMAT(created_at "%Y")
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-04 15:58:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%Y)
+FROM `logs`
+ORDER BY `log_id` ASC
+ LIMIT 10' at line 1
+CRITICAL - 2023-01-04 15:58:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%Y)
+FROM `logs`
+ORDER BY `log_id` ASC
+ LIMIT 10' at line 1
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `log_id`...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `log_id`...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `log_id`...')
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `log_id`...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#9 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#10 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-04 15:58:38 --> Undefined property: stdClass::$DATE_FORMAT(created_at "%Y")
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 15:59:21 --> Undefined property: stdClass::$DATE_FORMAT("%Y" created_at)
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Logs.php(37): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 16:40:09 --> Cannot declare class App\Models\MasterModel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-01-04 16:40:35 --> Cannot declare class App\Models\MasterModel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-01-04 17:23:06 --> Class "Myth\Auth\Authentication\LogsModel" not found
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(88): Myth\Auth\Authentication\AuthenticationBase->recordLoginAttempt('egie.santos@bal...', '::1', 1, true)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(60): Myth\Auth\Authentication\AuthenticationBase->login(Object(Myth\Auth\Entities\User), false)
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Controllers/AuthController.php(91): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 17:23:50 --> Non-static method App\Models\LogsModel::GeneralLogs() cannot be called statically
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(89): Myth\Auth\Authentication\AuthenticationBase->recordLoginAttempt('egie.santos@bal...', '::1', 1, true)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(60): Myth\Auth\Authentication\AuthenticationBase->login(Object(Myth\Auth\Entities\User), false)
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Controllers/AuthController.php(91): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 17:25:36 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, string given, called in /Applications/MAMP/htdocs/baliwag/systems/app/Models/LogsModel.php on line 23
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Models/LogsModel.php(23): CodeIgniter\Database\BaseBuilder->insert('User logged in ...')
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(218): App\Models\LogsModel::GeneralLogs('User logged in ...', '{"email":"egie....', 1, 'egie.santos@bal...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(89): Myth\Auth\Authentication\AuthenticationBase->recordLoginAttempt('egie.santos@bal...', '::1', 1, true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(60): Myth\Auth\Authentication\AuthenticationBase->login(Object(Myth\Auth\Entities\User), false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Controllers/AuthController.php(91): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#7 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 17:28:31 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, string given, called in /Applications/MAMP/htdocs/baliwag/systems/app/Models/LogsModel.php on line 23
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Models/LogsModel.php(23): CodeIgniter\Database\BaseBuilder->insert('logs')
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(227): App\Models\LogsModel::GeneralLogs('logs', Array)
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(89): Myth\Auth\Authentication\AuthenticationBase->recordLoginAttempt('egie.santos@bal...', '::1', 1, true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(60): Myth\Auth\Authentication\AuthenticationBase->login(Object(Myth\Auth\Entities\User), false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Controllers/AuthController.php(91): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#7 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 17:28:33 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, string given, called in /Applications/MAMP/htdocs/baliwag/systems/app/Models/LogsModel.php on line 23
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Models/LogsModel.php(23): CodeIgniter\Database\BaseBuilder->insert('logs')
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(227): App\Models\LogsModel::GeneralLogs('logs', Array)
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/AuthenticationBase.php(89): Myth\Auth\Authentication\AuthenticationBase->recordLoginAttempt('egie.santos@bal...', '::1', 1, true)
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(60): Myth\Auth\Authentication\AuthenticationBase->login(Object(Myth\Auth\Entities\User), false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/myth/auth/src/Controllers/AuthController.php(91): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#7 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-04 17:29:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1) VALUES ('User logged in successfully: egie.santos@baliwag.gov.ph', '{\"ema' at line 1
+ERROR - 2023-01-04 17:30:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1) VALUES ('User logged in successfully: egie.santos@baliwag.gov.ph', '{\"ema' at line 1
+ERROR - 2023-01-04 17:31:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1) VALUES ('User logged in successfully: egie.santos@baliwag.gov.ph', '{\"ema' at line 1
+ERROR - 2023-01-04 17:41:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1) VALUES ('User logged in successfully: egie.santos@baliwag.gov.ph', '{\"ema' at line 1

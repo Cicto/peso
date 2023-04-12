@@ -1,0 +1,494 @@
+CRITICAL - 2023-01-26 14:58:38 --> Attempt to read property "department_name" on string
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/External.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 41)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'logos', 'default-small.s...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 14:58:38 --> Attempt to read property "department_name" on string
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/External.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 41)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 14:58:38 --> Attempt to read property "department_name" on string
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/External.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 41)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 14:58:38 --> Attempt to read property "department_name" on string
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/External.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 41)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 14:58:38 --> Attempt to read property "department_name" on string
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/External.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 41)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'avatars', '300-1.jpg')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 14:58:38 --> Attempt to read property "department_name" on string
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/External.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 41)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 15:07:28 --> Too few arguments to function App\Models\MasterModel::getDataTables(), 1 passed in /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php on line 78 and at least 2 expected
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(78): App\Models\MasterModel->getDataTables('clients')
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-26 15:12:21 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(80): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:12:48 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(80): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:14:32 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(84): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:15:34 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(84): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:18:01 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(84): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:21:44 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(94): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:22:50 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(94): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:23:22 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(88): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:23:36 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(88): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-26 15:23:57 --> Undefined array key "no_quotes"
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 261)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableColumnDefs.php(17): Hermawan\DataTables\DataTableColumnDefs->initFromBuilder(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(35): Hermawan\DataTables\DataTableColumnDefs->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(46): Hermawan\DataTables\DataTable->__construct(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(88): Hermawan\DataTables\DataTable::of(Object(CodeIgniter\Database\MySQLi\Builder))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-26 15:24:14 --> Unknown column 'email' in 'order clause'
+CRITICAL - 2023-01-26 15:24:14 --> Unknown column 'email' in 'order clause'
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `chat_ro...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `chat_ro...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `chat_ro...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `chat_ro...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(91): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#10 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-26 15:24:53 --> Unknown column 'email' in 'order clause'
+CRITICAL - 2023-01-26 15:24:53 --> Unknown column 'email' in 'order clause'
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `chat_ro...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `chat_ro...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `chat_ro...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `chat_ro...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(91): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#10 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-26 15:52:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 15:52:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 15:52:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 15:52:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:02:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:02:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:02:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:02:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:02:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%egi%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:02:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%egi%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:02:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%egi%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:02:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%egi%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 16:04:50 --> Undefined property: stdClass::$CONCAT(user_info.firstname " " user_info.lastname)
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 105)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-26 16:06:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:06:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:06:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:06:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:06:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:06:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:06:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%e%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:06:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%e%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:06:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%s%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:06:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_info.lastname) LIKE '%s%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:15:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:15:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:15:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%eg%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:15:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%eg%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:15:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%B%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:15:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%B%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:15:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%B%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:15:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%B%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:21:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%sd%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:21:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%sd%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:21:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%sd%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:21:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%sd%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:21:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%s%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:21:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%s%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:21:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%s%' ESCAPE '!'' at line 5
+CRITICAL - 2023-01-26 16:21:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.lastname) LIKE '%s%' ESCAPE '!'' at line 5
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(97): Hermawan\DataTables\DataTable->toJson(true)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-01-26 16:44:14 --> FUNCTION baliwagc_bessy_db.FORMAT_DATE does not exist
+CRITICAL - 2023-01-26 16:44:14 --> FUNCTION baliwagc_bessy_db.FORMAT_DATE does not exist
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `chat_ro...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `chat_ro...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `chat_ro...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `chat_ro...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(87): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#10 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-26 16:44:43 --> FUNCTION baliwagc_bessy_db.FORMAT_DATE does not exist
+CRITICAL - 2023-01-26 16:44:43 --> FUNCTION baliwagc_bessy_db.FORMAT_DATE does not exist
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `chat_ro...', 0)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `chat_ro...')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `chat_ro...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `chat_ro...', Array, false)
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/hermawan/codeigniter4-datatables/src/DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Chats.php(87): Hermawan\DataTables\DataTable->toJson(true)
+#8 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Chats->fetchClients()
+#9 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chats))
+#10 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}

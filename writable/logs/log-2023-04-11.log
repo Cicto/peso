@@ -1,0 +1,542 @@
+ERROR - 2023-04-11 09:14:42 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-11 09:14:42 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 09:14:42 --> Column 'email' in field list is ambiguous
+CRITICAL - 2023-04-11 09:14:42 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 09:15:32 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 09:15:32 --> Column 'email' in field list is ambiguous
+CRITICAL - 2023-04-11 09:15:32 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 09:15:59 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 09:15:59 --> Column 'email' in field list is ambiguous
+CRITICAL - 2023-04-11 09:15:59 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 09:16:25 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 09:16:25 --> Unknown column 'house_number' in 'field list'
+CRITICAL - 2023-04-11 09:16:25 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:36:41 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:36:41 --> Unknown column 'brgy_id' in 'field list'
+CRITICAL - 2023-04-11 10:36:41 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:37:23 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:37:23 --> Unknown column 'is_validated' in 'field list'
+CRITICAL - 2023-04-11 10:37:23 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:37:31 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:37:31 --> Unknown column 'public_user_info.user_id' in 'on clause'
+CRITICAL - 2023-04-11 10:37:31 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:37:55 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:37:55 --> Unknown column 'public_user_info.brgy_id' in 'on clause'
+CRITICAL - 2023-04-11 10:37:55 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:38:10 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-11 10:38:10 --> Attempt to read property "firstname" on array
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:39:23 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-11 10:39:23 --> Attempt to read property "firstname" on array
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:39:48 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-11 10:39:48 --> Attempt to read property "role" on array
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 10:41:23 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:43:17 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-11 10:43:17 --> Undefined property: stdClass::$role
+#0 C:\xampp\htdocs\peso\app\Views\partials\noSideBarHeader.php(3008): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3008)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\noSideBarMain.php(68): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('home/home', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Home.php(35): view('home/home', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2023-04-11 10:43:24 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:44:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:44:09 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:44:11 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:44:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:44:22 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:44:24 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:45:07 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-11 10:45:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:45:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 10:45:07 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2023-04-11 10:45:07 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(42): App\Controllers\UtilController::isUserFilled('6')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-11 10:47:16 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:47:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 10:47:31 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 10:47:32 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:02:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:02:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:02:55 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:02:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:03:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:03:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:03:47 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:03:47 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:04:03 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:04:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:04:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:04:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:04:34 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:04:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:04:38 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:04:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:05:46 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:05:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:05:56 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:05:56 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:06:13 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:06:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:06:19 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:06:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:06:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:06:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:07:08 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:07:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:07:33 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:07:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:07:43 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:07:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:08:36 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:08:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:08:48 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:08:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:09:50 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:09:50 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:09:58 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:09:58 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:10:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:10:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:10:10 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:10:10 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:15:36 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:15:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:16:20 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:16:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:17:35 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:17:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:18:13 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:18:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:18:24 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:18:24 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:18:34 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:18:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:19:16 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:19:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:19:27 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:19:27 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:19:52 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:19:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:20:26 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:20:26 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:20:36 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:20:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:22:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:22:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:22:45 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:22:45 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:22:55 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:22:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:24:14 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:24:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:27:50 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:27:50 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:28:19 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:28:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:28:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:28:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:28:49 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:28:49 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:29:00 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:29:00 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:29:52 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:29:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:30:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:30:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:30:54 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:30:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:31:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:31:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:31:23 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:31:23 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:32:52 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:32:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:33:03 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:33:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:33:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:33:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:33:32 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:33:32 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:33:38 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:33:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:33:50 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:33:50 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:34:04 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:34:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:34:22 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:34:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:44:17 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:44:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:44:25 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:44:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:44:34 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:44:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:48:11 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:48:11 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:48:58 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:48:58 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:49:05 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:49:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:49:19 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:49:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:49:32 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:49:32 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:49:54 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:49:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:50:09 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:50:09 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:50:15 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:50:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:50:59 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:50:59 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:51:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:51:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:52:37 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:52:37 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:52:53 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:52:53 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:52:57 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:52:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:53:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:53:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:53:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:53:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:53:19 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:53:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:05 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:14 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:20 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:30 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:41 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:54:52 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:54:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:55:08 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:55:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:56:52 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:56:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:57:06 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:57:06 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:57:27 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:57:27 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:58:08 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:58:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:58:17 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:58:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:58:23 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:58:23 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 11:59:49 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 11:59:49 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:00:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:00:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:01:16 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:01:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:03:50 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:03:50 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:04:14 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:04:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:04:20 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:04:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:05:21 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:05:21 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:07:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:07:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:07:43 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:07:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:08:11 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:08:11 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:08:20 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:08:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:08:22 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:08:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:09:04 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:09:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:10:20 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:10:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:10:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:10:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:10:33 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:10:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:10:47 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:10:47 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:12:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:12:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:12:46 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:12:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:13:30 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:13:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:13:42 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:13:42 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:15:46 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:15:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:17:25 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:17:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:17:40 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:17:40 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:18:15 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:18:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:19:36 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:19:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:19:54 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:19:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:20:04 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:20:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:20:14 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:20:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:22:30 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:22:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:23:03 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:23:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:23:17 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:23:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:24:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:24:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:25:05 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:25:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:26:07 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:26:07 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:36:16 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:36:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:37:18 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:37:18 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:49:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:49:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:49:21 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:49:21 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:50:32 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:50:32 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:52:22 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:52:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 12:53:48 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 12:53:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:01:39 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:01:39 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:03:03 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:03:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:03:48 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:03:48 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:09:19 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:09:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:35:36 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:35:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:41:55 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:41:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:42:19 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:42:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:42:27 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:42:27 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:43:08 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:43:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:43:35 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:43:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:44:12 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:44:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:44:21 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:44:21 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:45:23 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:45:23 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:45:42 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:45:42 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:50:09 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:50:09 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:51:43 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:51:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:51:43 --> Table 'baliwagc_peso_db.roles' doesn't exist
+CRITICAL - 2023-04-11 13:51:43 --> rename(C:/xampp/htdocs/peso/public/assets/media/avatars/temp/undefined,C:/xampp/htdocs/peso/public/assets/media/avatars/undefined): The system cannot find the file specified (code: 2)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:/xampp...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(22): rename('C:/xampp/htdocs...', 'C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\UtilController->moveUserAvatar('undefined')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UtilController))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-11 13:56:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:56:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:56:02 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2023-04-11 13:56:02 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(42): App\Controllers\UtilController::isUserFilled('6')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-11 13:58:18 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:58:18 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:58:18 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2023-04-11 13:58:18 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(42): App\Controllers\UtilController::isUserFilled('6')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-11 13:58:29 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:58:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 13:58:29 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2023-04-11 13:58:29 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(42): App\Controllers\UtilController::isUserFilled('6')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-11 13:58:53 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:58:53 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-04-11 13:58:53 --> Attempt to read property "firstname" on string
+#0 C:\xampp\htdocs\peso\app\Controllers\UtilController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(42): App\Controllers\UtilController::isUserFilled('6')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-04-11 13:59:04 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 13:59:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-04-11 13:59:04 --> Invalid file: home.php
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(51): view('home', Array)
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-04-11 14:00:55 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:00:55 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:00:55 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:01:23 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-04-11 14:01:23 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:01:23 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:03:13 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:03:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:03:40 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:03:40 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:04:54 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:04:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:04:54 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-11 14:04:56 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:04:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:04:57 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:21:37 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:21:43 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:21:46 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:21:59 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:22:02 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:22:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:22:02 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-11 14:22:33 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-11 14:22:33 --> Undefined property: stdClass::$brgy_id
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 105)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-04-11 14:22:51 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:22:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-04-11 14:22:51 --> Table 'baliwagc_peso_db.roles' doesn't exist
+ERROR - 2023-04-11 14:22:53 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:22:54 --> Column 'role' in field list is ambiguous
+ERROR - 2023-04-11 14:22:56 --> Column 'role' in field list is ambiguous
+CRITICAL - 2023-04-11 14:22:56 --> Undefined property: stdClass::$house_number
+#0 C:\xampp\htdocs\peso\app\Views\users\editProfile.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('users/editProfi...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(107): view('users/editProfi...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->profile()
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-04-11 14:23:53 --> Column 'role' in field list is ambiguous

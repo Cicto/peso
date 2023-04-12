@@ -1,0 +1,4 @@
+ERROR - 2022-08-03 22:00:57 --> Unknown column 'visa_list.visa_desctiption' in 'field list'
+ERROR - 2022-08-03 22:01:00 --> Unknown column 'visa_list.visa_desctiption' in 'field list'
+ERROR - 2022-08-03 22:01:12 --> Unknown column 'visa_list.visa_description' in 'field list'
+ERROR - 2022-08-03 22:01:45 --> Column 'visa_id' in where clause is ambiguous

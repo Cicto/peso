@@ -1,0 +1,337 @@
+CRITICAL - 2022-09-12 01:49:02 --> syntax error, unexpected token ";", expecting "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/updat...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/updat...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 01:49:03 --> syntax error, unexpected token ";", expecting "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/updat...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/updat...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 01:49:33 --> syntax error, unexpected token ";", expecting "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/updat...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/updat...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 01:50:00 --> syntax error, unexpected token ";", expecting "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/updat...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/updat...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 01:53:05 --> Object of class App\Controllers\Settings could not be converted to string
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->updateRequuirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-12 01:55:23 --> syntax error, unexpected token ";", expecting "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/updat...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/updat...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 02:53:50 --> Undefined array key "requirements_list"
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(317): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 317)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->updateRequuirementsType()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 02:54:47 --> syntax error, unexpected token "}"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/updat...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/updat...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:13:46 --> Undefined array key "result"
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 32)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:14:23 --> Undefined array key "result"
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 32)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:25:59 --> Undefined property: stdClass::$requirements_list
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 27)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:26:27 --> Undefined variable $requirements
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 27)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:26:44 --> syntax error, unexpected token "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/requirements')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/requirements')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:26:52 --> Undefined property: stdClass::$requirements_list
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 29)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:27:29 --> Attempt to read property "requirements_list" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 27)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:27:49 --> Undefined variable $requirements
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 25)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:27:59 --> Undefined variable $requirements
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 25)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:28:07 --> Undefined array key "result"
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 50)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:28:23 --> Attempt to read property "rt_id" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 38)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:28:54 --> Undefined array key "result"
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 50)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:31:14 --> syntax error, unexpected token ";", expecting ")"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/requirements')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/requirements')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:33:01 --> whereIn() expects $values to be of type array or closure
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('req_id', '1,2', false, 'AND ', NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Models/MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('req_id', '1,2')
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(28): App\Models\MasterModel->getWhereIn('requirements', '*', Array, 'req_id', '1,2')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:33:22 --> whereIn() expects $values to be of type array or closure
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('req_id', '"1,2"', false, 'AND ', NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Models/MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('req_id', '"1,2"')
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(28): App\Models\MasterModel->getWhereIn('requirements', '*', Array, 'req_id', '"1,2"')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:33:23 --> whereIn() expects $values to be of type array or closure
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('req_id', '"1,2"', false, 'AND ', NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Models/MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('req_id', '"1,2"')
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(28): App\Models\MasterModel->getWhereIn('requirements', '*', Array, 'req_id', '"1,2"')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:33:31 --> whereIn() expects $values to be of type array or closure
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('req_id', '["1,2"]', false, 'AND ', NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Models/MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('req_id', '["1,2"]')
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(28): App\Models\MasterModel->getWhereIn('requirements', '*', Array, 'req_id', '["1,2"]')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:33:32 --> whereIn() expects $values to be of type array or closure
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('req_id', '["1,2"]', false, 'AND ', NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Models/MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('req_id', '["1,2"]')
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(28): App\Models\MasterModel->getWhereIn('requirements', '*', Array, 'req_id', '["1,2"]')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:34:57 --> str_split(): Argument #2 ($length) must be of type int, string given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(28): str_split(',', '1,2')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:35:25 --> str_split(): Argument #2 ($length) must be of type int, string given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(31): str_split(',', '1,2')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:36:37 --> explode(): Argument #2 ($string) must be of type string, array given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(31): explode(',', Array)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:38:59 --> Undefined property: stdClass::$rt_title
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 38)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 03:40:53 --> Undefined variable $visaList
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/requirements/requirements.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 18)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(49): view('requirements/re...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-12 03:42:41 --> Undefined array key "visaType"
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/requirements/requirements.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 23)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(49): view('requirements/re...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-12 03:42:49 --> syntax error, unexpected token ";"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(49): view('requirements/re...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:46:42 --> syntax error, unexpected token ")"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(48): view('requirements/re...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:46:58 --> syntax error, unexpected token ")"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(48): view('requirements/re...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:47:00 --> syntax error, unexpected token ")"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(48): view('requirements/re...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-12 03:49:04 --> Attempt to read property "rt_description" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/requirements/requirements.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 34)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('requirements/re...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(48): view('requirements/re...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-12 04:04:50 --> Attempt to read property "requirements_list" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 32)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 04:05:36 --> Attempt to read property "requirements_list" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 33)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 04:05:46 --> Attempt to read property "requirements_list" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 29)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 04:06:04 --> Attempt to read property "requirements_list" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 29)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 04:06:22 --> var_dump() expects at least 1 argument, 0 given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(30): var_dump()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 04:06:27 --> Attempt to read property "rt_id" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 35)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-12 04:06:37 --> Attempt to read property "rt_id" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Requirements.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 35)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Requirements->index()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirements))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}

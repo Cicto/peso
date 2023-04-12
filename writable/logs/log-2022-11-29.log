@@ -1,0 +1,53 @@
+CRITICAL - 2022-11-29 14:32:50 --> Cannot declare class App\Controllers\Applications, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-29 14:33:14 --> Undefined variable $applicationPackages
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 21)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Systems->index()
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Systems))
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-29 14:33:15 --> Undefined variable $applicationPackages
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 21)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Systems->index()
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Systems))
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-29 14:33:25 --> Too few arguments to function view(), 0 passed in /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php on line 26 and at least 1 expected
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php(26): view()
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Systems->index()
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Systems))
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-29 14:34:09 --> Invalid file: systems/systemsDashboard.php
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('systems/systems...')
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('systems/systems...', Array, true)
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php(26): view('systems/systems...')
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Systems->index()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Systems))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-29 14:56:40 --> syntax error, unexpected token ";"
+#0 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('systems/systems...', Array, true)
+#2 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php(26): view('systems/systems...')
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Systems->index()
+#4 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Systems))
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-29 14:58:27 --> Undefined variable $title
+#0 /Applications/MAMP/htdocs/baliwag/systems/app/Views/systems/systemsDashboard.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 15)
+#1 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('systems/systems...', Array, true)
+#4 /Applications/MAMP/htdocs/baliwag/systems/app/Controllers/Systems.php(26): view('systems/systems...')
+#5 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Systems->index()
+#6 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Systems))
+#7 /Applications/MAMP/htdocs/baliwag/systems/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/baliwag/systems/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}

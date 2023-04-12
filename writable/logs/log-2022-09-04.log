@@ -1,0 +1,104 @@
+CRITICAL - 2022-09-04 21:41:00 --> syntax error, unexpected token "=", expecting "]"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/settings/requi...')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/settings/requi...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-04 22:03:01 --> Undefined variable $usersModel
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 132)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-04 22:05:51 --> Call to undefined method App\Models\MasterModel::addUserData()
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-04 22:06:12 --> Call to undefined method App\Models\MasterModel::insertData()
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-04 22:06:34 --> Undefined variable $users
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 134)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-09-04 22:06:56 --> Column 'rt_code' cannot be null
+CRITICAL - 2022-09-04 22:06:56 --> Cannot access offset of type string on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-09-04 22:07:56 --> Column 'rt_code' cannot be null
+ERROR - 2022-09-04 22:10:28 --> Column 'rt_code' cannot be null
+ERROR - 2022-09-04 22:11:00 --> Column 'rt_code' cannot be null
+CRITICAL - 2022-09-04 22:11:00 --> Cannot access offset of type string on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-09-04 22:12:51 --> Column 'rt_code' cannot be null
+CRITICAL - 2022-09-04 22:12:51 --> Cannot access offset of type string on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-09-04 22:13:07 --> Column 'rt_code' cannot be null
+CRITICAL - 2022-09-04 22:13:07 --> Cannot access offset of type string on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->addRequirementsType()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-09-04 22:36:52 --> Unknown column 'dept_id' in 'field list'
+CRITICAL - 2022-09-04 23:39:30 --> syntax error, unexpected token ";"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/docume...', Array, true)
+#3 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(103): view('settings/docume...', Array)
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->requirementsType()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-09-04 23:39:47 --> syntax error, unexpected token ";"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/docume...', Array, true)
+#3 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(103): view('settings/docume...', Array)
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->requirementsType()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-09-04 23:42:29 --> syntax error, unexpected token ";"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/docume...', Array, true)
+#3 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(103): view('settings/docume...', Array)
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->requirementsType()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-09-04 23:42:31 --> syntax error, unexpected token ";"
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('settings/docume...', Array, true)
+#3 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Settings.php(103): view('settings/docume...', Array)
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Settings->requirementsType()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#8 {main}

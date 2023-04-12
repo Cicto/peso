@@ -1,0 +1,100 @@
+CRITICAL - 2022-10-05 00:36:20 --> Undefined variable $visaList
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/admin/documentDetails.php(462): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 462)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(195): view('admin/documentD...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('1')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-05 00:59:07 --> Attempt to read property "arc_country" on string
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/admin/documentDetails.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 172)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(198): view('admin/documentD...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('1')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-05 01:20:37 --> Attempt to read property "visa_type" on array
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 193)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-05 01:32:00 --> syntax error, unexpected token "endforeach", expecting end of file
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(207): view('admin/documentD...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('1')
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-05 01:32:27 --> syntax error, unexpected token "endif", expecting end of file
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(207): view('admin/documentD...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('1')
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-05 02:20:30 --> var_dump() expects at least 1 argument, 0 given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(227): var_dump()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->updateApplicationStatus('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-05 02:20:57 --> var_dump() expects at least 1 argument, 0 given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(227): var_dump()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->updateApplicationStatus('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-05 02:21:11 --> var_dump() expects at least 1 argument, 0 given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(227): var_dump()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->updateApplicationStatus('1')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-05 02:21:34 --> Undefined variable $data
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/BaseController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 58)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(231): App\Controllers\BaseController->applicationLogs(Array)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->updateApplicationStatus('1')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-05 02:33:11 --> syntax error, unexpected token "endif", expecting end of file
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/documentD...', Array, true)
+#2 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(214): view('admin/documentD...', Array)
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->documentDetails('1')
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-10-05 02:34:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+ LIMIT 100' at line 5
+ERROR - 2022-10-05 02:34:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC
+ LIMIT 100' at line 5
+CRITICAL - 2022-10-05 16:04:53 --> Undefined variable $bithdayDate
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Views/admin/clientProfile.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 285)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/clientPro...', Array, true)
+#4 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(157): view('admin/clientPro...', Array)
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->viewClientProfile('2')
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}

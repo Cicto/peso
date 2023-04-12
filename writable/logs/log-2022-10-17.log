@@ -1,0 +1,112 @@
+ERROR - 2022-10-17 12:57:09 --> Unknown column 'uploaded_id' in 'where clause'
+CRITICAL - 2022-10-17 13:01:38 --> Call to undefined method App\Models\MasterModel::getSpecific()
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('18')
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-10-17 13:01:47 --> Table 'applications_db.application_id' doesn't exist
+CRITICAL - 2022-10-17 13:02:50 --> Too few arguments to function App\Models\MasterModel::getWhereJoin(), 3 passed in /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php on line 467 and exactly 4 expected
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(467): App\Models\MasterModel->getWhereJoin('user_info', '*', Array)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('18')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 13:07:45 --> unlink(): http does not allow unlinking
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(): http ...', '/Applications/M...', 468)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(468): unlink('http://localhos...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('18')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-17 13:10:40 --> unlink(/Applications/MAMP/htdocs/projects/myapplink/public/uploads/documents/Client_Client_2/Leyva, Bianca_IDENTIFICATION_DOCUMENTS_Valid_Government_IDs.pdf): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/Applica...', '/Applications/M...', 467)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(467): unlink('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('18')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-17 13:21:44 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 339)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->uploadDocuments()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 13:22:37 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 339)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->uploadDocuments()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 13:24:06 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 339)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->uploadDocuments()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 14:58:13 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 339)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->uploadDocuments()
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 14:59:42 --> unlink(/Applications/MAMP/htdocs/projects/myapplink/public/uploads/documents/Bianca_Leyva_6/Leyva, Bianca_IDENTIFICATION_DOCUMENTS_Valid_Government_IDs_13.jpeg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/Applica...', '/Applications/M...', 468)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(468): unlink('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('26')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-17 14:59:45 --> unlink(/Applications/MAMP/htdocs/projects/myapplink/public/uploads/documents/Bianca_Leyva_6/Leyva, Bianca_IDENTIFICATION_DOCUMENTS_Valid_Government_IDs_13.jpeg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/Applica...', '/Applications/M...', 468)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(468): unlink('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('26')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-17 14:59:52 --> unlink(/Applications/MAMP/htdocs/projects/myapplink/public/uploads/documents/Bianca_Leyva_6/Leyva, Bianca_IDENTIFICATION_DOCUMENTS_Valid_Government_IDs.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/Applica...', '/Applications/M...', 468)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(468): unlink('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('23')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-17 14:59:55 --> unlink(/Applications/MAMP/htdocs/projects/myapplink/public/uploads/documents/Bianca_Leyva_6/Leyva, Bianca_IDENTIFICATION_DOCUMENTS_Valid_Government_IDs_13.jpeg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/Applica...', '/Applications/M...', 468)
+#1 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(468): unlink('/Applications/M...')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->removeUploadedItem('26')
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-17 18:44:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(808): count(NULL)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->addTravelInfo('6')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 18:47:52 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(810): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 810)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->addTravelInfo('6')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-17 18:52:13 --> Undefined variable $clientId
+#0 /Applications/MAMP/htdocs/projects/myapplink/app/Controllers/Admin.php(755): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 755)
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): App\Controllers\Admin->addCareerInfo('6')
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}

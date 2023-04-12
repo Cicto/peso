@@ -1,0 +1,69 @@
+CRITICAL - 2022-08-09 20:49:08 --> Undefined array key "name"
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 256)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->packagePlanDetails()
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-09 20:59:25 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 255)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->packagePlanDetails()
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-09 21:11:54 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 255)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->packagePlanDetails()
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-09 21:40:06 --> Undefined array key 0
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 293)
+#1 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(143): App\Controllers\Applications->insertRefusalTableData(Array)
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->applicationImmigration()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-09 21:44:53 --> Undefined array key 0
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 293)
+#1 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(115): App\Controllers\Applications->insertRefusalTableData(Array)
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->applicationImmigration()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-09 21:46:35 --> Undefined array key 0
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 295)
+#1 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(115): App\Controllers\Applications->insertRefusalTableData(Array)
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->applicationImmigration()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-09 21:47:21 --> Undefined array key 0
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(296): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 296)
+#1 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(115): App\Controllers\Applications->insertRefusalTableData(Array)
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->applicationImmigration()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-09 21:48:04 --> Undefined array key 0
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(296): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 296)
+#1 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(115): App\Controllers\Applications->insertRefusalTableData(Array)
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->applicationImmigration()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-09 21:48:29 --> Undefined array key 0
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 332)
+#1 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(116): App\Controllers\Applications->insertOverseasTableData(Array)
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->applicationImmigration()
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}

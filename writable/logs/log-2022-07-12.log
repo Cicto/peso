@@ -1,0 +1,28 @@
+ERROR - 2022-07-12 03:44:07 --> Unknown column 'user_info.dept_id' in 'on clause'
+CRITICAL - 2022-07-12 03:44:07 --> Unknown column 'user_info.dept_id' in 'on clause'
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\applications\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\projects\applications\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+#6 C:\xampp\htdocs\projects\applications\app\Controllers\Users.php(49): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-07-12 03:45:24 --> Unknown column 'user_info.dept_id' in 'on clause'
+CRITICAL - 2022-07-12 03:45:24 --> Unknown column 'user_info.dept_id' in 'on clause'
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\applications\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\projects\applications\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+#6 C:\xampp\htdocs\projects\applications\app\Controllers\Users.php(49): Hermawan\DataTables\DataTable->toJson(true)
+#7 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->getUsers()
+#8 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}

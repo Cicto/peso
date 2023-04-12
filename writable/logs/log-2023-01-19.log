@@ -1,0 +1,19 @@
+<<<<<<< Updated upstream
+CRITICAL - 2023-01-19 14:15:10 --> require(/Applications/MAMP/htdocs/baliwag/bessy/app/vendor/autoload.php): Failed to open stream: No such file or directory
+#0 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Server.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(/Applic...', '/Applications/M...', 7)
+#1 /Applications/MAMP/htdocs/baliwag/bessy/app/Controllers/Server.php(7): require()
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Router/Router.php(518): include_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/server')
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/server')
+#5 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-19 14:15:20 --> Class "Ratchet\Server\IoServer" not found
+#0 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Router/Router.php(518): include_once()
+#1 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('/server')
+#2 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/server')
+#3 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 /Applications/MAMP/htdocs/baliwag/bessy/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/baliwag/bessy/index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}

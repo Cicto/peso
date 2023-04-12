@@ -1,0 +1,585 @@
+CRITICAL - 2023-02-13 10:42:52 --> include(../layouts/_header.php): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\Bessy\app\Views\services\marriage_certificate_request.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../layo...', 'C:\\xampp\\htdocs...', 1)
+#1 C:\xampp\htdocs\Bessy\app\Views\services\marriage_certificate_request.php(1): include()
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('services/marria...', Array, true)
+#5 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(70): view('services/marria...', Array)
+#6 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', '16')
+#7 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-13 10:45:50 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:45:50 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:45:50 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:45:50 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:46:02 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:46:02 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:46:02 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:46:02 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('marriage_certif...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:47:17 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('birth_certifica...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:47:17 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('birth_certifica...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:47:17 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('birth_certifica...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:47:17 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('birth_certifica...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:48:36 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:48:36 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:48:36 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 10:48:36 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:15:40 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:16:33 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:16:33 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:16:33 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:16:33 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:25:27 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:25:27 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:25:27 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:25:27 --> Attempt to read property "service_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\Services.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Services->preview_service('death_certifica...', 'assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-02-13 11:49:01 --> Unknown column 'sex' in 'field list'
+ERROR - 2023-02-13 11:49:56 --> Unknown column 'sex' in 'field list'
+ERROR - 2023-02-13 11:52:15 --> Unknown column 'sex' in 'field list'
+CRITICAL - 2023-02-13 11:53:11 --> Undefined property: stdClass::$contact_number
+#0 C:\xampp\htdocs\Bessy\app\Views\partials\noSideBarHeader.php(3042): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3042)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\Bessy\app\Views\layouts\noSideBarMain.php(69): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('dashboards/clie...', Array, true)
+#9 C:\xampp\htdocs\Bessy\app\Controllers\Dashboard.php(57): view('dashboards/clie...', Array)
+#10 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#11 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-13 11:53:52 --> Undefined property: stdClass::$contact_number
+#0 C:\xampp\htdocs\Bessy\app\Views\partials\noSideBarHeader.php(3042): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3042)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\Bessy\app\Views\layouts\noSideBarMain.php(69): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('dashboards/clie...', Array, true)
+#9 C:\xampp\htdocs\Bessy\app\Controllers\Dashboard.php(57): view('dashboards/clie...', Array)
+#10 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#11 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-13 11:54:28 --> Undefined property: stdClass::$suffix
+#0 C:\xampp\htdocs\Bessy\app\Views\partials\noSideBarHeader.php(3092): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 3092)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/noSide...', NULL, true)
+#4 C:\xampp\htdocs\Bessy\app\Views\layouts\noSideBarMain.php(69): CodeIgniter\View\View->include('partials/noSide...')
+#5 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/noSideB...', Array, true)
+#8 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('dashboards/clie...', Array, true)
+#9 C:\xampp\htdocs\Bessy\app\Controllers\Dashboard.php(57): view('dashboards/clie...', Array)
+#10 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#11 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-13 11:57:18 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:57:18 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:57:18 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 11:57:18 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:00:55 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:00:55 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:00:55 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:00:55 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:07:44 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:07:44 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:07:44 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:07:44 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:10:58 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:10:58 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:10:58 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:10:58 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:11:02 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:11:02 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:11:02 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:11:02 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:28 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:28 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:28 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:28 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:25:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:31:44 --> Undefined variable $department
+#0 C:\xampp\htdocs\Bessy\app\Views\dashboards\clientDashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('dashboards/clie...', Array, true)
+#4 C:\xampp\htdocs\Bessy\app\Controllers\Dashboard.php(57): view('dashboards/clie...', Array)
+#5 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-13 13:35:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:35:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:35:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 13:35:33 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:35 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:36 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:36 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:36 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:36 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:51 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '44.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:51 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-84.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:51 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '600x600', 'img-82.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-13 14:01:51 --> Attempt to read property "department_name" on string
+#0 C:\xampp\htdocs\Bessy\app\Controllers\External.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\External->deptServices('assets', 'media', 'stock', '900x600', '46.jpg')
+#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\External))
+#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,45 @@
+ERROR - 2022-08-17 00:14:57 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-08-17 00:14:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-08-17 00:15:18 --> Error connecting to the database: Unknown database 'applications_db'
+CRITICAL - 2022-08-17 00:15:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'applications_db'
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-08-17 00:16:07 --> Error connecting to the database: Unknown database 'applications_db'
+CRITICAL - 2022-08-17 00:16:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'applications_db'
+#0 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 /Applications/MAMP/htdocs/projects/myapplink/vendor/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 /Applications/MAMP/htdocs/projects/myapplink/vendor/codeigniter4/framework/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/projects/myapplink/index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,82 @@
+CRITICAL - 2022-08-08 00:07:08 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('addon_id', '[1, 2, 3]', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\projects\applications\app\Models\MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('addon_id', '[1, 2, 3]')
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): App\Models\MasterModel->getWhereIn('visa_addons', 'addon_id, addon...', false, 'addon_id', '[1, 2, 3]')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('1')
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-08 00:07:28 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('addon_id', '[1, 2, 3]', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\projects\applications\app\Models\MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('addon_id', '[1, 2, 3]')
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): App\Models\MasterModel->getWhereIn('visa_addons', 'addon_id, addon...', false, 'addon_id', '[1, 2, 3]')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('1')
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-08 00:10:17 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('addon_id', '1, 2, 3', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\projects\applications\app\Models\MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('addon_id', '1, 2, 3')
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): App\Models\MasterModel->getWhereIn('visa_addons', 'addon_id, addon...', false, 'addon_id', '1, 2, 3')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('2')
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-08 00:10:19 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('addon_id', '4', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\projects\applications\app\Models\MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('addon_id', '4')
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): App\Models\MasterModel->getWhereIn('visa_addons', 'addon_id, addon...', false, 'addon_id', '4')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('3')
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-08 00:11:28 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('addon_id', '[1, 2, 3]', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\projects\applications\app\Models\MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('addon_id', '[1, 2, 3]')
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): App\Models\MasterModel->getWhereIn('visa_addons', 'addon_id, addon...', false, 'addon_id', '[1, 2, 3]')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('1')
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-08 00:11:54 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('addon_id', '1, 2, 3', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\projects\applications\app\Models\MasterModel.php(132): CodeIgniter\Database\BaseBuilder->whereIn('addon_id', '1, 2, 3')
+#2 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): App\Models\MasterModel->getWhereIn('visa_addons', 'addon_id, addon...', false, 'addon_id', '1, 2, 3')
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('2')
+#4 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#5 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-08 00:13:22 --> preg_split() expects at least 2 arguments, 1 given
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): preg_split('1, 2, 3')
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('2')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-08 00:13:25 --> preg_split() expects at least 2 arguments, 1 given
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): preg_split('1, 2, 3')
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('1')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-08 00:15:12 --> Array to string conversion
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 330)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('2')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-08 01:00:44 --> Attempt to read property "addons" on string
+#0 C:\xampp\htdocs\projects\applications\app\Controllers\Applications.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 330)
+#1 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Applications->getVisaPrices('undefined')
+#2 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Applications))
+#3 C:\xampp\htdocs\projects\applications\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\applications\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}

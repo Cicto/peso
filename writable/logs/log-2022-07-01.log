@@ -1,0 +1,86 @@
+CRITICAL - 2022-07-01 01:31:32 --> Undefined array key 0
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-01 01:55:16 --> Cannot declare class App\Libraries\customData, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-01 02:07:37 --> Call to undefined method App\Models\UsersModel::updateUserData()
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->updateUser()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-01 02:13:41 --> Class "App\Libraries\customData" not found
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-01 02:13:54 --> Class "App\Controllers\customData" not found
+#0 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-01 02:14:45 --> Attempt to read property "email" on array
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Views\partials\header.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 239)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\baliwag\template_v1\app\Views\layouts\main.php(33): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('dashboards/dash...', Array, true)
+#9 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Dashboard.php(27): view('dashboards/dash...', Array)
+#10 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#11 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#12 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-07-01 03:26:00 --> Undefined variable $updatetUserInfo
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 178)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->banUser()
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-01 03:36:11 --> Too few arguments to function App\Models\UsersModel::updateUserData(), 2 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 203 and exactly 3 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(203): App\Models\UsersModel->updateUserData('users', Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->unbanUser('1')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-01 03:37:28 --> Too few arguments to function App\Models\UsersModel::updateUserData(), 2 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 203 and exactly 3 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(203): App\Models\UsersModel->updateUserData('users', Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->unbanUser('undefined')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-01 03:38:49 --> Too few arguments to function App\Models\UsersModel::updateUserData(), 2 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 203 and exactly 3 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(203): App\Models\UsersModel->updateUserData('users', Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->unbanUser('1')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-01 03:40:59 --> Too few arguments to function App\Models\UsersModel::updateUserData(), 2 passed in C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php on line 203 and exactly 3 expected
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(203): App\Models\UsersModel->updateUserData('users', Array)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->unbanUser('1')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-01 03:41:41 --> Undefined variable $id
+#0 C:\xampp\htdocs\baliwag\template_v1\app\Controllers\Users.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->unbanUser('1')
+#2 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\baliwag\template_v1\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baliwag\template_v1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
