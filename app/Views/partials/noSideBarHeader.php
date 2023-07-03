@@ -2903,7 +2903,7 @@
                                                 if($counter!=0):
                                                 $diff = $current_time->difference($notification->created_at);
                                             ?>
-                                            <li class="list-group-item list-group-item-action" data-count="<?=$counter?>">
+                                            <li class="list-group-item list-group-item-action bg-body" data-count="<?=$counter?>">
                                                 <a href="<?=base_url()?>/home/notifications/<?=$notification->id?>" class="d-flex">
                                                     <i class="fas fa-<?=$notification->notification_icon?> pe-3 fs-2 align-self-center text-<?=!$notification->is_seen ? "primary" : "gray-500" ?> opacity-75"></i>
                                                     <div class="notification-content">

@@ -198,15 +198,19 @@
                                 <input type="text" name="company_city" id="company-city" value="<?=$company_city?>" hidden>
                                 <span class="text-blue text-truncate mt-2 display-8 fw-normal text-uppercase ff-noir pointer" id="company-city-preview" type="button" data-bs-toggle="dropdown" aria-expanded="false"><?=$company_city?></span>
                                 <ul class="dropdown-menu shadow-sm border ff-noir text-uppercase text-blue pt-0" style="max-height: 50vh; overflow: auto;">
-                                    <li class="p-1 sticky-top bg-white shadow-sm"><input type="text" id="city-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
+                                    <li class="p-1 sticky-top bg-body shadow-sm"><input type="text" id="city-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
                                     <?php 
                                         $initial_prov_code = '0314';
                                         if($is_edit){
                                             $initial_prov_code = $job_info->company_prov_code;
                                         }
-                                        foreach ($barangays_cities_and_pronvinces["cities"] as $key => $city):?>
+                                        foreach ($barangays_cities_and_pronvinces["cities"] as $key => $city):
+                                            if($city->provCode == $initial_prov_code):
+                                        ?>
                                     <li><a class="dropdown-item text-blue company-city <?= $city->provCode == $initial_prov_code ? "" : "d-none"?>" href="#" data-value="<?=$city->citymunDesc?>" data-prov-code="<?=$city->provCode?>" data-city-mun-code="<?=$city->citymunCode?>"><?=$city->citymunDesc?></a></li>
-                                    <?php endforeach;?>
+                                    <?php 
+                                            endif;
+                                        endforeach;?>
                                 </ul>
                             </div>
                             <!-- COMPANY PROVINCE -->
@@ -226,7 +230,7 @@
                                 <input type="text" name="company_province" id="company-province" value="<?=$company_prov?>" hidden>
                                 <span class="text-blue text-truncate mt-2 display-8 fw-normal text-uppercase ff-noir pointer" id="company-province-preview" type="button" data-bs-toggle="dropdown" aria-expanded="false"><?=$company_prov?></span>
                                 <ul class="dropdown-menu shadow-sm border ff-noir text-uppercase text-blue pt-0" style="max-height: 50vh; overflow: auto;">
-                                    <li class="p-1 sticky-top bg-white shadow-sm"><input type="text" id="province-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
+                                    <li class="p-1 sticky-top bg-body    shadow-sm"><input type="text" id="province-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
                                     <?php
                                         foreach ($barangays_cities_and_pronvinces["provinces"] as $key => $province):?>
                                     <li><a class="dropdown-item text-blue company-province" href="#" data-value="<?=$province->provDesc?>" data-prov-code="<?= $province->provCode?>"><?=$province->provDesc?></a></li>
@@ -295,15 +299,19 @@
                                 <input type="text" name="interview_city" id="interview-city" value="<?=$interview_city?>" hidden>
                                 <span class="text-green text-truncate mt-2 display-8 fw-normal text-uppercase ff-noir pointer" id="interview-city-preview" type="button" data-bs-toggle="dropdown" aria-expanded="false"><?=$interview_city?></span>
                                 <ul class="dropdown-menu shadow-sm border ff-noir text-uppercase text-green pt-0" style="max-height: 50vh; overflow: auto;">
-                                    <li class="p-1 sticky-top bg-white shadow-sm"><input type="text" id="interview-city-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
+                                    <li class="p-1 sticky-top bg-body shadow-sm"><input type="text" id="interview-city-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
                                     <?php 
                                         $initial_prov_code = '0314';
                                         if($is_edit){
                                             $initial_prov_code = $job_info->interview_prov_code;
                                         }
-                                        foreach ($barangays_cities_and_pronvinces["cities"] as $key => $city):?>
+                                        foreach ($barangays_cities_and_pronvinces["cities"] as $key => $city):
+                                            if($city->provCode == $initial_prov_code):
+                                        ?>
                                     <li><a class="dropdown-item text-green interview-city <?= $city->provCode == $initial_prov_code ? $city->provCode : "d-none"?>" href="#" data-value="<?=$city->citymunDesc?>" data-prov-code="<?=$city->provCode?>" data-city-mun-code="<?=$city->citymunCode?>" ><?=$city->citymunDesc?></a></li>
-                                    <?php endforeach;?>
+                                    <?php 
+                                            endif;
+                                        endforeach;?>
                                 </ul>
                             </div>
                             <!-- INTERVIEW PROVINCE -->
@@ -323,7 +331,7 @@
                                 <input type="text" name="interview_province" id="interview-province" value="<?=$interview_prov?>" hidden>
                                 <span class="text-green text-truncate mt-2 display-8 fw-normal text-uppercase ff-noir pointer" id="interview-province-preview" type="button" data-bs-toggle="dropdown" aria-expanded="false"><?=$interview_prov?></span>
                                 <ul class="dropdown-menu shadow-sm border ff-noir text-uppercase text-green pt-0" style="max-height: 50vh; overflow: auto;">
-                                    <li class="p-1 sticky-top bg-white shadow-sm"><input type="text" id="interview-province-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
+                                    <li class="p-1 sticky-top bg-body shadow-sm"><input type="text" id="interview-province-search" class="w-100 form-control form-control-sm text-uppercase" placeholder="Search"></li>
                                     <?php foreach ($barangays_cities_and_pronvinces["provinces"] as $key => $province):?>
                                     <li><a class="dropdown-item text-green interview-province" href="#" data-value="<?=$province->provDesc?>" data-prov-code="<?= $province->provCode?>"><?=$province->provDesc?></a></li>
                                     <?php endforeach;?>
@@ -567,7 +575,7 @@
             });
         })
 
-        $(".company-city").click(function(){
+        $("#post-form").on("click", ".company-city",function(){
             const value = this.dataset.value;
             const cityMunCode = this.dataset.cityMunCode;
             $("#company-city-preview").text(value)
@@ -582,25 +590,27 @@
             $("#company-province-preview").text(value)
             $("#company-prov-code").val(prov_code)
             $("#company-province").val(value)
-            $.each($(".company-city"), function (indexInArray, valueOfElement) { 
-                const city_prov_code = this.dataset.provCode;
-                const city_mun_code = this.dataset.cityMunCode;
-                const city_value = this.dataset.value;
-                if(prov_code == city_prov_code){
-                    if(is_first_to_city){
-                        $("#company-city").val(city_value)
-                        $("#company-city-code").val(city_mun_code)
-                        $("#company-city-preview").text(city_value)
-                        is_first_to_city = false
-                    }
-                    $(this).removeClass("d-none")
-                }else{
-                    $(this).addClass("d-none")
+            $(".company-city").parent("li").remove()
+            
+            AJAX({
+                method: "GET",
+                url: `<?=base_url()?>/utilcontroller/getCityMun/${prov_code}`, 
+                success:function(data){
+                    console.log(JSON.parse(data))
+                    JSON.parse(data).forEach(city => {
+                        if(is_first_to_city){
+                            $("#company-city").val(city.citymunDesc)
+                            $("#company-city-code").val(city.citymunCode)
+                            $("#company-city-preview").text(city.citymunDesc)
+                            is_first_to_city = false
+                        }
+                        $(`<li><a class="dropdown-item text-blue company-city" href="#" data-value="${city.citymunDesc}" data-prov-code="${city.provCode}" data-city-mun-code="${city.citymunCode}">${city.citymunDesc}</a></li>`).insertAfter($("#city-search").closest("ul").children("li").last());
+                    });
                 }
-            });
+            })
         })
 
-        $(".interview-city").click(function(){
+        $("#post-form").on("click", ".interview-city", function(){
             const value = this.dataset.value;
             const cityMunCode = this.dataset.cityMunCode;   
             $("#interview-city-preview").text(value)
@@ -614,22 +624,42 @@
             let is_first_to_city = true
             $("#interview-province-preview").text(value)
             $("#interview-province").val(value)
-            $.each($(".interview-city"), function (indexInArray, valueOfElement) { 
-                const city_prov_code = this.dataset.provCode;
-                const city_value = this.dataset.value;
-                if(prov_code == city_prov_code){
-                    if(is_first_to_city){
-                        const city_mun_code = this.dataset.cityMunCode;
-                        $("#interview-city").val(city_value)
-                        $("#interview-city-code").val(city_mun_code)
-                        $("#interview-city-preview").text(city_value)
-                        is_first_to_city = false
-                    }
-                    $(this).removeClass("d-none")
-                }else{
-                    $(this).addClass("d-none")
+            $("#interview-prov-code").val(prov_code)
+            $(".interview-city").parent("li").remove()
+
+            AJAX({
+                method: "GET",
+                url: `<?=base_url()?>/utilcontroller/getCityMun/${prov_code}`, 
+                success:function(data){
+                    console.log(JSON.parse(data))
+                    JSON.parse(data).forEach(city => {
+                        if(is_first_to_city){
+                            $("#interview-city").val(city.citymunDesc)
+                            $("#interview-city-code").val(city.citymunCode)
+                            $("#interview-city-preview").text(city.citymunDesc)
+                            is_first_to_city = false
+                        }
+                        $(`<li><a class="dropdown-item text-blue interview-city" href="#" data-value="${city.citymunDesc}" data-prov-code="${city.provCode}" data-city-mun-code="${city.citymunCode}">${city.citymunDesc}</a></li>`).insertAfter($("#interview-city-search").closest("ul").children("li").last());
+                    });
                 }
-            });
+            })
+
+            // $.each($(".interview-city"), function (indexInArray, valueOfElement) { 
+            //     const city_prov_code = this.dataset.provCode;
+            //     const city_value = this.dataset.value;
+            //     if(prov_code == city_prov_code){
+            //         if(is_first_to_city){
+            //             const city_mun_code = this.dataset.cityMunCode;
+            //             $("#interview-city").val(city_value)
+            //             $("#interview-city-code").val(city_mun_code)
+            //             $("#interview-city-preview").text(city_value)
+            //             is_first_to_city = false
+            //         }
+            //         $(this).removeClass("d-none")
+            //     }else{
+            //         $(this).addClass("d-none")
+            //     }
+            // });
         })
 
         $("#qualification-button").click(async function(){

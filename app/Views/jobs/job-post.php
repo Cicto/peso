@@ -3,7 +3,7 @@
         throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
     }
     $job_post = $job_post["result"][0];
-    if($job_post->status != 1 && $userInformation->role != 1){
+    if(($job_post->status != 1 && $job_post->status != 3) && $userInformation->role != 1){
         throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
     }
     $is_applied = FALSE;
@@ -102,7 +102,7 @@
                             <h2 class="company-name text-green display-6 text-uppercase fw-normal mb-0 mt-10"><?= date("F d, Y" ,strtotime( explode(" ", $job_post->job_date)[0] ))?> • <?= date("h:i A" ,strtotime( explode(" ", $job_post->job_date)[1] ))?></h2>
                             <div class="d-flex">
                                 <h3><i class="fas fa-map-marker-alt text-green mt-2 display-8 me-3"></i></h3>
-                                <h3 class="company-location text-green mt-2 display-8 fw-normal text-uppercase"><?=$job_post->interview_location?></h3>
+                                <h3 class="company-location text-green mt-2 display-8 fw-normal text-uppercase"><?=$job_post->interview_address?></h3>
                             </div>
                         <?php endif;?>
     

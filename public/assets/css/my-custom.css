@@ -371,10 +371,7 @@ small.small-helper {
   height: 50px;
   transform: translate(0%, -100%) !important;
   /* width: 100%; */
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0),
-    var(--kt-body-bg)
-  );
+  background-image: linear-gradient(rgba(255, 255, 255, 0), var(--kt-body-bg));
 }
 .news-learn-more-container {
   background-color: white;
@@ -616,4 +613,8 @@ small.small-helper {
 
 .form-control.error {
   border: 1px var(--kt-text-danger) solid !important;
+}
+
+#job-applications-table tr::before {
+  background-color: var(--kt-body-bg) !important;
 }
