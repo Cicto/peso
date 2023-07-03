@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baliwag eService System</title>
+    <title>Baliwag Trabaho Updates</title>
     <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/public/assets/media/favicon/peso-logo.png">
     <!-- App css -->
     <!-- <link href="<?= base_url()?>/public/assets/css/corporate/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
@@ -135,7 +135,7 @@
         }
         const base_url = "<?=base_url()?>";
         const current_url = window.location.href.split('#')[0];
-        const user_id = <?=$userInformation->user_id?>
+        const user_id = <?=$userInformation->user_id ? $userInformation->user_id : 0?>;
     </script>
 
     <?= $this->renderSection('javascript'); ?>

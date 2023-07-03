@@ -6,6 +6,15 @@
     if($job_post->status != 1 && $userInformation->role != 1){
         throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
     }
+    $is_applied = FALSE;
+    if($applied_jobs['status']){
+        foreach ($applied_jobs['result'] as $key => $job_info) {
+            $is_applied = $job_post->id == $job_info->id;
+            if($is_applied){
+                break;
+            }
+        }
+    }
 ?>
 <?= $this->extend('layouts/noSideBarMain'); ?>
 <?= $this->section('css'); ?>
@@ -142,11 +151,20 @@
                                 </div>
                             </div>
                         <?php endif;?>
+                        <div class="fs-4 text-blue ff-noir text-uppercase text-end mt-5" id="job-candidates-container" style="display: <?=$job_post->candidates == 0 ? "none" : "block"?>;">
+                        <i class="fas fa-users text-blue"></i> <span id="candidates">Looking for <u><span id="job-candidates"><?=$job_post->candidates?></span> candidates</u></span>
+                        </div>
                     </div>
                     
                     <div class="">
-                        <?php if($job_post->status == 1):?>
-                            <button class="btn btn-lg btn-blue w-100 mt-10">Apply Now!</button>
+
+                        <?php if($job_post->status == 1):
+                                if($is_applied):
+                            ?>
+                            <button class="btn btn-lg btn-blue w-100 mt-10" >Job Application Submitted <div class="fas fa-check text-white"></div></button>
+                            <?php else:?>
+                                <button class="btn btn-lg btn-blue w-100 mt-10" id="job-application-button" data-job-id="<?=$job_post->id?>">Apply Now!</button>
+                            <?php endif;?>
                         <?php else:?>
                             <div class="alert alert-warning d-flex align-items-center mt-10" role="alert">
                                 <!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-03-24-172858/core/html/src/media/icons/duotune/general/gen044.svg-->
@@ -159,11 +177,11 @@
                                 </span>
                                 <!--end::Svg Icon-->
                                 <div class="ms-3">
-                                    <?php $status = ["Not Posted", "Posted", "Drafted"];?>
-                                    This job post's status is currently "<?= $status[$job_post->status] ?>"
+                                    <?php $status = ["Not Posted", "Posted", "Drafted", "Finished"];?>
+                                    This job post's status <?= $job_post->status==3? "was":"is currently"?> "<?= $status[$job_post->status] ?>"
                                 </div>
                             </div>
-                            <button class="btn btn-lg btn-secondary w-100" disabled>Apply Now!</button>
+                            <button class="btn btn-lg btn-secondary w-100" disabled id="job-application-button" data-job-id="<?=$job_post->id?>">Apply Now!</button>
                         <?php endif;?>
                     </div>
                 </div>
@@ -177,7 +195,17 @@
 <?= $this->section('javascript'); ?>
 <script>
     $(function () {
-
+        $("#job-application-button").click(function(){
+            <?php if($userInformation):?>
+            if(this.dataset.isApplied==0){
+                confirmApplication(this.dataset.jobId, function(){
+                    $("#job-application-button").html(`<i class="fas fa-check text-white fs-3"></i> Applied`)
+                })
+            }
+            <?php else:?>
+                window.location.href = "<?=base_url()?>/login";
+            <?php endif;?>
+        })
     });
 </script>
 <?= $this->endSection(); ?>

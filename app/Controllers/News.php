@@ -21,8 +21,11 @@ class News extends BaseController
     public function index()
     {
         $view_data = [
-            'title' => 'Welcome, '.$this->userInformation->firstname.' '.$this->userInformation->lastname,
-            'userInformation' => $this->userInformation
+            // 'title' => 'Welcome, '.$this->userInformation->firstname.' '.$this->userInformation->lastname,
+            'userInformation' => $this->userInformation,
+            'is_loggedin' => logged_in(),
+            'news_list'=> $this->getAllNews(),
+            'pinned_news' => $this->getPinnedNews(),
         ];
         return view('news/news-and-updates', $view_data);
     }
@@ -177,6 +180,26 @@ class News extends BaseController
             }
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
+    }
+
+    public static function getPinnedNews(){
+        $master_model = new MasterModel();
+        $result = $master_model->get("news_posts", "*", ["status"=>1, "is_pinned"=>1, "is_deleted"=>0]);
+        return $result;
+    }
+
+    public static function getRecentNews($count = 3){
+        $master_model = new MasterModel();
+        $result = $master_model->get("news_posts", "*", ["status"=>1, "is_pinned"=>0, "is_deleted"=>0], FALSE, "created_at DESC", $count );
+        return $result;
+    }
+
+    public function getAllNews(){
+        // if($this->request->isAJAX()){
+            $master_model = new MasterModel();
+            $result = $master_model->get("news_posts", "*", ["is_deleted"=>0, "status"=>1, "is_pinned"=>0], FALSE, 'created_at DESC');
+            return $result;
+        // }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 }
 ?>

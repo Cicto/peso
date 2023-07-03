@@ -117,7 +117,7 @@ class UtilController extends BaseController
 
         $city = $master_model->get("refcitymun", "*", ["citymunCode" => $citymunCode]);
 
-        if(!$barangay['status']){ return false; }
+        if(!$city['status']){ return false; }
 
         $provCode = $city['result'][0]->provCode;
 
@@ -129,6 +129,29 @@ class UtilController extends BaseController
             "cities" => $cities["result"],
             "provinces" => $provinces["result"],
             "selected_barangay" => $barangay_id,
+            "selected_city" => $citymunCode,
+            "selected_province" => $provCode,
+        ]);
+    }
+
+    public static function userBirthPlace($city_mun_id){
+        $master_model = new MasterModel();
+
+        $city = $master_model->get("refcitymun", "*", ["id" => $city_mun_id]);
+        
+        if(!$city['status']){ return false; }
+
+        $citymunCode = $city['result'][0]->citymunCode;
+        
+        $provCode = $city['result'][0]->provCode;
+
+        $cities = $master_model->get("refcitymun", "*", ["provCode" => $provCode]);
+        
+        $provinces = $master_model->get("refprovince", "*");
+
+        return json_encode([
+            "cities" => $cities["result"],
+            "provinces" => $provinces["result"],
             "selected_city" => $citymunCode,
             "selected_province" => $provCode,
         ]);
@@ -430,5 +453,6 @@ class UtilController extends BaseController
             }
         }
     }
+
 }
 ?>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baliwag eService System</title>
+    <title>Baliwag Trabaho Updates</title>
     <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/public/assets/media/favicon/peso-logo.png">
     
     <!-- App css -->
@@ -130,7 +130,11 @@
         }
         const base_url = "<?=base_url()?>";
         const current_url = window.location.href.split('#')[0];
-        const user_id = <?=isset($userInformation->user_id) ? $userInformation->user_id : 0 ?>
+        const user_id = <?=$userInformation->user_id ? $userInformation->user_id : 0?>;
+        $("#user-notification-button").click(function(){
+            console.log("asd")
+            $("#user-notification-container").toggle()
+        })
     </script>
 
     <?= $this->renderSection('javascript'); ?>

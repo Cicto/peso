@@ -1329,7 +1329,7 @@
                                                         <!--begin:Menu link-->
                                                         <a href="../../demo1/dist/authentication/email/card-declined.html"
                                                             class="menu-link">
-                                                            <span class="menu-title">Credit Card Declined</span>
+                                                            <span class="menu-title">Credit Card Not Qualified</span>
                                                         </a>
                                                         <!--end:Menu link-->
                                                     </div>

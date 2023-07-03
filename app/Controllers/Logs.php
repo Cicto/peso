@@ -18,7 +18,7 @@ class Logs extends BaseController
     {
         $masterModel = new MasterModel();
 
-        LogsModel::GeneralLogs('logs',
+        LogsModel::GeneralLogs('system_logs',
             [
                 'log_action' => "Visited Logs Module", 
                 'log_data' => json_encode([   
@@ -45,7 +45,7 @@ class Logs extends BaseController
     {
         $masterModel = new MasterModel();
         
-        if($this->userInformation->role == 1)
+        if($this->userInformation->role == 1 || $this->userInformation->role == 2)
         {
             return DataTable::of($masterModel->getDataTables('logs', 'log_id, log_action, log_actor, created_at', [], FALSE, 'log_id ASC', FALSE))
             ->add('action', function($row){

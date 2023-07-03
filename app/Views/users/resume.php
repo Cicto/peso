@@ -198,7 +198,8 @@
             loading(true)
 
             if(!resume_file){
-                warningAlert();
+                warningAlert("Resume Missing", "Please make sure to upload your resume");
+                loading(false)
                 return false;
             }
 

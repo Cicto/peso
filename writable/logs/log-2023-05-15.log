@@ -1,0 +1,75 @@
+ERROR - 2023-05-15 13:46:25 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-05-15 13:46:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\peso\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\peso\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 C:\xampp\htdocs\peso\vendor\myth\auth\src\Controllers\AuthController.php(91): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-05-15 13:46:45 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-05-15 13:46:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 13:48:49 --> Table 'baliwagc_peso_db.logs' doesn't exist
+CRITICAL - 2023-05-15 13:54:29 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3642): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3642)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/jobs-build...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(139): view('jobs/jobs-build...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->edit_job_post('11')
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2023-05-15 14:00:37 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:02:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:24:42 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-05-15 14:24:42 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:25:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:27:15 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-05-15 14:27:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:31:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:34:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:35:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:37:40 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-05-15 14:37:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:38:11 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:39:37 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:47:09 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:47:10 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:47:10 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:47:11 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 14:54:08 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 15:01:56 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 15:02:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 15:03:22 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 15:03:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 15:03:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-05-15 15:03:37 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-05-15 15:03:48 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3642): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3642)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(194): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applicants('17')
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}

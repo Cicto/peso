@@ -1,4 +1,4 @@
-
+<?php use CodeIgniter\I18n\Time;?>
 <div id="kt_app_header" class="app-header position-relative">
     <!--begin::Header container-->
     <div class="app-container container-xxl d-flex align-items-stretch justify-content-between" id="kt_app_header_container">
@@ -1155,7 +1155,7 @@
                                                     <div class="menu-item p-0 m-0">
                                                         <!--begin:Menu link-->
                                                         <a href="../../demo1/dist/authentication/email/card-declined.html" class="menu-link">
-                                                            <span class="menu-title">Credit Card Declined</span>
+                                                            <span class="menu-title">Credit Card Not Qualified</span>
                                                         </a>
                                                         <!--end:Menu link-->
                                                     </div>
@@ -2832,10 +2832,10 @@
                     </div>
                     <?php if($is_loggedin):?>
                     <div class="menu-item w-75">
-                        <a href="#" class="menu-link menu-link-hover menu p-0">
+                        <a href="<?=base_url()?>/home/notifications" class="d-block d-lg-none menu-link menu-link-hover menu p-0">
                             <span class="menu-title h-35px w-100 w-md-40px h-md-40px position-relative">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="d-block mx-3 m-md-auto" width="18" height="18" style="fill: var(--kt-text-muted);" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="d-block mx-3 m-md-auto" width="18" height="18" style="fill: var(--kt-text-muted);" viewBox="0 0 448 512">
                                 <path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"/>
                                 </svg>
 
@@ -2848,10 +2848,113 @@
                                 </span>
                             </span>
                         </a>
+
+                        <div class="d-none d-lg-block notification position-relative">
+                            <?php 
+                                $is_not_seen_count = 0;
+                                if(isset($notifications)){
+                                    if($notifications['status']){
+                                        foreach ($notifications['result'] as $key => $notification) {
+                                            if($notification->is_seen == 0){
+                                                $is_not_seen_count++;
+                                            }
+                                        }
+                                    }
+                                }
+                            ?>
+                            <button type="button" class="btn menu-link menu-link-hover menu p-0" id="user-notification-button">
+                                <span class="menu-title h-35px w-100 w-md-40px h-md-40px position-relative">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="d-block mx-3 m-md-auto" width="18" height="18" style="fill: var(--kt-text-muted);" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"/>
+                                    </svg>
+
+                                    <span class="d-inline d-md-none mx-auto fs-5">
+                                        Notifications
+                                    </span>
+                                    <?php if($is_not_seen_count):?>
+                                    <span class="d-none d-md-block position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                    <?php endif;?>
+                                </span>
+                            </button>
+                            
+                            <div class="position-absolute top-100 start-50 bg-body w-300px shadow mt-6 rounded d-none-x d-lg-block-x" id="user-notification-container" style="display:none;overflow: hidden; transform: translate(-50%,0%) !important;">
+                                <div class="bg-primary p-5 d-flex text-white justify-content-between position-relative" style="overflow: hidden;">
+                                    <div class="">
+                                        Notifications
+                                    </div>
+                                    <small class="bg-light px-2 rounded text-primary">
+                                        <?= $is_not_seen_count?>
+                                    </small>
+                                    <div class="position-absolute top-0 start-0" >
+                                        <i class="fas fa-bullhorn text-white opacity-10" style="transform: rotate(-30deg); font-size:4rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="p-1">
+                                    <ul class="list-group list-group-flush rounded">
+                                        <?php 
+                                        if(isset($notifications)):
+                                        if($notifications['status']):
+                                            $counter = 10;
+                                            $current_time = new Time('now');
+                                            foreach ($notifications['result'] as $key => $notification):
+                                                if($counter!=0):
+                                                $diff = $current_time->difference($notification->created_at);
+                                            ?>
+                                            <li class="list-group-item list-group-item-action" data-count="<?=$counter?>">
+                                                <a href="<?=base_url()?>/home/notifications/<?=$notification->id?>" class="d-flex">
+                                                    <i class="fas fa-<?=$notification->notification_icon?> pe-3 fs-2 align-self-center text-<?=!$notification->is_seen ? "primary" : "gray-500" ?> opacity-75"></i>
+                                                    <div class="notification-content">
+                                                        <span class="text-dark small lh-sm"><?=$notification->description ?></span>
+                                                        <div class="d-flex justify-content-between" style="font-size: 0.75rem; !important">
+                                                            <small class="fw-lighter text-muted">
+                                                                <?=$diff->humanize() ?>
+                                                            </small>
+                                                            <?php if(!$notification->is_seen):?>
+                                                                <i class="fas fa-circle align-self-center text-primary" style="font-size: 0.75rem; !important"></i>
+                                                            <?php endif;?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        <?php
+                                            $counter--; 
+                                                endif;
+                                            endforeach;
+                                        endif;
+                                        endif;
+                                        ?>
+                                    
+                                        <?php 
+                                        if(isset($notifications)):
+                                            if(!$notifications['status']):?>
+                                        <li class="list-group-item p-0 bg-body">
+                                            <div class=" text-center bg-light rounded mb-1 border border-dashed border-gray-300 py-10">
+                                                <span class="text-gray-700 small lh-sm">No new notifications found.</span>
+                                            </div>
+                                        </li>
+                                        <?php endif;?>
+                                        <?php else:?>
+                                            <li class="list-group-item p-0 bg-body">
+                                                <div class=" text-center bg-light rounded mb-1 border border-dashed border-gray-300 py-10">
+                                                    <span class="text-gray-700 small lh-sm">No new notifications found.</span>
+                                                </div>
+                                            </li>
+                                        <?php endif;?>
+
+                                        <li class="list-group-item list-group-item-action bg-body">
+                                            <a href="<?=base_url()?>/home/notifications" class="small d-block text-center">View All Notifications</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="menu-item w-75 mx-3">
-                        <a href="#" class="menu-link menu-link-hover menu p-0">
+                        <a href="<?=base_url()?>/jobs/my_applications" class="menu-link menu-link-hover menu p-0">
                             <span class="menu-title h-35px w-100 w-md-40px h-md-40px position-relative">
 
                                 <!--begin::Svg Icon | path: /var/www/preview.keenthemes.com/kt-products/docs/metronic/html/releases/2023-01-30-131017/core/html/src/media/icons/duotune/general/gen056.svg-->
@@ -3004,8 +3107,11 @@
                         <div class="separator my-2"></div>
                         <!--end::Menu separator-->
                         <!--begin::Menu item-->
-                        <div class="menu-item px-5">
-                            <a href="<?= $userInformation->role==2?base_url("dashboard/profile"):'#'?>" class="menu-link px-5">My Profile</a>
+                        <div class="menu-item px-5" style="<?= $userInformation->role==2 ? "block" : "none"?>">
+                            <a href="<?= $userInformation->role==3?base_url("dashboard/profile"):'#'?>" class="menu-link px-5">My Profile</a>
+                        </div>
+                        <div class="menu-item px-5" style="display:<?= $userInformation->role==1 ? "block" : "none"?>;">
+                            <a href="<?= $userInformation->role== 1 ?base_url("dashboard"):'#'?>" class="menu-link px-5">Dashboard</a>
                         </div>
                         <div class="menu-item px-5">
                             <a href="#" class="menu-link px-5" data-bs-toggle="modal" data-bs-target="#change-password-modal">Change Password</a>

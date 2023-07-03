@@ -81,7 +81,7 @@
                 {   data: 'status',
                     className: "w-25px",
                     render: function(data, type, row){
-                        const status = ["Not Posted", "Posted", "Drafted"];
+                        const status = ["Not Posted", "Posted", "Drafted", "Finished"];
 
                         return `<div class="dropdown">
                                     <button class="btn btn-sm btn-secondary dropdown-toggle w-100" ${row.is_pinned == 1 && "disabled"} type="button" ${row.is_pinned == 0 && `data-bs-toggle="dropdown"`} aria-expanded="false">

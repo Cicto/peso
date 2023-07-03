@@ -5,7 +5,9 @@ namespace App\Models;
 use CodeIgniter\Model;
 use CodeIgniter\Database\ConnectionInterface;
 use CodeIgniter\Database\BaseBuilder;
+use \AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class UsersModel
 {
     public function __construct()

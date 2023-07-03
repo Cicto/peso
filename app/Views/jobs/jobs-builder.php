@@ -411,6 +411,23 @@
                                 <span><?= $is_edit ? date("F d, Y", strtotime(explode(" ", $job_info->job_date)[0])) : "_____ __, ____"?></span> <div class="btn btn-green btn-sm" id="date"><i class="fas fa-calendar-day p-0 text-white"></i></div>
                             </div>
                         </div>
+                        <div class="col-12 col-md-3 col-lg-3 my-5 d-none-x d-md-block-x candidates">
+                            <div class="d-flex h-100 justify-content-end align-items-center">
+                                <div class="fs-5 d-flex align-items-center text-gray-700">
+                                    <label for="" class="form-label">Candidates</label>
+                                    <i class="fas fa-caret-left text-gray-400 ms-3 fs-1" style="margin-right: -1px;"></i>
+                                </div>
+                                <div class="h-100 align-self-stretch px-3 border border-gray-400 border-end-0 border-2 rounded position-relative" style="clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- JOB DATE -->
+                        <div class="col-12 col-md-9 col-lg-9 my-5 border-start ff-noir candidates">
+                            <div class="text-blue text-uppercase fw-normal mb-0 d-flex display-8 align-items-center">
+                                <input type="number" name="candidates" id="candidates" class="form-control w-100 w-md-25" value="<?= $is_edit ? $job_info->candidates : "" ?>">
+                                <p class="m-0 mx-2">Candidates</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="">
                         <input hidden type="checkbox" name="status" id="status" checked>
@@ -616,7 +633,6 @@
         })
 
         $("#qualification-button").click(async function(){
-            // console.log(editor.data.get())
             if(!$(this).closest('ul').find("li input").length){
                 $(`
                 <li class="fs-4 text-blue mb-2">
@@ -736,9 +752,9 @@
                 success: function(data){
                     if(JSON.parse(data).status){
                         console.log(JSON.parse(data))
-                        // setTimeout(() => {
-                        //     window.location.href = "<?=base_url()?>/jobs/manage";
-                        // }, 1000);
+                        setTimeout(() => {
+                            window.location.href = "<?=base_url()?>/jobs/manage";
+                        }, 1000);
                     }
                 }
             })
@@ -832,6 +848,11 @@
             $(".job-date").hide()
             $(".interview-location").show()
             $(".interview-date").show()
+        }else if(category==3){
+            $(".job-description").show()
+            $(".job-date").show()
+            $(".interview-location").hide()
+            $(".interview-date").hide()
         }
     }
 

@@ -3,8 +3,9 @@
 namespace App\Models;
 
 use CodeIgniter\Database\ConnectionInterface;
+use \AllowDynamicProperties;
 
-
+#[AllowDynamicProperties]
 class LogsModel
 {
 

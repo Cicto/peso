@@ -1,0 +1,38 @@
+ERROR - 2023-06-22 15:09:05 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-06-22 15:09:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:23:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:32:37 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:35:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:37:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:37:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:42:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:42:46 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:50:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:53:44 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:56:56 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:57:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:57:28 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 15:58:28 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:12:06 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:13:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:14:28 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:17:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:19:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-06-22 16:19:05 --> Undefined array key "elementary_year_graduated"
+#0 C:\xampp\htdocs\peso\app\Controllers\Users.php(581): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 581)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->updatePublicUserInfo()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-06-22 16:22:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:34:09 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-06-22 16:34:09 --> Undefined array key "secondary_course"
+#0 C:\xampp\htdocs\peso\app\Controllers\Users.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 586)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Users->updatePublicUserInfo()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-06-22 16:36:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-06-22 16:39:38 --> Table 'baliwagc_peso_db.departments' doesn't exist

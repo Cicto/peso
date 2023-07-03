@@ -41,6 +41,16 @@ class TemplateLib
                     'left',
                 ],
                 [
+                    'public_user_misc_info',
+                    'public_user_misc_info.user_id = users.id',
+                    'left',
+                ],
+                [
+                    'public_user_educational_background',
+                    'public_user_educational_background.user_id = users.id',
+                    'left',
+                ],
+                [
                     'refbrgy',
                     'refbrgy.id = public_user_info.barangay_id',
                     'left',
@@ -67,7 +77,9 @@ class TemplateLib
                 FALSE,
                 FALSE
             );
-            return $fetched['result'][0];
+            $result = $fetched['result'][0];
+            $result->user_id = $userId;
+            return $result;
         }
     }
 
@@ -89,22 +101,23 @@ class TemplateLib
         return $fetched;
     }
 
-    public static function roles()
+
+    public static function roles($user_id=false)
     {
         $masterModel = new MasterModel();
 
-        $fetched = $masterModel->get(
-            'roles', //tableName
-            'role_id, role_description', //select field
-            [
-                'deleted_at' => NULL
-            ], //where conditions,
-            FALSE,
-            'role_id ASC',
-            FALSE
-        );
-
-        // var_dump($fetched[]);
+        if($user_id){
+            $fetched = $masterModel->get(
+                'users', 
+                'role', 
+                [
+                    'deleted_at' => NULL,
+                    'id' => $user_id
+                ]
+            );
+        }else{
+            $fetched = $masterModel->get( 'auth_groups', '*');
+        }
         return $fetched;
     }
 

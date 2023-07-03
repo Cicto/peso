@@ -5,7 +5,9 @@ namespace App\Models;
 use CodeIgniter\Model;
 use CodeIgniter\Database\ConnectionInterface;
 use CodeIgniter\Database\BaseBuilder;
+use \AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class UsersModel
 {
     public function __construct()
@@ -25,7 +27,7 @@ class UsersModel
     public function getSpecificUser($user_id)
     {
         return $this->db->table('users')
-                ->select('users.id, users.email,users.username, user_info.firstname, user_info.middlename, user_info.lastname, user_info.birthdate, user_info.role, user_info.dept_id, users.active, users.status')
+                ->select('users.id, users.email , users.username, user_info.firstname, user_info.middlename, user_info.lastname, user_info.birthdate, users.role, users.active, users.status')
                 ->join('user_info', 'user_info.user_id = users.id', 'left')
                 ->where(['user_id' => $user_id])
                 ->get()
@@ -36,7 +38,8 @@ class UsersModel
     {
         return $this->db->table('users')
                 ->select('users.id, users.email, users.username, user_info.firstname, user_info.lastname, user_info.user_photo, users.active, users.status')
-                ->join('user_info', 'user_info.user_id = users.id', 'left');
+                ->join('user_info', 'user_info.user_id = users.id', 'left')
+                ->whereIn('users.role', [1, 2]);
     }
 
     public function getAll($dbName)

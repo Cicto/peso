@@ -76,7 +76,7 @@
             </div>
             <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
                 
-                <form role="form" id = "user-form" class="needs-validation user-form form fv-plugins-bootstrap5 fv-plugins-framework" method = "POST" novalidate>
+                <form role="form" id="user-form" class="needs-validation user-form form fv-plugins-bootstrap5 fv-plugins-framework" method = "POST" novalidate>
                     
                     <div class="mb-13 text-center ">
                         <!--begin::Title-->
@@ -101,14 +101,14 @@
                             <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" aria-label="Specify a target name for future usage and reference" data-kt-initialized="1"></i>
                         </label>
                         <!--end::Label-->
-                        <input type="email" class="form-control" placeholder="Enter Target Title" name="email" id = "email" value = "@baliwag.gov.ph">
+                        <input type="email" class="form-control" placeholder="Enter Target Title" name="email" id = "email" value = "@baliwag.gov.ph" required>
                         <div class="fv-plugins-message-container invalid-feedback"></div>
                     </div>
 
                     <div class="row mb-5">
                         <div class="col-8">
                             <label class="required fs-6 fw-semibold mb-1">Username</label>
-                            <input type="username" class="form-control" placeholder="Enter Valid Username" name="username" id = "username">
+                            <input type="username" class="form-control" placeholder="Enter Valid Username" name="username" id = "username" required>
                             <div class="fv-plugins-message-container invalid-feedback"></div>
                         </div>
                         <div class="col-4">
@@ -117,18 +117,7 @@
                                 <option value = "" selected disabled>Select Role</option>
 
                                 <?php foreach ($roles as $role) : ?>
-                                    <option value="<?= $role->role_id ?>"><?= $role->role_description ?></option>
-                                <?php endforeach ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mb-5">
-                        <div class="col-10">
-                            <label class="required fs-6 fw-semibold mb-1">Department</label>
-                            <select name="dept_id" id="dept_id" class = "form-select">
-                                <option value = "" selected disabled>Select Department</option>
-                                <?php foreach ($departments as $department) : ?>
-                                    <option value="<?= $department->dept_id ?>"><?= $department->department_name ?></option>
+                                    <option value="<?= $role->id ?>"><?= $role->name ?></option>
                                 <?php endforeach ?>
                             </select>
                         </div>
@@ -223,7 +212,7 @@
                         <!--end::Wrapper-->
                     </div>
                     <div class="text-center">
-                        <button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Cancel</button>
+                        <button type="reset" id="kt_modal_new_target_cancel" data-bs-dismiss="modal" class="btn btn-light me-3">Cancel</button>
                         <button type="submit" id = "" class="btn btn-primary form-btn">Submit</button>
                     </div>
 

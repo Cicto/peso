@@ -87,7 +87,7 @@
                             <input type="text" class="form-control border-info" required placeholder="Author name" aria-label="Author" aria-describedby="basic-addon1" name="post_author" value="<?php echo $is_edit ? $post_info['result'][0]->post_author : ""?>">
                         </div>
                         <div class="separator my-5"></div>
-                        <textarea class="" name="post_body" id="post-body" placeholder="Type the content here!">
+                        <textarea class="" row="10" name="post_body" id="post-body" placeholder="Type the content here!">
                             <?php if($is_edit):?>
                                 <?= stripslashes($post_info['result'][0]->post_body)?>
                             <?php endif;?>
@@ -216,7 +216,7 @@
             xhr.addEventListener( 'load', () => {
                 let response = xhr.response;
                 response = JSON.parse(response);
-
+                
                 if ( !response || response.error ) {
                     const error_response = response && response.error ? response.error.message : genericErrorText;
                     warningAlert("Error", error_response);

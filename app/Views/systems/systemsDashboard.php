@@ -35,7 +35,7 @@
                             <div>
                                 <select class="form-select form-select-solid select2-hidden-accessible" data-kt-select2="true" data-placeholder="Select option" data-dropdown-parent="#kt_menu_633f0a65864cd" data-allow-clear="true" data-select2-id="select2-data-7-lsp6" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
                                     <option data-select2-id="select2-data-9-8fj4"></option>
-                                    <option value="1">Approved</option>
+                                    <option value="1">Qualified</option>
                                     <option value="2">Pending</option>
                                     <option value="2">In Process</option>
                                     <option value="2">Rejected</option>

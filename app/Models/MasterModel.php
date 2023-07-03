@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Models;
-
 use CodeIgniter\Database\ConnectionInterface;
+use \AllowDynamicProperties;
 
-
+#[AllowDynamicProperties]
 class MasterModel
 {
 
@@ -28,7 +28,6 @@ class MasterModel
         {
             foreach ($joinConditions as $join){$builder->join($join[0], $join[1], $join[2]);}
         }
-        $whereConditions = $builder->db->escape($whereConditions);
         $builder->where($whereConditions);
         ($orderBy != FALSE) ? $builder->orderBy($orderBy): NULL;
         ($limit != FALSE) ? $builder->limit($limit): NULL;

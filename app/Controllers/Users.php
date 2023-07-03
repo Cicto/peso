@@ -12,7 +12,8 @@ use App\Libraries\TemplateLib;
 class Users extends BaseController
 {
     public function __construct()
-    {
+    {   
+        $template_lib = new TemplateLib();
         $this->userInformation = TemplateLib::userInformation(user_id());
         $this->departments = TemplateLib::departments();
         $this->roles = TemplateLib::roles();
@@ -21,15 +22,30 @@ class Users extends BaseController
 
     public function index()
     {   
-        
+        if($this->roles['status']){
+            $view_data = [
+                'title' => 'User List',
+                'user_id' => user_id(),
+                'userInformation' => $this->userInformation,
+                'departments' => ($this->departments['status']) ? $this->departments['result'] : FALSE,
+                'roles' => $this->roles['result']
+            ];
+    
+            return view('users/users', $view_data);
+        }
+        return redirect()->to(base_url("/home")); 
+    }
+
+    public function public_users()
+    {   
         $view_data = [
             'title' => 'User List',
             'userInformation' => $this->userInformation,
             'departments' => ($this->departments['status']) ? $this->departments['result'] : FALSE,
-            'roles' => ($this->roles['status']) ? $this->roles['result'] : FALSE
+            'roles' => $this->roles['result']
         ];
 
-        return view('users/users', $view_data);
+        return view('users/public-users', $view_data);
     }
 
     public function resume(){
@@ -52,6 +68,31 @@ class Users extends BaseController
         ];
 
         return view('users/validateProfile', $view_data);
+    }
+
+    public function export_applicants(){
+        $applicantion_ids = [];
+        foreach (func_get_args() as $param) {
+            array_push($applicantion_ids, $param);
+        }
+        $this->db = db_connect();
+        $builder = $this->db->table("job_applications")
+            ->select("public_user_info.*, job_applications.created_at AS applied_on, users.email, refbrgy.brgyDesc, refcitymun.citymunDesc, refprovince.provDesc, public_user_misc_info.*, public_user_educational_background.*")
+            ->join("public_user_info", "job_applications.applicant_id = public_user_info.user_id", "left")
+            ->join("public_user_misc_info", "job_applications.applicant_id = public_user_misc_info.user_id", "left")
+            ->join("public_user_educational_background", "job_applications.applicant_id = public_user_educational_background.user_id", "left")
+            ->join("users", "users.id = public_user_info.user_id", "left")
+            ->join("refbrgy", "refbrgy.id = public_user_info.barangay_id", "left")
+            ->join("refcitymun", "refcitymun.citymunCode = refbrgy.citymunCode", "left")
+            ->join("refprovince", "refprovince.provCode = refcitymun.provCode", "left")
+            ->whereIn('job_applications.id', $applicantion_ids)
+            ->where("job_applications.application_status <>", 3);
+        $applicant_infos = $builder->get()->getResultArray();
+        $view_data = [
+            "applicants" => $applicant_infos,
+            "userInformation" => $this->userInformation 
+        ];
+        return view('users/export-applicants', $view_data);
     }
 
     public function getSpecificUser($user_id)
@@ -77,6 +118,10 @@ class Users extends BaseController
 
         if ($this->request->isAJAX())
         {
+            $data = $this->request->getPost();
+            if(!($data["email"] && $data["username"] && $data["role"] && $data["firstname"] && $data["lastname"] && $data["birthdate"])){
+                return json_encode(['error' => true, "error_message"=>"Some required fields are not filled", "error"=>true]);
+            }
             $getCount = $masterModel->get('user_info', 'COUNT(ui_id) as total', ['role' => 3]);
             $username = ((int)$getCount['result'][0]->total)+1;
 
@@ -97,7 +142,6 @@ class Users extends BaseController
                     'middlename' => $this->request->getPost('middlename'),
                     'lastname' => $this->request->getPost('lastname'),
                     'birthdate' => $this->request->getPost('birthdate'),
-                    'dept_id' => $this->request->getPost('dept_id'),
                     'role' => $this->request->getPost('role'),
                 ];
 
@@ -138,6 +182,7 @@ class Users extends BaseController
             $users = [
                 'email' => $this->request->getPost('email'),
                 'username' => $this->request->getPost('username'),
+                'role' => $this->request->getPost('role'),
             ];
 
             $whereConditions = [
@@ -148,56 +193,56 @@ class Users extends BaseController
 
             if(is_int($update) > 0)
             {
-                $userInfo = $_POST;
-                $table_name = 'user_info';
-                $user_role = UtilController::getUserRole($this->request->getPost(isset($_POST['id']) ? 'id' : 'user_id' ));
-                if($user_role){
-                    if($user_role==3){
-                        $table_name = 'public_user_info';
-                    }
-                }else{
-                    return json_encode([
-                        'error' => true,
-                        'error_message' => 'Something went wrong'
-                    ]);
-                }
+                // $userInfo = $_POST;
+                    // $table_name = 'user_info';
+                    // $user_role = UtilController::getUserRole($this->request->getPost(isset($_POST['id']) ? 'id' : 'user_id' ));
+                    // if($user_role){
+                    //     if($user_role==3){
+                    //         $table_name = 'public_user_info';
+                    //     }
+                // }else{
 
-                if($this->request->getPost('role')){
-                    $userInfo['role'] = $this->request->getPost('role');
-                }
+                return json_encode([
+                    'success' => true,
+                    'success_message' => 'User Info successully updated'
+                ]);
 
-                
-                $userInfo["user_id"] = isset($_POST['id']) ? $_POST['id'] : $_POST['user_id'] ;
-                
-                $whereConditions = [
-                    'user_id' => $userInfo["user_id"]
-                ];
+                // }
 
-                $removeFields = ['id', 'email', 'username'];
-                $userInfo = array_diff_key($userInfo, array_flip($removeFields));
-                
-                $updateUserInfo = $usersModel->updateUserData($table_name, $userInfo, $whereConditions);
+                    // if($this->request->getPost('role')){
+                    //     $userInfo['role'] = $this->request->getPost('role');
+                    // }
 
-                if(is_int($updateUserInfo) > 0)
-                {
-                    return json_encode([
-                        'success' => $updateUserInfo,
-                        'success_message' => 'Successfully Updated!',
-                        'user_info' => $userInfo,
-                        'role' => UtilController::getUserRole($this->request->getPost(isset($_POST['id']) ? 'id' : 'user_id' ))
-                    ]);
-                }
-                else
-                {
-                    return json_encode([
-                        'error' => true,
-                        'error_message' => $updateUserInfo
-                    ]);
-                }
+                    
+                    // $userInfo["user_id"] = isset($_POST['id']) ? $_POST['id'] : $_POST['user_id'] ;
+                    
+                    // $whereConditions = [
+                    //     'user_id' => $userInfo["user_id"]
+                    // ];
 
-            }
-            else
-            {
+                    // $removeFields = ['id', 'email', 'username'];
+                    // $userInfo = array_diff_key($userInfo, array_flip($removeFields));
+                    
+                    // $updateUserInfo = $usersModel->updateUserData($table_name, $userInfo, $whereConditions);
+
+                    // if(is_int($updateUserInfo) > 0)
+                    // {
+                    //     return json_encode([
+                    //         'success' => $updateUserInfo,
+                    //         'success_message' => 'Successfully Updated!',
+                    //         'user_info' => $userInfo,
+                    //         'role' => UtilController::getUserRole($this->request->getPost(isset($_POST['id']) ? 'id' : 'user_id' ))
+                    //     ]);
+                    // }
+                    // else
+                    // {
+                    //     return json_encode([
+                    //         'error' => true,
+                    //         'error_message' => $updateUserInfo
+                    //     ]);
+                // }
+
+            } else {
                 return json_encode([
                     'error' => true,
                     'error_message' => $update
@@ -428,7 +473,8 @@ class Users extends BaseController
         }
     }
 
-    public function authenticateUser(){
+    public function authenticateUser()
+    {
         if(logged_in()){
             $authen = service('authentication');
             $credentials = [
@@ -441,7 +487,8 @@ class Users extends BaseController
         }
     }
 
-    public function updateAccountPassword($id){
+    public function updateAccountPassword($id)
+    {
         if($this->request->isAJAX()){
         $users_model = new UsersModel();
         $ok = true;
@@ -465,36 +512,201 @@ class Users extends BaseController
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $data = $_POST;
-            $data["created_at"] = date("Y-m-d h:i:s");
-            $data["with_drivers_license"] = isset($data["with_drivers_license"]) ? 1 : 0;
-            $result = $master_model->insert("public_user_info", $data);
-            return $result;
-        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
-    }
+            $public_user_info = [
+                "user_id" => $data["user_id"],
+                "firstname" => $data["firstname"],
+                "middlename" => $data["middlename"],
+                "lastname" => $data["lastname"],
+                "suffix" => $data["suffix"],
+                "sex" => $data["sex"],
+                "birthdate" => $data["birthdate"],
+                "birth_place_city_mun_id" => $data["birth_place_city_mun_id"],
+                "civil_status" => $data["civil_status"],
+                "house_number" => $data["house_number"],
+                "street_name" => $data["street_name"],
+                "barangay_id" => $data["barangay_id"],
+                "religion" => $data["religion"],
+                "contact_number" => $data["contact_number"]
+            ];
 
-    public function updateUserResume($id){
-        if($this->request->isAJAX()){
-            $master_model = new MasterModel();
-            $data = $_POST;
-            $data["updated_at"] = date("Y-m-d h:i:s");
-            $result = $master_model->update("public_user_info", $data, ["user_id"=>$id]);
-            return $result;
-        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
-    }
+            $public_user_misc_info = [
+                "user_id" => $data["user_id"],
+                "height" => $data["height"],
+                "landline_number" => $data["landline_number"],
+                "tin" => $data["tin"],
+                "gsis_sss_no" => $data["gsis_sss_no"],
+                "pag_ibig_no" => $data["pag_ibig_no"],
+                "philhealth_no" => $data["philhealth_no"],
+                "disability" => $data["disability"],
+                "employment_status" => $data["employment_status"],
+                "employment_type" => $data["employment_type"],
+                "other_employment_type" => $data["other_employment_type"],
+                "terminated_laidoff_abroad" => $data["terminated_laidoff_abroad"],
+                "is_actively_looking" => $data["is_actively_looking"],
+                "is_actively_looking_since" => $data["is_actively_looking_since"],
+                "will_work_immediately" => $data["will_work_immediately"],
+                "when_will_work_immediately" => $data["when_will_work_immediately"],
+                "is_4ps_beneficiary" => $data["is_4ps_beneficiary"],
+                "4ps_beneficiary_household_no" => $data["4ps_beneficiary_household_no"],
+                "preferred_occupation" => $data["preferred_occupation"],
+                "preferred_work_location_local" => $data["preferred_work_location_local"],
+                "preferred_work_location_abroad" => $data["preferred_work_location_abroad"],
+                "expected_salary" => $data["expected_salary"],
+                "passport_no" => $data["passport_no"],
+                "passport_expiry" => $data["passport_expiry"]
+            ];
 
-    public function updatePublicUserInfo(){
-        if($this->request->isAJAX()){
-            $master_model = new MasterModel();
-            $data = $_POST;
+            $public_user_educational_background = [
+                "user_id" => $data["user_id"],
+                "elementary_school_name" => $data["elementary_school_name"],
+                "elementary_is_undergrad" => $data["elementary_is_undergrad"],
+                "elementary_year_graduated" => $data["elementary_year_graduated"],
+                "elementary_last_level" => $data["elementary_last_level"],
+                "elementary_last_year_attended" => $data["elementary_last_year_attended"],
+                "elementary_award" => $data["elementary_award"],
+                "secondary_school_name" => $data["secondary_school_name"],
+                "secondary_is_undergrad" => $data["secondary_is_undergrad"],
+                "secondary_year_graduated" => $data["secondary_year_graduated"],
+                "secondary_last_level" => $data["secondary_last_level"],
+                "secondary_last_year_attended" => $data["secondary_last_year_attended"],
+                "secondary_award" => $data["secondary_award"],
+                "tertiary_school_name" => $data["tertiary_school_name"],
+                "tertiary_course" => $data["tertiary_course"],
+                "tertiary_is_undergrad" => $data["tertiary_is_undergrad"],
+                "tertiary_year_graduated" => $data["tertiary_year_graduated"],
+                "tertiary_last_level" => $data["tertiary_last_level"],
+                "tertiary_last_year_attended" => $data["tertiary_last_year_attended"],
+                "tertiary_award" => $data["tertiary_award"],
+                "graduate_studies_school_name" => $data["graduate_studies_school_name"],
+                "graduate_studies_course" => $data["graduate_studies_course"],
+                "graduate_studies_is_undergrad" => $data["graduate_studies_is_undergrad"],
+                "graduate_studies_year_graduated" => $data["graduate_studies_year_graduated"],
+                "graduate_studies_last_level" => $data["graduate_studies_last_level"],
+                "graduate_studies_last_year_attended" => $data["graduate_studies_last_year_attended"],
+                "graduate_studies_award" => $data["graduate_studies_award"],
+                "language_dialect_proficiency" => $data["language_dialect_proficiency"],
+                "technical_vocational_and_other_training" => $data["technical_vocational_and_other_training"],
+                "eligibility" => $data["eligibility"],
+                "professional_license" => $data["professional_license"],
+                "work_experience" => $data["work_experience"],
+                "other_skills_acquired_without_formal_training" => $data["other_skills_acquired_without_formal_training"]
+            ];
+
             $user_id = $data["user_id"];
-            $data["updated_at"] = date("Y-m-d h:i:s");
-            $data["with_drivers_license"] = isset($data["with_drivers_license"]) ? 1 : 0;
-            $result = $master_model->update("public_user_info", $data, ["user_id"=>$user_id]);
+            $data["created_at"] = date("Y-m-d H:i:s");
+            $public_user_info_result = $master_model->insert("public_user_info", $public_user_info);
+            $public_user_misc_info = $master_model->insert("public_user_misc_info", $public_user_misc_info);
+            $public_user_educational_background = $master_model->insert("public_user_educational_background", $public_user_educational_background);
+
+            return json_encode($public_user_info_result);
+        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
+    }
+
+    public function updateUserResume($id)
+    {
+        if($this->request->isAJAX()){
+            $master_model = new MasterModel();
+            $data = $_POST;
+            $data["updated_at"] = date("Y-m-d H:i:s");
+            $result = $master_model->update("public_user_info", $data, ["user_id"=>$id]);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function uploadUserIDs(){
+    public function updatePublicUserInfo()
+    {
+        if($this->request->isAJAX()){
+            $master_model = new MasterModel();
+            $data = $_POST;
+            $public_user_info = [
+                "firstname" => $data["firstname"],
+                "middlename" => $data["middlename"],
+                "lastname" => $data["lastname"],
+                "suffix" => $data["suffix"],
+                "sex" => $data["sex"],
+                "birthdate" => $data["birthdate"],
+                "birth_place_city_mun_id" => $data["birth_place_city_mun_id"],
+                "civil_status" => $data["civil_status"],
+                "house_number" => $data["house_number"],
+                "street_name" => $data["street_name"],
+                "barangay_id" => $data["barangay_id"],
+                "religion" => $data["religion"],
+                "contact_number" => $data["contact_number"]
+            ];
+
+            $public_user_misc_info = [
+                "height" => $data["height"],
+                "landline_number" => $data["landline_number"],
+                "tin" => $data["tin"],
+                "gsis_sss_no" => $data["gsis_sss_no"],
+                "pag_ibig_no" => $data["pag_ibig_no"],
+                "philhealth_no" => $data["philhealth_no"],
+                "disability" => $data["disability"],
+                "employment_status" => $data["employment_status"],
+                "employment_type" => $data["employment_type"],
+                "other_employment_type" => $data["other_employment_type"],
+                "terminated_laidoff_abroad" => $data["terminated_laidoff_abroad"],
+                "is_actively_looking" => $data["is_actively_looking"],
+                "is_actively_looking_since" => $data["is_actively_looking_since"],
+                "will_work_immediately" => $data["will_work_immediately"],
+                "when_will_work_immediately" => $data["when_will_work_immediately"],
+                "is_4ps_beneficiary" => $data["is_4ps_beneficiary"],
+                "4ps_beneficiary_household_no" => $data["4ps_beneficiary_household_no"],
+                "preferred_occupation" => $data["preferred_occupation"],
+                "preferred_work_location_local" => $data["preferred_work_location_local"],
+                "preferred_work_location_abroad" => $data["preferred_work_location_abroad"],
+                "expected_salary" => $data["expected_salary"],
+                "passport_no" => $data["passport_no"],
+                "passport_expiry" => $data["passport_expiry"]
+            ];
+
+            $public_user_educational_background = [
+                "elementary_school_name" => $data["elementary_school_name"],
+                "elementary_is_undergrad" => $data["elementary_is_undergrad"],
+                "elementary_year_graduated" => $data["elementary_year_graduated"],
+                "elementary_last_level" => $data["elementary_last_level"],
+                "elementary_last_year_attended" => $data["elementary_last_year_attended"],
+                "elementary_award" => $data["elementary_award"],
+                "secondary_school_name" => $data["secondary_school_name"],
+                "secondary_is_undergrad" => $data["secondary_is_undergrad"],
+                "secondary_year_graduated" => $data["secondary_year_graduated"],
+                "secondary_last_level" => $data["secondary_last_level"],
+                "secondary_last_year_attended" => $data["secondary_last_year_attended"],
+                "secondary_award" => $data["secondary_award"],
+                "tertiary_school_name" => $data["tertiary_school_name"],
+                "tertiary_course" => $data["tertiary_course"],
+                "tertiary_is_undergrad" => $data["tertiary_is_undergrad"],
+                "tertiary_year_graduated" => $data["tertiary_year_graduated"],
+                "tertiary_last_level" => $data["tertiary_last_level"],
+                "tertiary_last_year_attended" => $data["tertiary_last_year_attended"],
+                "tertiary_award" => $data["tertiary_award"],
+                "graduate_studies_school_name" => $data["graduate_studies_school_name"],
+                "graduate_studies_course" => $data["graduate_studies_course"],
+                "graduate_studies_is_undergrad" => $data["graduate_studies_is_undergrad"],
+                "graduate_studies_year_graduated" => $data["graduate_studies_year_graduated"],
+                "graduate_studies_last_level" => $data["graduate_studies_last_level"],
+                "graduate_studies_last_year_attended" => $data["graduate_studies_last_year_attended"],
+                "graduate_studies_award" => $data["graduate_studies_award"],
+                "language_dialect_proficiency" => $data["language_dialect_proficiency"],
+                "technical_vocational_and_other_training" => $data["technical_vocational_and_other_training"],
+                "eligibility" => $data["eligibility"],
+                "professional_license" => $data["professional_license"],
+                "work_experience" => $data["work_experience"],
+                "other_skills_acquired_without_formal_training" => $data["other_skills_acquired_without_formal_training"]
+            ];
+
+            $user_id = $data["user_id"];
+            $data["updated_at"] = date("Y-m-d H:i:s");
+            $public_user_info_result = $master_model->update("public_user_info", $public_user_info, ["user_id"=>$user_id]);
+            $public_user_misc_info = $master_model->update("public_user_misc_info", $public_user_misc_info, ["user_id"=>$user_id]);
+            $public_user_educational_background = $master_model->update("public_user_educational_background", $public_user_educational_background, ["user_id"=>$user_id]);
+
+            return json_encode($public_user_info_result);
+        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
+    }
+
+    public function uploadUserIDs()
+    {
         if ($this->request->isAJAX())
         {
             $util_controller = new UtilController();
@@ -554,5 +766,80 @@ class Users extends BaseController
                 ]);
             }
         }
+    }
+    
+    public function createUserNotification($user_id,  $description="", $link="#", $notification_icon="bell")
+    {
+        $master_model = new MasterModel();
+        $data = [
+            "user_id" => $user_id,
+            "notification_icon" => $notification_icon,
+            "description" => $description,
+            "link" => $link,
+            "created_at" => date("Y-m-d H:i:s")
+        ];
+        $result = $master_model->insert("user_notifications", $data);
+        return $result;
+    }
+
+    public function updateSeenNotification($user_id, $id=false)
+    {
+        $master_model = new MasterModel();
+        $where = [
+            "user_id"=>$user_id
+        ];
+        $data = [
+            "is_seen" => 1
+        ];
+        if($id){
+            $where["id"] = $id;
+        }
+        $result = $master_model->update("user_notifications", $data, $where);
+        return $result;
+    }
+
+    public function getUserNotifications($user_id, $id=false)
+    {
+        $master_model = new MasterModel();
+        $where = ["user_id"=>$user_id];
+        if($id){
+            $where["id"] = $id;
+        }
+        $result = $master_model->get("user_notifications", "*", $where, FALSE, "created_at DESC");
+        return $result;
+    }
+
+    public function getPublicUsersDataTable(){
+        if($this->request->isAJAX()){
+        
+            $master_model = new MasterModel();
+        
+            $builder = $master_model->getDataTables("users", 
+            "
+            users.id, users.email, users.username, users.active, users.status, users.created_at, 
+            public_user_info.firstname, public_user_info.middlename, public_user_info.lastname, public_user_info.suffix, public_user_info.user_photo, 
+            public_user_info.resume, public_user_info.sex, public_user_info.birthdate, public_user_info.contact_number, 
+            public_user_info.house_number, public_user_info.street_name, refbrgy.brgyDesc, refcitymun.citymunDesc, refprovince.provDesc,
+            public_user_misc_info.employment_status, public_user_misc_info.employment_type, public_user_misc_info.preferred_occupation, 
+            public_user_educational_background.work_experience, public_user_educational_background.elementary_school_name, public_user_educational_background.elementary_year_graduated, public_user_educational_background.elementary_is_undergrad, public_user_educational_background.elementary_last_year_attended,
+            public_user_educational_background.secondary_school_name, public_user_educational_background.secondary_year_graduated, public_user_educational_background.secondary_is_undergrad, public_user_educational_background.secondary_last_year_attended,
+            public_user_educational_background.tertiary_school_name, public_user_educational_background.tertiary_year_graduated, public_user_educational_background.tertiary_course, public_user_educational_background.tertiary_is_undergrad, public_user_educational_background.tertiary_last_year_attended,
+            public_user_educational_background.graduate_studies_school_name, public_user_educational_background.graduate_studies_year_graduated, public_user_educational_background.graduate_studies_course, public_user_educational_background.graduate_studies_is_undergrad, public_user_educational_background.graduate_studies_last_year_attended", 
+        
+            ["users.role"=>3], 
+    
+            [
+                ["public_user_info", "public_user_info.user_id = users.id", "left"],
+                ["public_user_misc_info", "public_user_misc_info.user_id = users.id", "left"],
+                ["public_user_educational_background", "public_user_educational_background.user_id = users.id", "left"],
+                ["refbrgy", "refbrgy.id = public_user_info.barangay_id", "left"],
+                ["refcitymun", "refcitymun.citymunCode = refbrgy.citymunCode", "left"],
+                ["refprovince", "refprovince.provCode = refcitymun.provCode", "left"]
+            ]);
+        
+            // return $builder->getCompiledSelect();
+            return DataTable::of($builder)->toJson(TRUE);
+        
+        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 }

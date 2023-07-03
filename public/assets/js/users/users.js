@@ -95,7 +95,7 @@ $(document).ready(function () {
             confirmButtonText: 'Yes'
         }).then((result) => {
             if (result.isConfirmed) {
-
+                
                 $.post(current_url + '/addUser', $(this).serialize())
                     .done(function (data) {
 
@@ -428,7 +428,7 @@ $(document).ready(function () {
         $('#user-status').attr('data-id', id);
         $('#other-buttons').show();
 
-        $.post(current_url + '/getSpecificUser/' + id, {})
+        $.get(current_url + '/getSpecificUser/' + id, {})
             .done(function (data) {
 
                 data = JSON.parse(data);
@@ -457,7 +457,8 @@ $(document).ready(function () {
                 $('#right-modal').modal('show');
 
                 $.each(data, (key, val) => {
-                    $('#' + key).val(val);
+                    $(`#edit-user-form *[name="${key}"]`).val(val);
+                    console.log(key, val)
                 });
 
             })

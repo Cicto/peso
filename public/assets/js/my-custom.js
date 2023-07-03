@@ -2,39 +2,43 @@ var pathname = window.location.pathname.split( '/' );
 var url = window.location.origin+'/'+pathname[1]+'/'+pathname[2]+'/'+pathname[3];
 var baseUrl = window.location.origin;
 
-const profile_modal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#my-profile-modal"))
-const cropper_modal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#my-profile-photo-crop-modal"))
-const password_modal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#change-password-modal"))
+const profile_modal = $("#my-profile-modal").length ? bootstrap.Modal.getOrCreateInstance(document.querySelector("#my-profile-modal")) : null;
+const cropper_modal = $("#my-profile-photo-crop-modal").length ? bootstrap.Modal.getOrCreateInstance(document.querySelector("#my-profile-photo-crop-modal")) : null;
+const password_modal = $("#change-password-modal").length ? bootstrap.Modal.getOrCreateInstance(document.querySelector("#change-password-modal")) : null;
 let cropper;
 
 let is_authenticated = false;
-document.querySelector("#user-photo").addEventListener("change", function () {
-    profile_modal.hide();
-    const image = document.querySelector("#my-profile-photo-crop-image");
-    const [file] = this.files
-    if (file) {
-        image.src = URL.createObjectURL(file)
-    }
+if($("#user-photo").length){
+    document.querySelector("#user-photo").addEventListener("change", function () {
+        profile_modal.hide();
+        const image = document.querySelector("#my-profile-photo-crop-image");
+        const [file] = this.files
+        if (file) {
+            image.src = URL.createObjectURL(file)
+        }
+    
+        cropper = new Cropper(image, {
+            aspectRatio: 1 / 1,
+            dragMode: "move",
+            viewMode: 1,
+            background: false,
+            minContainerWidth: 450,
+            minContainerHeight: 420,
+            cropBoxMovable: false,
+            cropBoxResizable: false,
+        });
+        cropper.reset()
+        cropper_modal.show();
+    })
+}
 
-    cropper = new Cropper(image, {
-        aspectRatio: 1 / 1,
-        dragMode: "move",
-        viewMode: 1,
-        background: false,
-        minContainerWidth: 450,
-        minContainerHeight: 420,
-        cropBoxMovable: false,
-        cropBoxResizable: false,
-    });
-    cropper.reset()
-    cropper_modal.show();
-})
-
-document.querySelector("#my-profile-photo-crop-modal").addEventListener('hidden.bs.modal', event => {
-    if(cropper){
-        cropper.destroy()
-    }
-})
+if($("#my-profile-photo-crop-modal").length){
+    document.querySelector("#my-profile-photo-crop-modal").addEventListener('hidden.bs.modal', event => {
+        if(cropper){
+            cropper.destroy()
+        }
+    })
+}
 
 $("#my-profile-photo-crop-modal #crop-button").click(function(){
     const cropped_image = cropper.getCroppedCanvas().toDataURL('image/jpeg');
@@ -55,6 +59,7 @@ $("#my-profile-photo-crop-modal #crop-button").click(function(){
                                 $(".user-avatar").attr("src", base_url+"/public/assets/media/avatars/"+data).attr("data-photo-name", data)
                                 loading(false);
                                 cropper_modal.hide();
+                                location.reload(true);
 
                             }).fail(function() {
                                 alert( "Something went wrong" );
@@ -140,11 +145,64 @@ $(".change-password-submit").click(function(){
     }
 })
 
-document.querySelector("#change-password-modal").addEventListener('hidden.bs.modal', event => {
-    is_authenticated = false;
-    $(".current-password-container").show()
-    $(".new-password-container").hide()
-    $("#current-password").val('')
-    $("#new-password").val('')
-    $("#repeat-new-password").val('')
+if($("#change-password-modal").length){
+    document.querySelector("#change-password-modal").addEventListener('hidden.bs.modal', event => {
+        is_authenticated = false;
+        $(".current-password-container").show()
+        $(".new-password-container").hide()
+        $("#current-password").val('')
+        $("#new-password").val('')
+        $("#repeat-new-password").val('')
+    })
+}
+
+let confirmApplication_callback_function = false;
+function confirmApplication(job_id, callback_function = false){
+    const application_modal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#jobApplicationModal"))
+    AJAX({
+        method: "GET",
+        url: base_url + "/jobs/getJob/" + job_id,
+        loader: false,
+        success: function(data){
+            let job_id = 0;
+            if (isJsonString(data)) {
+                result = JSON.parse(data)
+                if (result.status) {
+                    result = result.result[0]
+                    console.log(result)
+
+                    job_id = result.id
+                    confirmApplication_callback_function = callback_function;
+                    $("#jobApplicationModal-job-category").html(`${result.job_category}`)
+                    $("#jobApplicationModal-job-title").html(`${result.job_title}`)
+                    $("#jobApplicationModal-company-name").html(`${result.company_name}`)
+                    $("#jobApplicationModal-company-address").html(`${result.company_address}`)
+                    application_modal.show()
+                }
+            }
+            $("#jobApplicationModal_proceed").attr("data-job-id", job_id);
+        }
+    })
+}
+
+$("#jobApplicationModal_proceed").click(function(){
+    const application_modal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#jobApplicationModal"))
+    const job_id = this.dataset.jobId;
+    AJAX({
+        method: "GET",
+        url: base_url + "/jobs/createJobApplication/" + job_id,
+        successAlert: true,
+        warningAlert: true,
+        success: function(data){
+            if (isJsonString(data)) {
+                result = JSON.parse(data)
+                if (result.status) {
+                    if(confirmApplication_callback_function){
+                        confirmApplication_callback_function()
+                    }
+                    application_modal.hide()
+                }
+            }
+        }
+    })
 })
