@@ -88,3 +88,133 @@ ERROR - 2023-07-11 11:20:02 --> Table 'baliwagc_peso_db.user' doesn't exist
 ERROR - 2023-07-11 11:20:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
 ERROR - 2023-07-11 11:22:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
 ERROR - 2023-07-11 11:23:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:26:40 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:26:42 --> Unknown column 'log_actor' in 'field list'
+CRITICAL - 2023-07-11 11:26:42 --> Unknown column 'log_actor' in 'field list'
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `log_id`...', 0)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `log_id`...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `log_id`...')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `log_id`...', Array, false)
+#4 C:\xampp\htdocs\peso\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peso\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\xampp\htdocs\peso\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\xampp\htdocs\peso\app\Controllers\Logs.php(53): Hermawan\DataTables\DataTable->toJson(true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#9 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-07-11 11:27:15 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:29:20 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:29:27 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:29:59 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:30:01 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:30:05 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:30:06 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:30:27 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:30:28 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:30:29 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:31:52 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:31:58 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:32:31 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:32:38 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:32:47 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:33:12 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:33:19 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:33:31 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:33:53 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:35:26 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+CRITICAL - 2023-07-11 11:35:27 --> Undefined array key 0
+#0 C:\xampp\htdocs\peso\app\Models\MasterModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\peso\app\Controllers\Logs.php(50): App\Models\MasterModel->getDataTables('logs', 'log_id, log_act...', Array, Array, 'log_id ASC', false)
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-11 11:36:58 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+CRITICAL - 2023-07-11 11:36:59 --> Undefined array key 0
+#0 C:\xampp\htdocs\peso\app\Models\MasterModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\peso\app\Controllers\Logs.php(50): App\Models\MasterModel->getDataTables('logs', 'log_id, log_act...', Array, Array, 'log_id ASC', false)
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-11 11:38:19 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+CRITICAL - 2023-07-11 11:38:21 --> Undefined array key 2
+#0 C:\xampp\htdocs\peso\app\Models\MasterModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\peso\app\Controllers\Logs.php(50): App\Models\MasterModel->getDataTables('logs', 'log_id, log_act...', Array, Array, 'log_id ASC', false)
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-11 11:38:34 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:38:35 --> Column 'created_at' in field list is ambiguous
+CRITICAL - 2023-07-11 11:38:35 --> Column 'created_at' in field list is ambiguous
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `log_id`...', 0)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `log_id`...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `log_id`...')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `log_id`...', Array, false)
+#4 C:\xampp\htdocs\peso\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peso\vendor\hermawan\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\xampp\htdocs\peso\vendor\hermawan\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\xampp\htdocs\peso\app\Controllers\Logs.php(53): Hermawan\DataTables\DataTable->toJson(true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Logs->getLogs()
+#9 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logs))
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-07-11 11:38:47 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 11:39:42 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:11:42 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:11:56 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:12:11 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:13:26 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:13:38 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:15:15 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:16:57 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:17:13 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:17:28 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:17:48 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:18:04 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:20:25 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:21:08 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:22:42 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:23:09 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:23:22 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:23:48 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:24:34 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:25:01 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:25:15 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:25:27 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:27:12 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:30:48 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:31:41 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:32:01 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:32:13 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:32:30 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:34:34 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:34:56 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:35:12 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:35:23 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:35:39 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:35:45 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:36:18 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:36:39 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:38:46 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:39:02 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:39:49 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:40:33 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:41:29 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:41:48 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:41:57 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:42:04 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:42:35 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:42:52 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:43:32 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:44:03 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:44:18 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:44:22 --> Table 'baliwagc_peso_db.system_logs' doesn't exist
+ERROR - 2023-07-11 13:44:38 --> Table 'baliwagc_peso_db.system_logs' doesn't exist

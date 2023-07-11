@@ -45,19 +45,10 @@ class Logs extends BaseController
     {
         $masterModel = new MasterModel();
         
-        if($this->userInformation->role == 1 || $this->userInformation->role == 2)
-        {
-            return DataTable::of($masterModel->getDataTables('logs', 'log_id, log_action, log_actor, created_at', [], FALSE, 'log_id ASC', FALSE))
-            ->add('action', function($row){
-                // return '<button type="button" id = "edit-btn" class="btn btn-outline-primary btn-xs" data-id = "'.$row->id.'"><i class="fas fa-edit"></i></button>';
-            })->toJson(true);
-        }
-        else
-        {
-            return DataTable::of($masterModel->getDataTables('logs', 'log_id, log_action, log_actor, created_at', ['user_id' => user_id()], FALSE, 'log_id ASC', FALSE))
-            ->add('action', function($row){
-                // return '<button type="button" id = "edit-btn" class="btn btn-outline-primary btn-xs" data-id = "'.$row->id.'"><i class="fas fa-edit"></i></button>';
-            })->toJson(true);
+        if($this->userInformation->role == 1 || $this->userInformation->role == 2){
+            return DataTable::of($masterModel->getDataTables('logs', 'log_id, log_action, log_data, logs.created_at, users.username AS log_actor', [], [["users", "users.id = logs.user_id", "inner"]], 'log_id DESC', FALSE))->toJson(true);
+        }else{
+            return DataTable::of($masterModel->getDataTables('logs', 'log_id, log_action, log_data, logs.created_at, users.username AS log_actor', ['user_id' => user_id()], [["users", "users.id = logs.user_id", "inner"]], 'log_id DESC', FALSE))->toJson(true);
         }
         
     }

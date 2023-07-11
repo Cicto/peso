@@ -618,3 +618,7 @@ small.small-helper {
 #job-applications-table tr::before {
   background-color: var(--kt-body-bg) !important;
 }
+
+.overflow-hidden{
+  overflow: hidden;
+}
