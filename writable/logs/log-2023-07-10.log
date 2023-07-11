@@ -1,0 +1,181 @@
+ERROR - 2023-07-10 08:57:45 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-07-10 08:57:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 08:57:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-10 09:07:45 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3642): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3642)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(207): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applicants('17')
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2023-07-10 09:10:01 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:01 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:10:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:13:19 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:13:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:13:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 09:13:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-10 09:45:44 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#2 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(207): view('jobs/job-applic...', Array)
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applicants('17')
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-07-10 13:11:26 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3642): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3642)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(207): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applicants('17')
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-07-10 13:11:34 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3642): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3642)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(155): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applications()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-07-10 13:13:35 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3646)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(155): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applications()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-07-10 13:14:29 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3649): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3649)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(155): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applications()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-07-10 13:14:48 --> Attempt to read property "user_photo" on bool
+#0 C:\xampp\htdocs\peso\app\Views\partials\header.php(3649): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 3649)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('partials/header', NULL, true)
+#4 C:\xampp\htdocs\peso\app\Views\layouts\main.php(71): CodeIgniter\View\View->include('partials/header')
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('layouts/main', Array, true)
+#8 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/job-applic...', Array, true)
+#9 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(155): view('jobs/job-applic...', Array)
+#10 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->applications()
+#11 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#12 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2023-07-10 13:15:10 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-07-10 13:24:57 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:25:20 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-07-10 13:25:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:25:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:27:25 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:27:44 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:32:45 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:33:09 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:33:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:33:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:33:25 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-07-10 13:33:34 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-07-10 13:33:41 --> Table 'baliwagc_peso_db.logs' doesn't exist
+ERROR - 2023-07-10 13:33:41 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:34:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 13:34:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 14:53:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 14:54:20 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-10 14:54:20 --> foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 657)
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(265): App\Controllers\Jobs->declineApplicationEmail('Darrel Geslani', 'AUTE EXPLICABO ...', 'MAGNA SIT ET EA...', '{}')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->sendApplicantEmails('5')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-10 14:55:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 14:56:29 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-10 14:56:29 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+#0 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(656): count(Object(stdClass))
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(265): App\Controllers\Jobs->declineApplicationEmail('Darrel Geslani', 'AUTE EXPLICABO ...', 'MAGNA SIT ET EA...', Object(stdClass))
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->sendApplicantEmails('5')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-10 14:57:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-10 14:57:30 --> Undefined variable $list_items
+#0 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(684): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 684)
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(265): App\Controllers\Jobs->declineApplicationEmail('Darrel Geslani', 'AUTE EXPLICABO ...', 'MAGNA SIT ET EA...', Object(stdClass))
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->sendApplicantEmails('5')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-10 14:58:21 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 15:11:01 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 15:11:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-10 15:11:04 --> json_decode(): Argument #1 ($json) must be of type string, stdClass given
+#0 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(659): json_decode(Object(stdClass))
+#1 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(265): App\Controllers\Jobs->declineApplicationEmail('Wallace Miles', 'SAMPLE JOB POST...', 'SAMPLE COMPANY ...', Object(stdClass))
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->sendApplicantEmails('10')
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#4 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-07-10 15:12:49 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 15:17:18 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 15:21:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-10 15:22:54 --> Table 'baliwagc_peso_db.departments' doesn't exist

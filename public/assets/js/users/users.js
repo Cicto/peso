@@ -81,7 +81,7 @@ $(document).ready(function () {
 
     });
 
-    $(document).on('submit', '#add-user-form', function () {
+    $(document).on('submit', '#add-user-form', function (event) {
 
         event.preventDefault();
 
@@ -95,7 +95,7 @@ $(document).ready(function () {
             confirmButtonText: 'Yes'
         }).then((result) => {
             if (result.isConfirmed) {
-                
+                console.table($(this).serializeArray())
                 $.post(current_url + '/addUser', $(this).serialize())
                     .done(function (data) {
 

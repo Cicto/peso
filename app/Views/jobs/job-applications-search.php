@@ -82,7 +82,7 @@
                             return `
                                 <div class="d-flex align-items-center view-profile me-3 pointer" data-applicant-id="${row.id}" data-toggle="0">
                                     <div class="symbol symbol-40px me-2">                                                   
-                                        <img src="<?=base_url()?>/public/assets/media/avatars/${row.user_photo}" class="m-1" alt="">                                                    
+                                        <img src="<?=base_url()?>/public/assets/media/avatars/${row.user_photo ? row.user_photo : "default-avatar.png"}" class="m-1" alt="">                                                    
                                     </div>
                                     <p class="text-nowrap flex-grow-1 h-100 text-dark m-0 lh-sm">${data} ${row.middlename} ${row.lastname} <br><small class="text-muted">${row.email}</small></p>
                                     

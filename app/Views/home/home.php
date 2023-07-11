@@ -702,6 +702,7 @@ use CodeIgniter\I18n\Time;
                 if(this.dataset.isApplied==0){
                     confirmApplication(this.dataset.jobId, function(){
                         $("#job-application-button").html(`<i class="fas fa-check text-white fs-3"></i> Applied`)
+                        $("#job-application-button").attr("data-is-applied", 1);
                     })
                 }
             <?php else:?>

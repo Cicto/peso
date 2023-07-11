@@ -11,12 +11,12 @@ class Admin extends BaseController
     public function __construct()
     {
         $this->userInformation = TemplateLib::userInformation(user_id());
-        $this->educationalAttainment = TemplateLib::educationalAttainment();
     }
 
     public function index()
     {
-
+        header("Location: ".base_url("dashboard"));
+        die();
     }
 
 }

@@ -14,7 +14,7 @@ class Email extends BaseConfig
     /**
      * @var string
      */
-    public $fromName = 'Baliwag Bessy';
+    public $fromName = 'Baliwag PESO';
 
     /**
      * @var string
@@ -61,7 +61,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPPass = 'lnhkhzzfnfrxzwdz';
+    public $SMTPPass = 'jbufxwcxfohkneqx';
 
     /**
      * SMTP Port

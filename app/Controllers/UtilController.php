@@ -81,6 +81,20 @@ class UtilController extends BaseController
         }
     }
 
+    /**
+     * The function `barangaysCitiesAndProvinces` retrieves barangays, cities, and provinces from a
+     * database and returns them as JSON or an array.
+     * 
+     * @param barangay_id The `barangay_id` parameter is an optional parameter that represents the ID
+     * of a specific barangay. If provided, the function will return the details of that specific
+     * barangay. If not provided, the function will return the details of all barangays, cities, and
+     * provinces.
+     * @param is_json A boolean parameter that determines whether the function should return the result
+     * as a JSON string or as an associative array. If set to true, the function will return the result
+     * as a JSON string. If set to false, the function will return the result as an associative array.
+     * 
+     * @return an array or JSON object containing the barangays, cities, and provinces.
+     */
     public static function barangaysCitiesAndPronvinces($barangay_id = false, $is_json = true){
         if($barangay_id){
             return userBarangaysCitiesAndPronvinces($barangay_id);

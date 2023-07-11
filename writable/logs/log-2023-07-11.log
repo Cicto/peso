@@ -1,0 +1,90 @@
+ERROR - 2023-07-11 09:26:36 --> Unknown column 'log_actor' in 'field list'
+CRITICAL - 2023-07-11 09:26:49 --> Non-static method App\Controllers\Logs::log() cannot be called statically
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->updateJobStatus('17', '0')
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-11 09:39:25 --> Attempt to read property "id" on string
+#0 C:\xampp\htdocs\peso\app\Views\jobs\jobs-builder.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 109)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/jobs-build...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(140): view('jobs/jobs-build...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->edit_job_post('6')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 09:40:13 --> Attempt to read property "id" on string
+#0 C:\xampp\htdocs\peso\app\Views\jobs\jobs-builder.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 109)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('jobs/jobs-build...', Array, true)
+#4 C:\xampp\htdocs\peso\app\Controllers\Jobs.php(140): view('jobs/jobs-build...', Array)
+#5 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Jobs->edit_job_post('6')
+#6 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobs))
+#7 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-07-11 09:41:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 09:41:58 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:11:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:11:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:11:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:11:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:12:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:12:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:12:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:12:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:12:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:12:17 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:13:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:13:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:26 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:33 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:34 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:35 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:36 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:21:38 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-11 10:39:06 --> Call to undefined method App\Libraries\TemplateLib::educationalAttainment()
+#0 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(809): App\Controllers\Admin->__construct()
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-07-11 10:40:01 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:40:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:40:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:40:04 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:42:12 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:42:13 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:42:14 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:42:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:42:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:43:51 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:43:52 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:43:54 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:01 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:15 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:16 --> Table 'baliwagc_peso_db.departments' doesn't exist
+CRITICAL - 2023-07-11 10:44:34 --> Undefined variable $view_data
+#0 C:\xampp\htdocs\peso\app\Controllers\Dashboard.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 272)
+#1 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\peso\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\peso\index.php(38): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-07-11 10:44:43 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 10:44:45 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:20:02 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:20:02 --> Table 'baliwagc_peso_db.user' doesn't exist
+ERROR - 2023-07-11 11:20:30 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:22:03 --> Table 'baliwagc_peso_db.departments' doesn't exist
+ERROR - 2023-07-11 11:23:25 --> Table 'baliwagc_peso_db.departments' doesn't exist

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Controllers\UtilController;
+use App\Controllers\Logs;
 use App\Models\UsersModel;
 use App\Models\MasterModel;
 use Myth\Auth\Entities\User;
@@ -48,7 +49,8 @@ class Users extends BaseController
         return view('users/public-users', $view_data);
     }
 
-    public function resume(){
+    public function resume()
+    {
         $view_data = [
             'title' => 'User List',
             'userInformation' => $this->userInformation,
@@ -58,7 +60,8 @@ class Users extends BaseController
         return view('users/resume', $view_data);
     }
 
-    public function profile_validation(){
+    public function profile_validation()
+    {
         $view_data = [
             'title' => 'Profile Validation',
             'userInformation' => $this->userInformation,
@@ -70,7 +73,8 @@ class Users extends BaseController
         return view('users/validateProfile', $view_data);
     }
 
-    public function export_applicants(){
+    public function export_applicants()
+    {
         $applicantion_ids = [];
         foreach (func_get_args() as $param) {
             array_push($applicantion_ids, $param);
@@ -149,6 +153,7 @@ class Users extends BaseController
 
                 if(is_int($insertUserInfo))
                 {
+                    Logs::log("Added a new user", user_id(), $userInfo);
                     return json_encode([
                         'success' => $insertUserInfo,
                         'success_message' => 'Successfully Inserted!'
@@ -156,6 +161,7 @@ class Users extends BaseController
                 }
                 else
                 {
+                    Logs::log("Added a new user but other info are left out", user_id(), $userInfo);
                     return json_encode([
                         'error' => true,
                         'error_message' => $insertUserInfo
@@ -165,6 +171,7 @@ class Users extends BaseController
             }
             else
             {
+                Logs::log("Failed to add new user", user_id(), $users);
                 return json_encode([
                     'error' => true,
                     'error_message' => $insert
@@ -193,56 +200,14 @@ class Users extends BaseController
 
             if(is_int($update) > 0)
             {
-                // $userInfo = $_POST;
-                    // $table_name = 'user_info';
-                    // $user_role = UtilController::getUserRole($this->request->getPost(isset($_POST['id']) ? 'id' : 'user_id' ));
-                    // if($user_role){
-                    //     if($user_role==3){
-                    //         $table_name = 'public_user_info';
-                    //     }
-                // }else{
-
+                Logs::log("Updated user ~ ".$this->request->getPost('id'), user_id(), $users);
                 return json_encode([
                     'success' => true,
                     'success_message' => 'User Info successully updated'
                 ]);
 
-                // }
-
-                    // if($this->request->getPost('role')){
-                    //     $userInfo['role'] = $this->request->getPost('role');
-                    // }
-
-                    
-                    // $userInfo["user_id"] = isset($_POST['id']) ? $_POST['id'] : $_POST['user_id'] ;
-                    
-                    // $whereConditions = [
-                    //     'user_id' => $userInfo["user_id"]
-                    // ];
-
-                    // $removeFields = ['id', 'email', 'username'];
-                    // $userInfo = array_diff_key($userInfo, array_flip($removeFields));
-                    
-                    // $updateUserInfo = $usersModel->updateUserData($table_name, $userInfo, $whereConditions);
-
-                    // if(is_int($updateUserInfo) > 0)
-                    // {
-                    //     return json_encode([
-                    //         'success' => $updateUserInfo,
-                    //         'success_message' => 'Successfully Updated!',
-                    //         'user_info' => $userInfo,
-                    //         'role' => UtilController::getUserRole($this->request->getPost(isset($_POST['id']) ? 'id' : 'user_id' ))
-                    //     ]);
-                    // }
-                    // else
-                    // {
-                    //     return json_encode([
-                    //         'error' => true,
-                    //         'error_message' => $updateUserInfo
-                    //     ]);
-                // }
-
             } else {
+                Logs::log("Failed to update user ~ ".$this->request->getPost('id'), user_id(), $users);
                 return json_encode([
                     'error' => true,
                     'error_message' => $update
@@ -267,6 +232,7 @@ class Users extends BaseController
 
             if(is_int($banned) > 0)
             {
+                Logs::log("Banned user ~ ".$id, user_id(), $data);
                 return json_encode([
                     'success' => $banned,
                     'success_message' => 'User is banned!'
@@ -274,6 +240,7 @@ class Users extends BaseController
             }
             else
             {
+                Logs::log("Failed to ban user ~ ".$id, user_id(), $data);
                 return json_encode([
                     'error' => true,
                     'error_message' => $banned
@@ -297,6 +264,7 @@ class Users extends BaseController
 
             if(is_int($banned) > 0)
             {
+                Logs::log("Unbanned user ~ ".$id, user_id(), $data);
                 return json_encode([
                     'success' => $banned,
                     'success_message' => 'User is unbanned!'
@@ -304,6 +272,7 @@ class Users extends BaseController
             }
             else
             {
+                Logs::log("Failed to unban user ~ ".$id, user_id(), $data);
                 return json_encode([
                     'error' => true,
                     'error_message' => $banned
@@ -326,6 +295,7 @@ class Users extends BaseController
 
             if(is_int($update) > 0)
             {
+                Logs::log("Reset user ~ ".$id." 's password to default", user_id(), ['id' => $id]);
                 return json_encode([
                     'success' => $update,
                     'success_message' => 'Updated to default password!'
@@ -333,6 +303,7 @@ class Users extends BaseController
             }
             else
             {
+                Logs::log("Failed to reset user ~ ".$id." 's password", user_id(), ['id' => $id]);
                 return json_encode([
                     'error' => true,
                     'error_message' => $update
@@ -355,6 +326,7 @@ class Users extends BaseController
 
             if(is_int($update) > 0)
             {
+                Logs::log("Activated user ~ ".$id." 's account", user_id(), ['id' => $id, 'active' => ($this->request->getPost('status') == 'activate') ? 1 : 0,]);
                 return json_encode([
                     'success' => $update,
                     'success_message' => ($this->request->getPost('status') == 'activate') ? 'User Activated!' : 'User Deactivated!',
@@ -362,22 +334,13 @@ class Users extends BaseController
             }
             else
             {
+                Logs::log("Failed to activate user ~ ".$id." 's account", user_id(), ['id' => $id, 'active' => ($this->request->getPost('status') == 'activate') ? 1 : 0,]);
                 return json_encode([
                     'error' => true,
                     'error_message' => $update
                 ]);
             }
         }
-    }
-
-    public function changePassword()
-    {
-        $view_data = [
-            'title' => 'Change Password',
-            'userInformation' => TemplateLib::userInformation(user_id())
-        ];
-
-        return view('users/changePassword', $view_data);
     }
 
     public function changeUserPassword()
@@ -420,6 +383,7 @@ class Users extends BaseController
 
                     if(is_int($update) > 0)
                     {
+                        Logs::log("Updated user ~ ".user_id()." 's own password", user_id(), ['id' => user_id()]);
                         return json_encode([
                             'success' => $update,
                             'success_message' => 'Password Updated!'
@@ -427,6 +391,7 @@ class Users extends BaseController
                     }
                     else
                     {
+                        Logs::log("Failed to update user ~ ".user_id()." 's own password", user_id(), ['id' => user_id()]);
                         return json_encode([
                             'error' => true,
                             'error_message' => $update
@@ -445,6 +410,7 @@ class Users extends BaseController
                 foreach ($errors as $error) {
                     $error_cont .= '-'.$error.'<br>';
                 }
+                Logs::log("Failed to update user ~ ".user_id()." 's own password", user_id(), ['error_message' => $error_cont]);
                 return json_encode(
                     [
                         'error' => true,
@@ -465,6 +431,11 @@ class Users extends BaseController
             }
             
             $result = $masterModel->update($table_name, ["user_photo"=>$filename], ["user_id"=>$id]);
+            if($result["status"]){
+                Logs::log("Updated user ~ ".user_id()." 's own photo", user_id(), [ "id"=>$id, "filename"=>$filename ]);
+            }else{
+                Logs::log("Failed to update user ~ ".user_id()." 's own photo", user_id(), [ "id"=>$id, "filename"=>$filename ]);
+            }
             return json_encode([
                 "id"=>$id,
                 "filename"=>$filename,
@@ -598,6 +569,12 @@ class Users extends BaseController
             $public_user_misc_info = $master_model->insert("public_user_misc_info", $public_user_misc_info);
             $public_user_educational_background = $master_model->insert("public_user_educational_background", $public_user_educational_background);
 
+            if($public_user_info_result["status"] && $public_user_misc_info["status"] && $public_user_educational_background["status"]){
+                Logs::log("Added user ~ ".$user_id." 's other info", user_id(), $data);
+            }else{
+                Logs::log("Failed to add user ~ ".$user_id." 's other info", user_id(), $data);
+            }
+
             return json_encode($public_user_info_result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -609,6 +586,11 @@ class Users extends BaseController
             $data = $_POST;
             $data["updated_at"] = date("Y-m-d H:i:s");
             $result = $master_model->update("public_user_info", $data, ["user_id"=>$id]);
+            if($result["status"]){
+                Logs::log("Updated user ~ ".user_id()." 's own resume", user_id(), $data);
+            }else{
+                Logs::log("Failed to update user ~ ".user_id()." 's own resume", user_id(), $data);
+            }
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -701,6 +683,11 @@ class Users extends BaseController
             $public_user_misc_info = $master_model->update("public_user_misc_info", $public_user_misc_info, ["user_id"=>$user_id]);
             $public_user_educational_background = $master_model->update("public_user_educational_background", $public_user_educational_background, ["user_id"=>$user_id]);
 
+            if($public_user_info_result["status"] && $public_user_misc_info["status"] && $public_user_educational_background["status"]){
+                Logs::log("Updated user ~ ".$user_id." 's other info", user_id(), $data);
+            }else{
+                Logs::log("Failed to update user ~ ".$user_id." 's other info", user_id(), $data);
+            }
             return json_encode($public_user_info_result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -779,6 +766,12 @@ class Users extends BaseController
             "created_at" => date("Y-m-d H:i:s")
         ];
         $result = $master_model->insert("user_notifications", $data);
+        if($result["status"]){
+            Logs::log("Notified user ~ ".$user_id, user_id(), $data);
+        }else{
+            Logs::log("Failed to notify user ~ ".$user_id, user_id(), $data);
+
+        }
         return $result;
     }
 
@@ -840,6 +833,47 @@ class Users extends BaseController
             // return $builder->getCompiledSelect();
             return DataTable::of($builder)->toJson(TRUE);
         
+        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
+    }
+
+    public function updateUserOwnAccount(){
+        if($this->request->isAJAX()){
+            $master_model = new MasterModel();
+            $data = $_POST;
+            $data["updated_at"] = date("Y-m-d H:i:s");
+
+            $id = $data["id"];
+
+            $email = $data["email"];
+            $username = $data["username"];
+
+            $firstname = $data["firstname"];
+            $middlename = $data["middlename"];
+            $lastname = $data["lastname"];
+            $birthdate = $data["birthdate"];
+
+            $email_check = $master_model->get("users", "*", ["email" => $email, "id <>"=>$id]);
+            if($email_check["status"]){
+                return json_encode(["status"=>0, "result"=>"Email already exist"]);
+            }
+
+            $user_check = $master_model->get("users", "*", ["username" => $username, "id <>"=>$id]);
+            if($user_check["status"]){
+                return json_encode(["status"=>0, "result"=>"Username already exist"]);
+            }
+
+            $result = $master_model->update("users", ["email"=>$email, "username"=>$username], ["id"=>$id]);
+            if($result["status"]){
+                $user_info_result = $master_model->update("user_info", ["firstname"=>$firstname,"middlename"=>$middlename,"lastname"=>$lastname,"birthdate"=>$birthdate], ["user_id"=>$id]);
+                if($user_info_result["status"]){
+                    Logs::log("Updated user ~ ".user_id()." 's own info", user_id(), $data);
+                }else{
+                    Logs::log("Failed to update all user ~ ".user_id()." 's own info", user_id(), $data);
+                }
+            }else{
+                Logs::log("Failed to update user ~ ".user_id()." 's own info", user_id(), array_push($data, $result["result"]));
+            }
+            return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 }

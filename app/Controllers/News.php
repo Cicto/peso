@@ -5,6 +5,7 @@ use Myth\Auth\Entities\User;
 use Myth\Auth\Password;
 use App\Models\MasterModel;
 use App\Controllers\UtilController;
+use App\Controllers\Logs;
 use App\Libraries\TemplateLib;
 use \Hermawan\DataTables\DataTable;
 
@@ -30,7 +31,8 @@ class News extends BaseController
         return view('news/news-and-updates', $view_data);
     }
 
-    public function manage(){
+    public function manage()
+    {
         $view_data = [
             'title' => 'News and Updates',
             'userInformation' => $this->userInformation
@@ -38,7 +40,8 @@ class News extends BaseController
         return view('news/news-manager', $view_data);
     }
 
-    public function post($post_id){
+    public function post($post_id)
+    {
         $master_model = new MasterModel();
         $view_data = [
             'title' => 'Create New Post',
@@ -49,7 +52,8 @@ class News extends BaseController
         return view('news/read-news-post', $view_data);
     }
 
-    public function new_post(){
+    public function new_post()
+    {
         $view_data = [
             'title' => 'Create New Post',
             'userInformation' => $this->userInformation,
@@ -58,7 +62,8 @@ class News extends BaseController
         return view('news/news-builder', $view_data);
     }
 
-    public function edit_post($post_id){
+    public function edit_post($post_id)
+    {
         $master_model = new MasterModel();
         $view_data = [
             'title' => 'Edit Post',
@@ -69,7 +74,8 @@ class News extends BaseController
         return view('news/news-builder', $view_data);
     }
 
-    public function postDatatable($draft=0, $is_deleted=0){
+    public function postDatatable($draft=0, $is_deleted=0)
+    {
         if($this->request->isAJAX()){
             $where_status = "(status = 1 OR status = 0)";
             $where_deleted = "is_deleted = ".$is_deleted;
@@ -85,7 +91,8 @@ class News extends BaseController
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function createPost(){
+    public function createPost()
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $post_data = $_POST;
@@ -101,11 +108,14 @@ class News extends BaseController
             $result = $master_model->insert("news_posts", $post_data);
             if($result["status"]){
                 if($post_data["status"] == 1){
+                    Logs::log("Posted news post ~ ".$result["id"], user_id(), $post_data);
                     return json_encode(['status' => 1, 'result' => 'Post successfully posted']);
                 }else{
+                    Logs::log("Added news post ~ ".$result["id"]." to drafts", user_id(), $post_data);
                     return json_encode(['status' => 1, 'result' => 'Post successfully added to drafts']);
                 }
             }
+            Logs::log("Failed to add new post", user_id(), $post_data);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -115,7 +125,6 @@ class News extends BaseController
             $master_model = new MasterModel();
             $post_data = $_POST;
 
-            //Do a little checky checky uwu
             foreach ($post_data as $key => $value) {
                 if($value == ""){
                     return ["status"=>0, "message"=>"Some fields are not filled", "error"=>true];
@@ -132,8 +141,10 @@ class News extends BaseController
             $result = $master_model->update("news_posts", $post_data, ["id"=>$post_id]);
 
             if($result["status"]){
+                Logs::log("Updated news post ~ ".$post_id, user_id(), $post_data);
                 return json_encode(['status' => 1, 'result' => 'Post successfully updated']);
             }
+            Logs::log("Failed to update news post ~ ".$post_id, user_id(), $post_data);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -147,8 +158,10 @@ class News extends BaseController
             if($result["status"]){
                 $result = $master_model->update("news_posts", ["is_pinned"=>1], ["id"=>$post_id]);
                 if($result["status"]){
+                    Logs::log("Pinned news post ~ ".$post_id, user_id(), ["is_pinned"=>1, "id"=>$post_id]);
                     return json_encode(['status' => 1, 'result' => 'Post successfully pinned']);
                 }
+                Logs::log("Failed to pin news post ~ ".$post_id, user_id(), ["is_pinned"=>1, "id"=>$post_id]);
                 return json_encode($result);
             }
             return json_encode($result);
@@ -162,8 +175,10 @@ class News extends BaseController
             $result = $master_model->update("news_posts", ["status"=>$status], ["id"=>$post_id]);
             
             if($result["status"]){
+                Logs::log("Updated news post ~ ".$post_id." ' status", user_id(), ["status"=>$status, "id"=>$post_id]);
                 return json_encode(['status' => 1, 'result' => 'Post status successfully updated']);
             }
+            Logs::log("Failed to update news post ~ ".$post_id." ' status", user_id(), ["status"=>$status, "id"=>$post_id]);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -176,8 +191,10 @@ class News extends BaseController
             $result = $master_model->update("news_posts", ["is_deleted"=>$is_deleted, "is_pinned"=>0], ["id"=>$post_id]);
             
             if($result["status"]){
+                Logs::log(ucwords($message)." news post ~ ".$post_id, user_id(), ["is_deleted"=>$is_deleted, "is_pinned"=>0, "id"=>$post_id]);
                 return json_encode(['status' => 1, 'result' => 'Post successfully '.$message]);
             }
+            Logs::log("Failed to ".rtrim($message, "d")." news post ~ ".$post_id, user_id(), ["is_deleted"=>$is_deleted, "is_pinned"=>0, "id"=>$post_id]);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }

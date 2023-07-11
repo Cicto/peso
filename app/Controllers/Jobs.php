@@ -4,6 +4,7 @@ namespace App\Controllers;
 use Myth\Auth\Entities\User;
 use App\Models\MasterModel;
 use App\Controllers\UtilController;
+use App\Controllers\Logs;
 use App\Controllers\Users as Users_Controller;
 use App\Libraries\TemplateLib;
 use Myth\Auth\Password;
@@ -133,7 +134,7 @@ class Jobs extends BaseController
                 'userInformation' => $this->userInformation,
                 'barangays_cities_and_pronvinces' => UtilController::barangaysCitiesAndPronvinces(false, false),
                 'job_categories' => $master_model->get("job_categories", "*", ["is_deleted"=>0])["result"],
-                'job_info' => $master_model->get("job_posts", "*", ["id"=>$job_id,"is_deleted"=>0])["result"][0],
+                'job_info' => $master_model->get("job_posts", "*", ["id"=>$job_id])["result"][0],
                 'is_edit' => true
             ];
             return view('jobs/jobs-builder', $view_data);
@@ -231,7 +232,7 @@ class Jobs extends BaseController
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $applicant_query = $master_model->get("job_applications", 
-                "CONCAT(public_user_info.firstname, ' ', public_user_info.lastname) AS applicant_name, email, job_title, company_name, application_status, applicant_id", 
+                "CONCAT(public_user_info.firstname, ' ', public_user_info.lastname) AS applicant_name, email, job_title, company_name, application_status, applicant_id, qualifications_not_met", 
                 ["job_applications.id"=>$application_id],
                 [
                     ["job_posts", "job_posts.id = job_applications.job_post_id", "inner"],
@@ -247,6 +248,7 @@ class Jobs extends BaseController
                 $company_name = $applicant_query["result"][0]->company_name;
                 $application_status = $applicant_query["result"][0]->application_status;
                 $applicant_id = $applicant_query["result"][0]->applicant_id;
+                $qualifications_not_met = $applicant_query["result"][0]->qualifications_not_met;
 
                 if($application_status==0){
                     $update_applicant_status = $master_model->update("job_applications", ["application_status"=>2],["id"=>$application_id]);
@@ -261,7 +263,7 @@ class Jobs extends BaseController
                     $email_content = $this->approveApplicationEmail($applicant_name, $job_title, $company_name);
                     $users->createUserNotification($applicant_id, "Your application for <b>" . $job_title . "</b> at <b>" . $company_name . "</b> has been accepted. Check your email for more details", base_url("jobs/my_applications"));
                 }else{
-                    $email_content = $this->declineApplicationEmail($applicant_name, $job_title, $company_name);
+                    $email_content = $this->declineApplicationEmail($applicant_name, $job_title, $company_name, $qualifications_not_met);
                     $users->createUserNotification($applicant_id, "Your application for <b>" . $job_title . "</b> at <b>" . $company_name . "</b> has been declined. Check your email for more details", base_url("jobs/my_applications"));
                 }
 
@@ -276,13 +278,17 @@ class Jobs extends BaseController
                 if($email_result){
                     $update_emailed = $master_model->update("job_applications", ["is_emailed"=>1], ["id"=>$application_id]);
                     if($update_emailed["status"]){
+                        Logs::log("Sent email for applicant ~ ".$applicant_id, user_id(), ["id"=>$application_id]);
                         return json_encode(["status"=>1, "result"=>"Email successfully sent"]);
                     }
+                    Logs::log("Sent email for applicant ~ ".$applicant_id." , but records are not updated", user_id(), ["id"=>$application_id]);
                     return json_encode(["status"=>1, "result"=>"Email successfully sent, but records are not updated"]);
                 }else{
+                    Logs::log("Failed to send email for applicant ~ ".$applicant_id, user_id(), ["id"=>$application_id]);
                     return json_encode(["status"=>0, "error"=>true, "result"=>$email->printDebugger(['headers'])]);
                 }
             }
+            Logs::log("Failed to retrieve applicant ~ ".$applicant_id." 's info for email sending", user_id(), ["id"=>$application_id]);
             return json_encode($applicant_query);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -351,11 +357,14 @@ class Jobs extends BaseController
         $result = $master_model->insert("job_posts", $data);
         if($result["status"]){
             if($data["status"] == 1){
+                Logs::log("Posted job post ~ ".$result["id"], user_id(), $data);
                 return json_encode(['status' => 1, 'result' => 'Job successfully posted']);
             }else{
+                Logs::log("Added job post ~ ".$result["id"]." to drafts", user_id(), $data);
                 return json_encode(['status' => 1, 'result' => 'Job successfully added to drafts']);
             }
         }
+        Logs::log("Failed to add job post", user_id(), $data);
         return json_encode($data);
     }
 
@@ -392,8 +401,10 @@ class Jobs extends BaseController
         
         $result = $master_model->update("job_posts", $data, ["id"=>$id]);
         if($result["status"]){
+            Logs::log("Updated job post ~ ".$id, user_id(), $data);
             return json_encode(['status' => 1, 'result' => 'Job successfully updated', 'submitted'=> json_encode($data)]);
         }
+        Logs::log("Failed to update job post ~ ".$id, user_id(), $data);
         return json_encode($data);
     }
 
@@ -408,8 +419,10 @@ class Jobs extends BaseController
             $result = $master_model->update("job_posts", $update, ["id"=>$job_id]);
             
             if($result["status"]){
+                Logs::log("Updated status for job post ~ ".$job_id, user_id(), $update);
                 return json_encode(['status' => 1, 'result' => 'Job status successfully updated']);
             }
+            Logs::log("Failed to update status for job post ~ ".$job_id, user_id(), $update);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -423,8 +436,10 @@ class Jobs extends BaseController
             $result = $master_model->update("job_posts", ["is_deleted"=>$is_deleted], ["id"=>$job_id]);
             
             if($result["status"]){
+                Logs::log(ucwords($message)." job post ~ ".$job_id, user_id(), ["id"=>$job_id, "is_deleted"=>$is_deleted]);
                 return json_encode(['status' => 1, 'result' => 'Job post successfully '.$message]);
             }
+            Logs::log("Failed to ".rtrim($message, "d")." job post ~ ".$job_id, user_id(), ["id"=>$job_id, "is_deleted"=>$is_deleted]);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
@@ -475,7 +490,8 @@ class Jobs extends BaseController
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
     
-    public function createJobApplication($job_id){
+    public function createJobApplication($job_id)
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $user_id = user_id();
@@ -486,13 +502,16 @@ class Jobs extends BaseController
 
             $result = $master_model->insert("job_applications", $data);
             if($result["status"]){
+                Logs::log("Applied for job post ~ ".$job_id, user_id(), $data);
                 return json_encode(['status' => 1, 'result' => 'Job application successfully submitted']);
             }
+            Logs::log("Failed to apply for job post ~ ".$job_id, user_id(), $data);
             return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function appliedJobsDataTable(){
+    public function appliedJobsDataTable()
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             return DataTable::of($master_model->getDataTables(  "job_applications", 
@@ -504,15 +523,22 @@ class Jobs extends BaseController
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function updateJobApplication($application_id, $status){
+    public function updateJobApplication($application_id, $status)
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $data = ['application_status' => $status];
-            return json_encode($master_model->update("job_applications", $data, ['id' => $application_id] ));
+            $result = $master_model->update("job_applications", $data, ['id' => $application_id]);
+            if($result["status"]){
+                Logs::log("Update status for job application ~ ".$application_id, user_id(), $data);
+            }
+            Logs::log("Failed to update status for job application ~ ".$application_id, user_id(), $data);
+            return json_encode($result);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function jobApplicationsDataTable(){
+    public function jobApplicationsDataTable()
+    {
         if($this->request->isAJAX()){
             $this->db = db_connect();
             $builder = $this->db->table("job_posts")
@@ -545,7 +571,7 @@ class Jobs extends BaseController
             }
             $builder = $master_model->getDataTables("job_applications", 
                 "
-                job_applications.id, job_applications.application_status, public_user_info.resume, users.email, job_applications.created_at, job_applications.is_emailed, job_applications.is_hired, job_applications.not_hired_reason,
+                job_applications.id, job_applications.application_status, public_user_info.resume, users.email, job_applications.created_at, job_applications.is_emailed, job_applications.is_hired, job_applications.not_hired_reason, job_applications.qualifications_not_met,
                 public_user_info.firstname, public_user_info.middlename, public_user_info.lastname, public_user_info.suffix, public_user_info.user_photo,
                 public_user_info.sex, public_user_info.birthdate, public_user_info.contact_number, 
                 public_user_info.house_number, public_user_info.street_name, refbrgy.brgyDesc, refcitymun.citymunDesc, refprovince.provDesc,
@@ -571,35 +597,115 @@ class Jobs extends BaseController
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function approveApplicants($job_id){
+    public function approveApplicants($job_id)
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $ids = $this->request->getPost();
+            $updated_ids = [];
             foreach ($ids as $key => $id) {
-                $result = $master_model->update("job_applications", ["application_status"=>1], ["job_post_id"=>$job_id, "id"=>$id]);
+                $result = $master_model->update("job_applications", ["application_status"=>1, "qualifications_not_met"=>""], ["job_post_id"=>$job_id, "id"=>$id]);
                 if(!$result["status"]){
+                    Logs::log("Failed to set application ~ ".$id." as qualified", user_id(), ["application_status"=>1, "job_post_id"=>$job_id, "id"=>$id]);
                     return $result;
+                }else{
+                    array_push($updated_ids, $id);
                 }
             }
-            return json_encode(["status"=>1, "result"=>"Applicant application(s) approved"]);
+            Logs::log("Set job applications as qualified", user_id(), $updated_ids, ["application_status"=>1, "job_post_id"=>$job_id, "applicant_ids"=>$updated_ids]);
+            return json_encode(["status"=>1, "result"=>"Applicant application(s) set to qualified"]);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    public function declineApplicants($job_id){
+    public function declineApplicants($job_id)
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
             $ids = $this->request->getPost();
+            $updated_ids = [];
             foreach ($ids as $key => $id) {
                 $result = $master_model->update("job_applications", ["application_status"=>2, "is_hired"=>0], ["job_post_id"=>$job_id, "id"=>$id]);
                 if(!$result["status"]){
+                    Logs::log("Failed to set application ~ ".$id." as not qualified", user_id(), ["application_status"=>1, "job_post_id"=>$job_id, "id"=>$id]);
                     return $result;
+                }else{
+                    array_push($updated_ids, $id);
                 }
             }
+            Logs::log("Set job applications as not qualified", user_id(), ["application_status"=>1, "job_post_id"=>$job_id, "applicant_ids"=>$updated_ids]);
+            return json_encode(["status"=>1, "result"=>"Applicant application(s) set to not qualified"]);
+        }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
+    }
+
+    public function declineApplicant($job_id)
+    {
+        if($this->request->isAJAX()){
+            $master_model = new MasterModel();
+            $data = $this->request->getPost();
+            $id = $data["id"];
+            $qualifications_not_met = $data["qualifications_not_met"];
+            $result = $master_model->update("job_applications", ["application_status"=>2, "is_hired"=>0, "qualifications_not_met"=>$qualifications_not_met], ["job_post_id"=>$job_id, "id"=>$id]);
+
+            if(!$result["status"]){
+                Logs::log("Failed to set job application ~ ".$id." as not qualified", user_id(), array_merge($data, ["application_status"=>2, "job_post_id"=>$job_id, "is_hired"=>0]));
+                return $result;
+            }
+            Logs::log("Set job application ~ ".$id." as not qualified", user_id(), array_merge($data, ["application_status"=>2, "job_post_id"=>$job_id, "is_hired"=>0]));
             return json_encode(["status"=>1, "result"=>"Applicant application(s) declined"]);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }
 
-    private function approveApplicationEmail($name, $job_title, $company_name){
+    private function approveApplicationEmail($name, $job_title, $company_name)
+    {
+        return '
+        <div style="padding:0;margin:0;height:100%;width:100%;font-family: Open Sans,Helvetica, Arial,sans-serif; ">
+            <div
+                style="border-radius: 5px; margin:0 auto;max-width:600px;display:block;font-family:inherit; background-color: #2966b1; color: white; text-align: center; padding-bottom: 30px;">
+        
+                <img src="https://lh3.googleusercontent.com/pw/AMWts8D_FGdEDQzuEq4At0UcGz_ihpWgkBErIwlP76J58S855F4INE9bBCJgQIeACq10u3Kh4btgu-inx_lPxwpjSWlmJHotGVwo-PZlSPzw0BLra0HP6a0=w2400"
+                    alt="" srcset="" style=" width: 101%; margin: -5px -0.5%;">
+        
+                <div style=" margin-top: 10px; font-family:inherit;font-size:22px;font-weight:700;line-height:22px;">
+                    Application Qualified
+                </div>
+        
+                <p style="margin-left: 25px;margin-right: 25px; text-align: start;">
+                    Dear '.$name.',<br><br>
+                    This is to inform you that you passed the initial screening, and we have already submitted your application to <b>'.$company_name.'.</b> <br><br>
+                    The company will evaluate your application and contact you as soon as possible. <br><br>
+                    You can visit us on our official Facebook Page, PESO Baliwag, for the latest job postings, local recruitment activities, and updates. <br><br>
+                    If you have any questions, you may call us at 0997-136-9180. <br><br>
+                </p>
+                <p style="margin-left: 25px;margin-right: 25px; text-align: right;">
+                    Thank you! Regards <br>
+                    In the Name of Serbisyong May Malasakit, <br>
+                    <b>JENNELYN G. MARCELO</b><br>
+                    PESO Manager
+                </p>
+        
+            </div>
+            <small style="color: #888; text-align: center; display: block; margin-top: 10px; ">
+                If you did not apply for this job or if you\'re not even registered on this website, please kindly inform us on baliwag.gov.ph
+            </small>
+        </div>
+        ';
+    }
+
+    private function declineApplicationEmail($name, $job_title, $company_name, $qualifications_not_met)
+    {
+        $has_qualifications_not_met = 'First of all, we really appreciate your interest in our job posting. However, we cannot consider your application due to not being qualified for the job position since it requires the following: <br>';
+        $unordered_list = '';
+        $qualifications_not_met = json_decode($qualifications_not_met);
+        if((array)$qualifications_not_met){
+            $list_items = '';
+            foreach ($qualifications_not_met as $index => $qualification) {
+                $list_items .= '<li style="text-align: left;">'.$qualification.'</li>';
+            }
+            $unordered_list = '<ul>'.$list_items.'</ul>';
+        }else{
+            $has_qualifications_not_met = 'First of all, we really appreciate your interest in our job posting. However, we cannot consider your application due to not being qualified for the job position. <br><br>';
+        }
+
         return '
         <div style="padding:0;margin:0;height:100%;width:100%;font-family: Open Sans,Helvetica, Arial,sans-serif; ">
             <div
@@ -610,15 +716,23 @@ class Jobs extends BaseController
         
         
                 <div style=" margin-top: 10px; font-family:inherit;font-size:22px;font-weight:700;line-height:22px;">
-                    Application Accepted
+                    Application Not Qualified
                 </div>
         
                 <p style="margin-left: 25px;margin-right: 25px; text-align: start;">
-                    Good day '.$name.',<br>
-                    First of all, we really appreciate your interest in our job posting. Regrettably, we received a large volume of applicants and we have decided to move forward with other applicants at this time. 
-                    We encourage you to apply for other positions. You can visit our official Facebook Page (PESO Baliwag) for the latest job postings, local recruitment activities, or updates.
-                    If you have any questions, you may call us at 0997-136-9180.<br>
-                    Thank you!
+                    Dear '.$name.',<br><br>
+                    '.$has_qualifications_not_met.'
+                </p>
+                '.$unordered_list.'
+                <p style="margin-left: 25px;margin-right: 25px; text-align: start;">
+                    We encourage you to apply for other positions. You can visit our official Facebook Page (PESO Baliwag) for the latest job postings, local recruitment activities, or updates.<br><br>
+                    If you have any questions, you may call us at 0997-136-9180.<br><br>
+                </p>
+                <p style="margin-left: 25px;margin-right: 25px; text-align: right;">
+                    Thank you! <br>
+                    In the Name of Serbisyong May Malasakit, <br>
+                    <b>JENNELYN G. MARCELO</b><br>
+                    PESO Manager
                 </p>
         
         
@@ -626,25 +740,24 @@ class Jobs extends BaseController
             <small style="color: #888; text-align: center; display: block; margin-top: 10px; ">
                 If you did not apply for this job or if you\'re not even registered on this website, please kindly inform us on baliwag.gov.ph
             </small>
-        </div>
-        ';
-    }
-
-    private function declineApplicationEmail($name, $job_title, $company_name){
-        return 'REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE';
+        </div>';
     }
     
-    public function updateHiredApplicant(){
+    public function updateHiredApplicant()
+    {
         if($this->request->isAJAX()){
             $master_model = new MasterModel();
-            $data = $_POST;
-            $result = $master_model->update("job_applications", $data, ["id"=>$data["id"]]);
-            if(!$result["status"]){
-                return $result;
-            }
             $hire_statuses = ["pending", "not hired", "hired"];
             $hire_status = $hire_statuses[$data["is_hired"]];
 
+            $data = $_POST;
+            $result = $master_model->update("job_applications", $data, ["id"=>$data["id"]]);
+            if(!$result["status"]){
+                Logs::log("Failed to update hired status of application ~ ".$data["id"]." to ".$hire_status, user_id(), $data);
+                return $result;
+            }
+
+            Logs::log("Updated hired status of application ~ ".$data["id"]." to ".$hire_status, user_id(), $data);
             return json_encode(["status"=>1, "result"=>"Applicant status set to ".$hire_status]);
         }else{throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();}
     }

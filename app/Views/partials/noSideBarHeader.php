@@ -3096,7 +3096,7 @@
                                 <!--begin::Username-->
                                 <div class="d-flex flex-column">
                                     <div class="fw-bold d-flex align-items-center fs-5"><?=$userInformation->firstname?> <?=$userInformation->lastname?>
-                                    <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Admin</span></div>
+                                    <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2 <?=$userInformation->role == 1 ? "d-block" : "d-none"?>">Admin</span></div>
                                     <a href="#" class="fw-semibold text-muted text-hover-primary fs-7"><?=$userInformation->email?></a>
                                 </div>
                                 <!--end::Username-->

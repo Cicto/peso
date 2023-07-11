@@ -40,7 +40,7 @@ class BaseController extends Controller
      */
     protected $helpers = ['auth', 'form', 'url'];
 
-    protected $fromEmail = 'no-reply@mnsvisaglobal.com';
+    protected $fromEmail = 'peso_site@baliwag.gov.ph';
 
     protected $fromName = 'Movenstudy International';
 

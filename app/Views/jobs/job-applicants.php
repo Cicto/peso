@@ -103,8 +103,8 @@
                                     <i class="fas fa-ellipsis-v fs-2 text-blue p-0"></i>
                                 </button>
                                 <ul class="dropdown-menu p-0 shadow-lg">
-                                    <li class="m-2"><a href="<?=base_url()?>/jobs/post/17" target="_blank" class="btn btn-sm btn-blue w-100 me-2 text-truncate">View Job Post</a></li>
-                                    <li class="m-2"><a href="<?=base_url()?>/jobs/edit_job_post/17" target="_blank" class="btn btn-sm btn-blue w-100">Edit Job Post</a></li>
+                                    <li class="m-2"><a href="<?=base_url()?>/jobs/post/<?=$job_info->id?>" target="_blank" class="btn btn-sm btn-blue w-100 me-2 text-truncate">View Job Post</a></li>
+                                    <li class="m-2"><a href="<?=base_url()?>/jobs/edit_job_post/<?=$job_info->id?>" target="_blank" class="btn btn-sm btn-blue w-100">Edit Job Post</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -122,8 +122,8 @@
                                 <i class="fas fa-ellipsis-v fs-2 text-blue p-0"></i>
                             </button>
                             <ul class="dropdown-menu p-0 shadow-lg">
-                                <li class="m-2"><a href="<?=base_url()?>/jobs/post/17" target="_blank" class="btn btn-sm btn-blue w-100 me-2 text-truncate">View Job Post</a></li>
-                                <li class="m-2"><a href="<?=base_url()?>/jobs/edit_job_post/17" target="_blank" class="btn btn-sm btn-blue w-100">Edit Job Post</a></li>
+                                <li class="m-2"><a href="<?=base_url()?>/jobs/post/<?=$job_info->id?>" target="_blank" class="btn btn-sm btn-blue w-100 me-2 text-truncate">View Job Post</a></li>
+                                <li class="m-2"><a href="<?=base_url()?>/jobs/edit_job_post/<?=$job_info->id?>" target="_blank" class="btn btn-sm btn-blue w-100">Edit Job Post</a></li>
                             </ul>
                         </div>
                         <p class="border bg-light p-3 rounded text-blue ff-noir text-center m-0"><?=$job_info->candidates != 0 ? "Looking for <u> ".$job_info->candidates." candidate(s) </u>" : "No number of candidates specified"?> </p>
@@ -179,13 +179,13 @@
 </div>
 
 <div class="modal fade" tabindex="-1" id="applicant-info-modal">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg mx-10">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Applicant Personal Information</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body position-relative ">
                 <div class="row m-0" id="applicant-personal-info-container" style="display: flex;">
                     <div class="col-12 col-md-3 border-end position-relative d-none d-md-block">
                         <div class="p-1 border bg-light rounded-3">
@@ -276,6 +276,7 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="bg-white rounded-3 position-absolute start-100 w-75 ms-10">asd</div> -->
         </div>
     </div>
 </div>
@@ -288,10 +289,10 @@
       </div>
       <div class="modal-body">
         <?php foreach($applicants as $key => $applicant):?>
-        <li class="list-group-item d-flex justify-content-between align-items-center approved" id="email-applicant-<?=$applicant->id?>">
+        <li class="list-group-item d-flex-x justify-content-between align-items-center email-applicant" id="email-applicant-<?=$applicant->id?>" data-applicant-id="<?=$applicant->id?>">
             <div class="d-flex align-items-center">
                 <div class="symbol symbol-50px">
-                    <img src="<?=base_url()?>/public/assets/media/avatars/<?=$applicant->user_photo?>" alt=""/>
+                    <img src="<?=base_url()?>/public/assets/media/avatars/<?=$applicant->user_photo ? $applicant->user_photo : "default-avatar.png" ?>" alt=""/>
                 </div>
                 <div class="ms-2">
                     <h5 class="m-0"><?=$applicant->firstname?> <?=$applicant->middlename?> <?=$applicant->lastname?></h5>
@@ -344,6 +345,45 @@
   </div>
 </div>
 
+<div
+    id="non-qualified-applicants-drawer"
+    class="bg-white"
+    data-kt-drawer="true"
+    data-kt-drawer-activate="true"
+    data-kt-drawer-toggle="#non-qualified-applicants-drawer-button"
+    data-kt-drawer-close="#non-qualified-applicants-drawer-close"
+    data-kt-drawer-overlay="true"
+    data-kt-drawer-permanent="true"
+    data-kt-drawer-width="{default:'300px', 'md': '500px'}"
+>
+    <div class="h-100 w-100">
+        <div class="h-50 w-100 position-relative" style="overflow: auto;">
+            <h4 class="ff-noir m-3">Selected Applicants</h4>
+            <div class="list-group list-group-flush" id="non-qualified-applicants">
+            </div>
+            <div class="position-sticky p-1 bottom-0" style="background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));"></div>
+        </div>
+        <div class="h-50 w-100 position-relative" style="overflow: auto;" id="qualifications-not-met-container">
+            <div class="separator separator-dashed border-primary"></div>
+            <h4 class="ff-noir m-3">Qualifications not met:</h4>
+            <div class="px-4 pt-2">
+                <?php 
+                    $job_qualifications = json_decode($job_info->job_qualifications);
+                    foreach ($job_qualifications as $index => $qualification):?>
+                <div class="form-check mb-3">
+                    <input class="form-check-input job-qualification" type="checkbox" value="<?=$index?>" id="qualification_<?=$index?>" data-qualification-index="<?=$index?>">
+                    <label class="form-check-label" for="qualification_<?=$index?>"><?=$qualification?></label>
+                </div>
+                <?php endforeach;?>
+            </div>
+            <div class="px-3">
+                <small class="d-block text-muted text-end mt-5"><i class="fas fa-exclamation-circle"></i> Choose from the list of qualifications that the selected applicant did not met.</small>
+                <button type="button" class="btn btn-primary btn-sm w-100" id="qualifications-not-met-button">Submit Reasons for Non-Qualification</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?= $this->endSection(); ?>
 
 <?= $this->section('javascript'); ?>
@@ -394,7 +434,7 @@
                         return `
                             <div class="d-flex align-items-center view-profile me-3 pointer" data-applicant-id="${row.id}" data-toggle="0">
                                 <div class="symbol symbol-40px me-2">                                                   
-                                    <img src="<?=base_url()?>/public/assets/media/avatars/${row.user_photo}" class="m-1" alt="">                                                    
+                                    <img src="<?=base_url()?>/public/assets/media/avatars/${row.user_photo ? row.user_photo : "default-avatar.png" }" class="m-1" alt="">                                                    
                                 </div>
                                 <a href="#" class="text-nowrap flex-grow-1 h-100 text-dark">${data} ${row.middlename} ${row.lastname}</a>
                             </div>
@@ -483,117 +523,10 @@
                 this.checked = is_checked
             })
         })
-
+  
         $("#applicants-table").on("click", ".view-profile", function () {
-            const applicant_modal = bootstrap.Modal.getOrCreateInstance('#applicant-info-modal');
-            const applicant_id = this.dataset.applicantId
-            const applicant_object = searchArrayById(applicants_list, applicant_id)
-            const applicant = applicant_object
-            console.log(applicants_list, applicant_id)
-
-            $(".applicant-photo").attr("src", `<?=base_url()?>/public/assets/media/avatars/${applicant.user_photo}`)
-            $("#applicant-firstname").html(`${applicant.firstname}`)
-            $("#applicant-middlename").html(`${applicant.middlename}`)
-            $("#applicant-lastname").html(`${applicant.lastname}`)
-            $("#applicant-email").html(`${applicant.email}`)
-            $("#applicant-contact-number").html(`${applicant.contact_number}`)
-            $("#applicant-birthdate").html(`${mySQLDateToText(applicant.birthdate)}`)
-            $("#applicant-age").html(`${getAge(applicant.birthdate)}`)
-            $("#applicant-address").html(`${applicant.house_number} ${applicant.street_name} ${applicant.brgyDesc.ucwords()}, ${applicant.citymunDesc.ucwords()}, ${applicant.provDesc.ucwords()}`)
-            $("#applicant-educational-attainment").html(setEducationalAttainment(
-                [
-                    {
-                        name: "Elementary",
-                        school_name: applicant.elementary_school_name,
-                        year_graduated: applicant.elementary_year_graduated,
-                        is_undergrad: Number(applicant.elementary_is_undergrad),
-                        last_year_attended: applicant.elementary_last_year_attended,
-                    },
-                    {
-                        name: "Secondary",
-                        school_name: applicant.secondary_school_name,
-                        year_graduated: applicant.secondary_year_graduated,
-                        is_undergrad: Number(applicant.secondary_is_undergrad),
-                        last_year_attended: applicant.secondary_last_year_attended,
-                    },
-                    {
-                        name: "Tertiary",
-                        school_name: applicant.tertiary_school_name,
-                        year_graduated: applicant.tertiary_year_graduated,
-                        is_undergrad: Number(applicant.tertiary_is_undergrad),
-                        last_year_attended: applicant.tertiary_last_year_attended,
-                        course: applicant.tertiary_course,
-                    },
-                    {
-                        name: "Graduate Studies",
-                        school_name: applicant.graduate_studies_school_name,
-                        year_graduated: applicant.graduate_studies_year_graduated,
-                        is_undergrad: Number(applicant.graduate_studies_is_undergrad),
-                        last_year_attended: applicant.graduate_studies_last_year_attended,
-                        course: applicant.graduate_studies_course,
-                    }
-                ]
-            ))
-
-            const applicant_work_experience = JSON.parse(htmlDecode(applicant.work_experience))
-            let work_experience_list = '';
-            if(applicant_work_experience.length){
-                applicant_work_experience.forEach(work_experience => {
-                    work_experience_list += `<li class="">
-                                                <span class="text-dark work-experience">${work_experience.position}</span>
-                                                <br>
-                                                <small class="ps-1 text-dark">
-                                                    <b class="text-blue"> - </b> ${work_experience["company name"]} (${work_experience.address})
-                                                </small>
-                                            </li>`
-                });
-
-                $("#applicant-work-experience").html(`
-                    <ul class="text-blue ps-4">
-                        ${work_experience_list}
-                    </ul>
-                `)
-                $("#applicant-work-experience-container").show()
-            }else{
-                $("#applicant-work-experience-container").hide()
-            }
-
-            const applicant_preferred_occupation = JSON.parse(htmlDecode(applicant.preferred_occupation))
-            let preferred_occupation_list = '';
-            if(applicant_preferred_occupation.length){
-                applicant_preferred_occupation.forEach(preferred_occupation => {
-                    preferred_occupation_list += `<li class="">
-                                                <span class="text-dark preferred-occupation">${preferred_occupation}</span>
-                                            </li>`
-                });
-
-                $("#applicant-preferred-occupation").html(`
-                    <ul class="text-blue ps-4">
-                        ${preferred_occupation_list}
-                    </ul>
-                `)
-                $("#applicant-preferred-occupation-container").show()
-            }else{
-                $("#applicant-preferred-occupation-container").hide()
-            }
-        
-            $("#applicant-current-employment-status").html(`
-            ${applicant.employment_status} <br>
-            <small class="ps-1">
-                <b class="text-blue"> - </b> ${applicant.employment_type}
-            </small>`)
-            $(".applicant-applied-on").html(`${mySQLDateTimeToText(applicant.created_at)}`)
-            
-            previewResume(applicant.resume)
-            if(Number(this.dataset.toggle)){
-                $("#applicant-personal-info-container").hide()
-                $("#applicant-resume-container").show()
-            }else{
-                $("#applicant-personal-info-container").show()
-                $("#applicant-resume-container").hide()
-            }
-            applicant_modal.show()
-            console.log(applicant_object)
+            $("#applicant-info-modal .modal-dialog").removeClass("mx-10")
+            viewProfile(this.dataset.applicantId, Number(this.dataset.toggle))
         })
 
         $("#applicants-table").on("click", ".hire-applicant", async function () {
@@ -710,12 +643,109 @@
             if(Object.keys(applicants_id).length==0){
                 return false;
             }
+            
+            $("#applicant-personal-info-container").hide()
+            $("#applicant-resume-container").show()
+            
+            let is_first = true;
+            $("#non-qualified-applicants").html("")
+            $("#applicant-info-modal .modal-dialog").addClass("mx-10")
+
+            for (const index in applicants_id) {
+                if (Object.hasOwnProperty.call(applicants_id, index)) {
+                    const id = applicants_id[index];
+                    const applicant = searchArrayById(applicants_list, id);
+                    if(is_first){
+                        viewProfile(id, 1)
+                        if(isJsonString(htmlDecode(applicant.qualifications_not_met))){
+                            const qualifications_not_met = JSON.parse(htmlDecode(applicant.qualifications_not_met));
+                            $(`#qualifications-not-met-container .job-qualification`).each(function(){
+                                const index = this.dataset.qualificationIndex;
+                                this.checked = (index in qualifications_not_met)
+                            })
+                        }else{
+                            $(`#qualifications-not-met-container .job-qualification`).each(function(){
+                                this.checked = false
+                            });
+                        }
+                    }
+                    $("#non-qualified-applicants").append(`
+                    <button type="button" class="list-group-item list-group-item-action ${is_first && "active"}" aria-current="true" data-applicant-id="${id}">
+                        <div class="d-flex align-items-center justify-content-between view-profile me-3 pointer">
+                            <div class="">
+                                <div class="symbol symbol-40px me-2">                                                   
+                                    <img src="<?=base_url()?>/public/assets/media/avatars/${applicant.user_photo ? applicant.user_photo : "default-avatar.png"}" class="m-1" alt="">                                                    
+                                </div>
+                                ${applicant.firstname} ${applicant.middlename} ${applicant.lastname}
+                            </div>
+                            <div class="">
+                                <span class="svg-icon svg-icon-${is_first ? "white" : "primary"}">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    ${applicant.application_status == 0 ? `
+                                        <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="currentColor"/>
+                                        <rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="currentColor"/>
+                                        ` : `
+                                        <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="currentColor"/>
+                                        <path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="currentColor"/>
+                                        `}
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    `)
+                    is_first = false
+                }
+            }
+            const drawer = KTDrawer.getInstance(document.querySelector("#non-qualified-applicants-drawer"));
+            drawer.toggle();
+        })
+
+        $("#non-qualified-applicants").on("click", ".list-group-item-action", function(){
+            $("#non-qualified-applicants .list-group-item-action").removeClass("active")
+            $("#non-qualified-applicants .list-group-item-action .svg-icon").removeClass("svg-icon-white").addClass("svg-icon-primary")
+            $(this).addClass("active")
+            $(this).find(".svg-icon").addClass("svg-icon-white").removeClass("svg-icon-primary")
+            viewProfile(this.dataset.applicantId, 1);
+            const applicant = searchArrayById(applicants_list, this.dataset.applicantId);
+        
+            if(isJsonString(htmlDecode(applicant.qualifications_not_met))){
+                const qualifications_not_met = JSON.parse(htmlDecode(applicant.qualifications_not_met));
+                $(`#qualifications-not-met-container .job-qualification`).each(function(){
+                    const index = this.dataset.qualificationIndex;
+                    this.checked = (index in qualifications_not_met)
+                })
+            }else{
+                $(`#qualifications-not-met-container .job-qualification`).each(function(){
+                    this.checked = false
+                });
+            }
+        })
+
+        $("#qualifications-not-met-button").click(function(){
+            const qualifications_not_met = {};
+            const id = $("#non-qualified-applicants .list-group-item-action.active").data("applicantId")
+            $("#qualifications-not-met-container .job-qualification").each(function(){
+                if(this.checked == true){
+                    const index = this.dataset.qualificationIndex;
+                    qualifications_not_met[index] = $(this).next("label").text();
+                }
+            })
+
             AJAX({
                 method: "POST",
-                url: "<?=base_url()?>/jobs/declineApplicants/<?=$job_info->id?>",
-                data: applicants_id,
-                successAlert: true,
+                url: "<?=base_url()?>/jobs/declineApplicant/<?=$job_info->id?>",
+                data: {
+                    id: id,
+                    qualifications_not_met: JSON.stringify(qualifications_not_met),
+                },
                 success: function(data){
+                    $("#non-qualified-applicants .list-group-item-action.active .svg-icon").html(`
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="currentColor"/>
+                            <path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="currentColor"/>
+                        </svg>
+                    `)
                     console.log(data)
                     reloadDataTable(applicant_datatable)
                 }
@@ -785,8 +815,10 @@
 
         $("#email-applicants").click(async function(){
             let application_ids = []
+            $(".email-applicant").hide();
             await $("#applicants-table").find("input.applicant-checklist").each(function (index, element) {
                 if(this.checked){
+                    $(`.email-applicant[data-applicant-id="${this.dataset.applicantId}"]`).show()
                     application_ids.push(this.dataset.applicantId)
                     this.checked = false
                 }
@@ -795,6 +827,7 @@
             if(application_ids.length==0){
                 return false;
             }
+
             const applicant_modal = bootstrap.Modal.getOrCreateInstance('#applicant-emailing-modal');
             applicant_modal.show()
             sendEmails(application_ids)
@@ -933,6 +966,116 @@
             }
         }
         return educational_attainment_element;
+    }
+
+    function viewProfile(applicant_id, toggle = 0){
+        const applicant_modal = bootstrap.Modal.getOrCreateInstance('#applicant-info-modal');
+        const applicant_object = searchArrayById(applicants_list, applicant_id)
+        const applicant = applicant_object
+        console.log(applicants_list, applicant_id)
+
+        $(".applicant-photo").attr("src", `<?=base_url()?>/public/assets/media/avatars/${applicant.user_photo ? applicant.user_photo : "default-avatar.png"}`)
+        $("#applicant-firstname").html(`${applicant.firstname}`)
+        $("#applicant-middlename").html(`${applicant.middlename}`)
+        $("#applicant-lastname").html(`${applicant.lastname}`)
+        $("#applicant-email").html(`${applicant.email}`)
+        $("#applicant-contact-number").html(`${applicant.contact_number}`)
+        $("#applicant-birthdate").html(`${mySQLDateToText(applicant.birthdate)}`)
+        $("#applicant-age").html(`${getAge(applicant.birthdate)}`)
+        $("#applicant-address").html(`${applicant.house_number} ${applicant.street_name} ${applicant.brgyDesc.ucwords()}, ${applicant.citymunDesc.ucwords()}, ${applicant.provDesc.ucwords()}`)
+        $("#applicant-educational-attainment").html(setEducationalAttainment(
+            [
+                {
+                    name: "Elementary",
+                    school_name: applicant.elementary_school_name,
+                    year_graduated: applicant.elementary_year_graduated,
+                    is_undergrad: Number(applicant.elementary_is_undergrad),
+                    last_year_attended: applicant.elementary_last_year_attended,
+                },
+                {
+                    name: "Secondary",
+                    school_name: applicant.secondary_school_name,
+                    year_graduated: applicant.secondary_year_graduated,
+                    is_undergrad: Number(applicant.secondary_is_undergrad),
+                    last_year_attended: applicant.secondary_last_year_attended,
+                },
+                {
+                    name: "Tertiary",
+                    school_name: applicant.tertiary_school_name,
+                    year_graduated: applicant.tertiary_year_graduated,
+                    is_undergrad: Number(applicant.tertiary_is_undergrad),
+                    last_year_attended: applicant.tertiary_last_year_attended,
+                    course: applicant.tertiary_course,
+                },
+                {
+                    name: "Graduate Studies",
+                    school_name: applicant.graduate_studies_school_name,
+                    year_graduated: applicant.graduate_studies_year_graduated,
+                    is_undergrad: Number(applicant.graduate_studies_is_undergrad),
+                    last_year_attended: applicant.graduate_studies_last_year_attended,
+                    course: applicant.graduate_studies_course,
+                }
+            ]
+        ))
+
+        const applicant_work_experience = JSON.parse(htmlDecode(applicant.work_experience))
+        let work_experience_list = '';
+        if(applicant_work_experience.length){
+            applicant_work_experience.forEach(work_experience => {
+                work_experience_list += `<li class="">
+                                            <span class="text-dark work-experience">${work_experience.position}</span>
+                                            <br>
+                                            <small class="ps-1 text-dark">
+                                                <b class="text-blue"> - </b> ${work_experience["company name"]} (${work_experience.address})
+                                            </small>
+                                        </li>`
+            });
+
+            $("#applicant-work-experience").html(`
+                <ul class="text-blue ps-4">
+                    ${work_experience_list}
+                </ul>
+            `)
+            $("#applicant-work-experience-container").show()
+        }else{
+            $("#applicant-work-experience-container").hide()
+        }
+
+        const applicant_preferred_occupation = JSON.parse(htmlDecode(applicant.preferred_occupation))
+        let preferred_occupation_list = '';
+        if(applicant_preferred_occupation.length){
+            applicant_preferred_occupation.forEach(preferred_occupation => {
+                preferred_occupation_list += `<li class="">
+                                            <span class="text-dark preferred-occupation">${preferred_occupation}</span>
+                                        </li>`
+            });
+
+            $("#applicant-preferred-occupation").html(`
+                <ul class="text-blue ps-4">
+                    ${preferred_occupation_list}
+                </ul>
+            `)
+            $("#applicant-preferred-occupation-container").show()
+        }else{
+            $("#applicant-preferred-occupation-container").hide()
+        }
+    
+        $("#applicant-current-employment-status").html(`
+        ${applicant.employment_status} <br>
+        <small class="ps-1">
+            <b class="text-blue"> - </b> ${applicant.employment_type}
+        </small>`)
+        $(".applicant-applied-on").html(`${mySQLDateTimeToText(applicant.created_at)}`)
+        
+        previewResume(applicant.resume)
+        if(Number(toggle)){
+            $("#applicant-personal-info-container").hide()
+            $("#applicant-resume-container").show()
+        }else{
+            $("#applicant-personal-info-container").show()
+            $("#applicant-resume-container").hide()
+        }
+        applicant_modal.show()
     }
 </script>
 <?= $this->endSection(); ?>

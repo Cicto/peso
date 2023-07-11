@@ -1,8 +1,0 @@
-CRITICAL - 2023-02-21 14:31:55 --> Too few arguments to function App\Models\MasterModel::update(), 2 passed in C:\xampp\htdocs\Bessy\app\Controllers\Departments.php on line 589 and exactly 3 expected
-#0 C:\xampp\htdocs\Bessy\app\Controllers\Departments.php(589): App\Models\MasterModel->update('asd', Array)
-#1 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Departments->test()
-#2 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departments))
-#3 C:\xampp\htdocs\Bessy\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\Bessy\index.php(38): CodeIgniter\CodeIgniter->run()
-#5 {main}
-ERROR - 2023-02-21 14:32:08 --> Table 'baliwagc_bessy_db.asd' doesn't exist

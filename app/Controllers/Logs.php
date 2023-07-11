@@ -61,4 +61,15 @@ class Logs extends BaseController
         }
         
     }
+
+    public static function log($action, $user_id, $data=[]){
+        $user_id = $user_id ? $user_id : user_id();
+        $master_model = new MasterModel();
+        $result = $master_model->insert("logs", [
+            "log_action"=>$action,
+            "log_data"=>json_encode($data),
+            "user_id"=>$user_id
+        ]);
+        return $result;
+    }
 }

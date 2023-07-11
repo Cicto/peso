@@ -76,7 +76,7 @@
             </div>
             <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
                 
-                <form role="form" id="user-form" class="needs-validation user-form form fv-plugins-bootstrap5 fv-plugins-framework" method = "POST" novalidate>
+                <form role="form" id="user-form" class="needs-validation user-form form fv-plugins-bootstrap5 fv-plugins-framework" method = "POST">
                     
                     <div class="mb-13 text-center ">
                         <!--begin::Title-->
@@ -101,7 +101,7 @@
                             <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" aria-label="Specify a target name for future usage and reference" data-kt-initialized="1"></i>
                         </label>
                         <!--end::Label-->
-                        <input type="email" class="form-control" placeholder="Enter Target Title" name="email" id = "email" value = "@baliwag.gov.ph" required>
+                        <input type="email" class="form-control" placeholder="@baliwag.gov.ph" name="email" id = "email" value = "" required>
                         <div class="fv-plugins-message-container invalid-feedback"></div>
                     </div>
 
@@ -114,11 +114,14 @@
                         <div class="col-4">
                             <label class="required fs-6 fw-semibold mb-1">Role</label>
                             <select class="form-select" id="role" name = "role" aria-label="Floating label select example" required>
-                                <option value = "" selected disabled>Select Role</option>
+                                <option value="" selected disabled>Select Role</option>
 
-                                <?php foreach ($roles as $role) : ?>
+                                <?php foreach ($roles as $role) : 
+                                        if($role->name !== "User"): ?>
+                                    
                                     <option value="<?= $role->id ?>"><?= $role->name ?></option>
-                                <?php endforeach ?>
+                                <?php       endif;
+                                        endforeach ?>
                             </select>
                         </div>
                     </div>
